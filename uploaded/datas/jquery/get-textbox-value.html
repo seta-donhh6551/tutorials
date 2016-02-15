@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jQuery get textbox value</title>
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    // Get value
+	$("button#Get").click(function () {
+		$('#msg').html($('input:text').val());
+	 });
+	 
+	 // Reset
+	$("button#Reset").click(function(){
+		$('#msg').html("");
+		$('input:text').val("");
+	 
+	});
+	
+	// Set value
+	$("button#Set").click(function () {
+		$('input:text').val("ABC");
+		$('#msg').html($('input:text').val());
+    });
+});
+</script>
+</head>
+
+<body>
+<h1>jQuery lấy giá trị của textbox</h1>
+<h4>TextBox value :
+  <label id="msg"></label>
+</h4>
+<div style="padding:16px;"> TextBox :
+  <input type="text" value="Giá trị bất kỳ"/>
+</div>
+<button id="Get">Get TextBox Value</button>
+<button id="Set">Set To "ABC"</button>
+<button id="Reset">Reset It</button>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jQuery selectbox</title>
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	// Lấy giá trị được chọn
+    $("#isSelect").click(function () {
+		alert($('#gender').val());
+    });
+ 
+ 	// Chọn Nam
+    $("#selectnam").click(function () {
+		$("#gender").val("Nam");
+    });
+ 
+ 	// Chọn Nữ
+    $("#selectnu").click(function () {
+		$("#gender").val("Nữ");
+    });
+
+	// Disable Nữ 
+    $("#disablenu").click(function () {
+		$("#gender option[value='Nữ']").attr("disabled", true);
+    });
+ 
+ 	// Enable Nữ
+    $("#enablenu").click(function () {
+		$("#gender option[value='Nữ']").attr("disabled", false);
+    });
+});
+</script>
+</head>
+
+<body>
+<h1>jQuery thao tác với select box</h1>
+<form action="">
+<select id="gender">
+   <option value="None">-- Select --</option>
+   <option value="Nam">Nam</option>
+   <option value="Nữ">Nữ</option>
+   <option value="Unknow">Không xác định</option>
+</select>
+<br>
+<br>
+<br>
+<input type='button' value='Lấy giá trị được chọn' id='isSelect'>
+<input type='button' value='Chọn Nam' id='selectnam'>
+<input type='button' value='Chọn Nữ' id='selectnu'>
+<input type='button' value='Disable Nữ' id='disablenu'>
+<input type='button' value='Enable Nữ' id='enablenu'>
+</form>
+</body>
+</html>

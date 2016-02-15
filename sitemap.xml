@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://phpandmysql.net/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/gioi-thieu.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/khoa-hoc.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/cong-nghe.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/lien-he.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/javascript-basic-124.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/jquery-framework-128.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/php-can-ban-52.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/php-nang-cao-88.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/php-training-127.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/php-framework-126.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/bai-viet-moi/bai-10-ket-hop-php-va-mysql-57.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/bai-viet-moi/xu-ly-mang-mo-rong-trong-php-56.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/bai-viet-moi/class-phan-trang-trong-php-55.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/bai-viet-moi/lazy-loading-trong-php-54.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/bai-viet-moi/regular-expressions-trong-php-53.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/bai-viet-moi/viet-lai-duong-dan-url-than-thien-52.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/bai-viet-moi/bai-9-tim-hieu-ve-co-so-du-lieu-mysql-51.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/bai-viet-moi/bai-8-upload-file-trong-php-50.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/bai-viet-moi/phan-5-do-an-quan-ly-sinh-vien-tao-trang-dang-nhap-quan-tri-admin-49.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/bai-viet-moi/phan-4-do-an-quan-ly-sinh-vien-to-chuc-thu-muc-cau-hinh-project-48.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/php-can-ban/bai-1-gioi-thieu-cai-dat-server-cau-hinh-chay-php-1.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/php-can-ban/bai-2-hello-world-dong-lenh-dau-tien-2.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/php-can-ban/bai-3-bien-hang-va-cac-toan-tu-trong-php-5.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/php-can-ban/bai-4-bieu-thuc-cau-lenh-dieu-kien-vong-lap-trong-php-29.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/php-can-ban/bai-5-mang-trong-php-30.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/php-can-ban/bai-6-su-dung-session-va-cookie-trong-php-31.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/php-can-ban/bai-7-form-va-xu-ly-form-trong-php-32.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/php-can-ban/bai-8-upload-file-trong-php-50.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/php-can-ban/bai-9-tim-hieu-ve-co-so-du-lieu-mysql-51.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/php-can-ban/bai-10-ket-hop-php-va-mysql-57.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/php-nang-cao/lap-trinh-huong-doi-tuong-cac-khai-niem-43.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/php-nang-cao/viet-lai-duong-dan-url-than-thien-52.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/php-nang-cao/regular-expressions-trong-php-53.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/php-nang-cao/lazy-loading-trong-php-54.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/php-nang-cao/class-phan-trang-trong-php-55.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/php-training/phan-1-do-an-quan-ly-sinh-vien-gioi-thieu-44.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/php-training/phan-2-do-an-quan-ly-sinh-vien-phan-tich-database-45.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/php-training/phan-3-do-an-quan-ly-sinh-vien-tao-co-so-du-lieu-46.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/php-training/phan-4-do-an-quan-ly-sinh-vien-to-chuc-thu-muc-cau-hinh-project-48.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/php-training/phan-5-do-an-quan-ly-sinh-vien-tao-trang-dang-nhap-quan-tri-admin-49.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/cong-nghe/tin-tuc-cong-nghe-184.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/cong-nghe/cong-nghe-mobile-183.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/cong-nghe/thu-thuat-internet-182.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/cong-nghe/ngon-ngu-lap-trinh-195.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/cong-nghe/the-gioi-thiet-bi-so-199.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/tin-cong-nghe/facebook-bi-yahoo--microsoft-qua-mat/99.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/tags/facebook</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/tags/mang-xa-hoi</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/tags/yahoo</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/tags/microsoft</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/tin-cong-nghe/khach-hang-bi-ton-thuong-vi-dich-vu-3g/98.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/tags/internet</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/tags/3g</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/tin-cong-nghe/vu-tan-cong-mang-lon-nhat-toan-cau-la-bi-thoi-phong/97.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/tags/bao-mat</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/tags/hacker</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/tags/tin-tac</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/tags/ddos</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/tin-cong-nghe/dong-sang-lap-blackberry-roi-cong-ty/96.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/tags/blackberry</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/tags/samsung</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/tags/apple</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/tags/smartphone</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/tin-cong-nghe/vu-ddos-lon-nhat-lich-su-chua-cham-viet-nam/95.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/tin-cong-nghe/sau-5-thang-thu-phi-tai-nhac-lai-dau-voi-duoi-chuot/94.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/tags/tai-nhac</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/tags/mien-phi</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/tin-cong-nghe/facebook-ra-mat-cong-cu-quang-cao/93.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/tags/google</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/cong-nghe/7</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/php-framework/mo-hinh-mvc-trong-php-47.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/php-framework/xu-ly-mang-mo-rong-trong-php-56.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/tin-cong-nghe/facebook-bi-danh-bai-o-nhat-han/92.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/tin-cong-nghe/han-quoc---tin-tac-trung-quoc-tan-cong-ngan-hang-va-truyen-hinh/91.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/tags/ngan-hang</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/tin-cong-nghe/quang-cao-tu-khoa-tren-google-chi-to-phi-tien/89.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/tags/chat</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/tin-cong-nghe/google-se-thong-nhat-cac-nen-tang-chat-thanh-babble/90.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://phpandmysql.net/cong-nghe/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+</urlset>

@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Jquery events</title>
+<style type="text/css">
+div{
+	padding:16px;
+}
+.focus, .blur, .change, .select{
+	color:white;
+	border:1px solid red;
+	background-color:blue;
+	padding:8px;
+	margin:8px;
+}
+</style>
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+   
+	// Focus
+	$("input,select,textarea").focus(function () {
+	  $(this).after("<span class='focus'> focus() triggered! </span>");
+	  $("span").filter('.focus').fadeOut(4000);
+    });
+ 	
+	// Blur
+    $("input,select,textarea").blur(function () {
+	  $(this).after("<span class='blur'> blur() triggered! </span>");
+	  $("span").filter('.blur').fadeOut(4000);
+    });
+ 
+ 	// Change
+    $("input,select,textarea").change(function () {
+	  $(this).after("<span class='change'> change() triggered! </span>");
+	  $("span").filter('.change').fadeOut(4000);
+ 
+    });
+	
+	// Select
+    $("input,textarea").select(function () {
+	  $(this).after("<span class='select'> select() triggered! </span>");
+	  $("span").filter('.select').fadeOut(4000);
+ 
+    });
+ 
+ 	// Submit
+    $("form").submit(function () { 
+	 	alert('Form submitted!');
+    });	
+});
+</script>
+</head>
+
+<body>
+<form name="formsubmit" action="#">
+  <div> TextBox :
+    <input type="textbox" size="50"/>
+  </div>
+  <div>
+    <label style="float:left">TextArea : </label>
+    <textarea cols="30" rows="5"></textarea>
+  </div>
+  <div> Radio :
+    <input name="sex" type="radio" value="Male" checked/>Male
+    <input name="sex" type="radio" value="Female"/>Female
+  </div>
+  <div> CheckBox :
+    <input type="checkbox" name="checkme"/>Check Me
+  </div>
+  <div> Country :
+    <select id="country">
+      <option value="China">China</option>
+      <option value="United State">United State</option>
+    </select>
+  </div>
+  <div>
+    <input type="submit"/>
+    <input type="reset"/>
+  </div>
+</form>
+</body>
+</html>
