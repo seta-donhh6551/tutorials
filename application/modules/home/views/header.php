@@ -80,8 +80,8 @@
 						<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-40 current_page_item menu-item-first td-menu-item td-normal-menu menu-item-52"><a href="http://localhost/wordpress/">News</a>
 						</li>
 						<li class="menu-item menu-item-type-custom menu-item-object-custom td-menu-item td-mega-menu menu-item-53"><a href="#" class="sf-with-ul">Fashion<i class="td-icon-menu-down"></i></a>
-							<ul class="sub-menu" style="float: none; width: 10em; display: none;">
-								<li class="menu-item-0" style="white-space: normal; float: left; width: 100%;">
+							<ul class="sub-menu">
+								<li class="menu-item-0">
 									<div class="td-container-border">
 										<div class="td-mega-grid">
 											<div class="td_block_wrap td_block_mega_menu td_block_id_1698881586 td_uid_1_56c18169accae_rand  td_with_ajax_pagination td-pb-border-top">

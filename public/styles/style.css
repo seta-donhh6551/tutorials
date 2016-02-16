@@ -4903,7 +4903,7 @@ ol li {
 .mce-content-body .td_pull_quote p:first-child:before,
 .comment-content .td_pull_quote p:first-child:before {
   position: absolute;
-  background: url('images/icons/pull-quote-left.png') no-repeat;
+  background: url('../images/icons/pull-quote-left.png') no-repeat;
   left: 0;
   display: block;
   content: '';
@@ -4918,7 +4918,7 @@ ol li {
 .mce-content-body .td_pull_quote p:after,
 .comment-content .td_pull_quote p:after {
   position: absolute;
-  background: url('images/icons/pull-quote-right.png') no-repeat;
+  background: url('../images/icons/pull-quote-right.png') no-repeat;
   bottom: 10px;
   right: 0;
   display: block;
@@ -6429,7 +6429,7 @@ embed {
   margin-bottom: 20px;
 }
 .mejs-overlay .mejs-overlay-button {
-  background: url('images/icons/ico-video-large.png') no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  background: url('../images/icons/ico-video-large.png') no-repeat scroll 0 0 rgba(0, 0, 0, 0);
   margin: 0 !important;
   width: 40px;
   height: 40px;
@@ -18066,15 +18066,15 @@ video list player
 }
 @font-face {
   font-family: 'newsmag';
-  src: url('images/icons/newsmag.eot?10');
-  src: url('images/icons/newsmag.eot?10#iefix') format('embedded-opentype'), url('images/icons/newsmag.woff?10') format('woff'), url('images/icons/newsmag.ttf?10') format('truetype'), url('images/icons/newsmag.svg?10#newsmag') format('svg');
+  src: url('../images/icons/newsmag.eot?10');
+  src: url('../images/icons/newsmag.eot?10#iefix') format('embedded-opentype'), url('../images/icons/newsmag.woff?10') format('woff'), url('../images/icons/newsmag.ttf?10') format('truetype'), url('../images/icons/newsmag.svg?10#newsmag') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   @font-face {
     font-family: 'newsmag';
-    src: url('images/icons/newsmag.svg?#newsmag') format('svg');
+    src: url('../images/icons/newsmag.svg?#newsmag') format('svg');
   }
 }
 [class^="td-icon-"]:before,
@@ -20093,7 +20093,7 @@ tagdiv animations
   .iosSlider .prevButton,
   .iosSlider .nextButton,
   .sf-sub-indicator {
-    background-image: url('images/sprite/elements@2x.png');
+    background-image: url('../images/sprite/elements@2x.png');
     background-size: 90px 2100px !important;
   }
 }
