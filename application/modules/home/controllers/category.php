@@ -40,6 +40,6 @@
 		  $data['image'] 		= "design.png";
 		  $data['title'] 		= $data['result']['cate_name'];
 		  $data['rewrite']      = $data['result']['cate_rewrite'];
-		  $this->load->view("category/posts/layout",$data);
+		  $this->load->view("category/layout",$data);
 	   }
    }

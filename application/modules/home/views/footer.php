@@ -4,7 +4,7 @@
 		<div class="td-pb-span4">
 			<div class="td-footer-info td-pb-padding-side">
 				<div class="footer-logo-wrap">
-					<a href="http://localhost/wordpress/"><img class="td-retina-data" src="http://localhost/wordpress/wp-content/uploads/2016/01/newsmag-footer.png" data-retina="http://localhost/wordpress/wp-content/uploads/2016/01/newsmag-footer.png" alt="" />
+					<a href="<?php echo base_url(); ?>"><img class="td-retina-data" src="<?php echo base_url(); ?>wp-content/uploads/2016/01/newsmag-footer.png" data-retina="<?php echo base_url(); ?>wp-content/uploads/2016/01/newsmag-footer.png" alt="" />
 					</a>
 				</div>
 				<div class="footer-text-wrap">Newsmag is your news, entertainment, music fashion website. We provide you with the latest breaking news and videos straight from the entertainment industry.
@@ -26,11 +26,11 @@
 						<div class="td_module_6 td_module_wrap td-animation-stack">
 
 							<div class="td-module-thumb">
-								<a href="http://localhost/wordpress/2016/01/22/health-star-ratings-kellogg-reveals-the-cereal/" rel="bookmark" title="Health star ratings Kellogg reveals the cereal"><img width="100" height="75" class="entry-thumb" src="http://localhost/wordpress/wp-content/uploads/2016/01/3-100x75.jpg" alt="" title="Health star ratings Kellogg reveals the cereal" />
+								<a href="<?php echo base_url(); ?>2016/01/22/health-star-ratings-kellogg-reveals-the-cereal/" rel="bookmark" title="Health star ratings Kellogg reveals the cereal"><img width="100" height="75" class="entry-thumb" src="<?php echo base_url(); ?>wp-content/uploads/2016/01/3-100x75.jpg" alt="" title="Health star ratings Kellogg reveals the cereal" />
 								</a>
 							</div>
 							<div class="item-details">
-								<h3 class="entry-title td-module-title"><a href="http://localhost/wordpress/2016/01/22/health-star-ratings-kellogg-reveals-the-cereal/" rel="bookmark" title="Health star ratings Kellogg reveals the cereal">Health star ratings Kellogg reveals the cereal</a></h3>
+								<h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/health-star-ratings-kellogg-reveals-the-cereal/" rel="bookmark" title="Health star ratings Kellogg reveals the cereal">Health star ratings Kellogg reveals the cereal</a></h3>
 								<div class="meta-info">
 									<div class="td-post-date">
 										<time class="entry-date updated td-module-date" datetime="2016-01-22T06:09:49+00:00">22nd January 2016</time>
@@ -49,11 +49,11 @@
 						<div class="td_module_6 td_module_wrap td-animation-stack">
 
 							<div class="td-module-thumb">
-								<a href="http://localhost/wordpress/2016/01/22/springfest-one-fashion-show-at-the-university-of-michigan/" rel="bookmark" title="SpringFest One Fashion Show at the University of Michigan"><img width="100" height="75" class="entry-thumb" src="http://localhost/wordpress/wp-content/uploads/2016/01/18-100x75.jpg" alt="" title="SpringFest One Fashion Show at the University of Michigan" />
+								<a href="<?php echo base_url(); ?>2016/01/22/springfest-one-fashion-show-at-the-university-of-michigan/" rel="bookmark" title="SpringFest One Fashion Show at the University of Michigan"><img width="100" height="75" class="entry-thumb" src="<?php echo base_url(); ?>wp-content/uploads/2016/01/18-100x75.jpg" alt="" title="SpringFest One Fashion Show at the University of Michigan" />
 								</a>
 							</div>
 							<div class="item-details">
-								<h3 class="entry-title td-module-title"><a href="http://localhost/wordpress/2016/01/22/springfest-one-fashion-show-at-the-university-of-michigan/" rel="bookmark" title="SpringFest One Fashion Show at the University of Michigan">SpringFest One Fashion Show at the University of Michigan</a></h3>
+								<h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/springfest-one-fashion-show-at-the-university-of-michigan/" rel="bookmark" title="SpringFest One Fashion Show at the University of Michigan">SpringFest One Fashion Show at the University of Michigan</a></h3>
 								<div class="meta-info">
 									<div class="td-post-date">
 										<time class="entry-date updated td-module-date" datetime="2016-01-22T06:09:49+00:00">22nd January 2016</time>
@@ -72,11 +72,11 @@
 						<div class="td_module_6 td_module_wrap td-animation-stack">
 
 							<div class="td-module-thumb">
-								<a href="http://localhost/wordpress/2016/01/22/xbox-one-to-launch-in-china-this-month-after-all/" rel="bookmark" title="Xbox One to launch in China this month after all"><img width="100" height="75" class="entry-thumb" src="http://localhost/wordpress/wp-content/uploads/2016/01/1-100x75.jpg" alt="" title="Xbox One to launch in China this month after all" />
+								<a href="<?php echo base_url(); ?>2016/01/22/xbox-one-to-launch-in-china-this-month-after-all/" rel="bookmark" title="Xbox One to launch in China this month after all"><img width="100" height="75" class="entry-thumb" src="<?php echo base_url(); ?>wp-content/uploads/2016/01/1-100x75.jpg" alt="" title="Xbox One to launch in China this month after all" />
 								</a>
 							</div>
 							<div class="item-details">
-								<h3 class="entry-title td-module-title"><a href="http://localhost/wordpress/2016/01/22/xbox-one-to-launch-in-china-this-month-after-all/" rel="bookmark" title="Xbox One to launch in China this month after all">Xbox One to launch in China this month after all</a></h3>
+								<h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/xbox-one-to-launch-in-china-this-month-after-all/" rel="bookmark" title="Xbox One to launch in China this month after all">Xbox One to launch in China this month after all</a></h3>
 								<div class="meta-info">
 									<div class="td-post-date">
 										<time class="entry-date updated td-module-date" datetime="2016-01-22T06:09:48+00:00">22nd January 2016</time>
@@ -98,19 +98,19 @@
 			<div class="td_block_wrap td_block_popular_categories widget widget_categories">
 				<h4 class="block-title"><span>POPULAR CATEGORY</span></h4>
 				<ul class="td-pb-padding-side">
-					<li><a href="http://localhost/wordpress/category/tech/internet/">Internet<span class="td-cat-no">15</span></a>
+					<li><a href="<?php echo base_url(); ?>category/tech/internet/">Internet<span class="td-cat-no">15</span></a>
 					</li>
-					<li><a href="http://localhost/wordpress/category/travel/">Travel<span class="td-cat-no">15</span></a>
+					<li><a href="<?php echo base_url(); ?>category/travel/">Travel<span class="td-cat-no">15</span></a>
 					</li>
-					<li><a href="http://localhost/wordpress/category/video/">Video<span class="td-cat-no">11</span></a>
+					<li><a href="<?php echo base_url(); ?>category/video/">Video<span class="td-cat-no">11</span></a>
 					</li>
-					<li><a href="http://localhost/wordpress/category/tech/">Tech<span class="td-cat-no">11</span></a>
+					<li><a href="<?php echo base_url(); ?>category/tech/">Tech<span class="td-cat-no">11</span></a>
 					</li>
-					<li><a href="http://localhost/wordpress/category/tech/apple/">Apple<span class="td-cat-no">11</span></a>
+					<li><a href="<?php echo base_url(); ?>category/tech/apple/">Apple<span class="td-cat-no">11</span></a>
 					</li>
-					<li><a href="http://localhost/wordpress/category/tech/entertainment/">Entertainment<span class="td-cat-no">11</span></a>
+					<li><a href="<?php echo base_url(); ?>category/tech/entertainment/">Entertainment<span class="td-cat-no">11</span></a>
 					</li>
-					<li><a href="http://localhost/wordpress/category/tech/gadgets/">Gadgets<span class="td-cat-no">11</span></a>
+					<li><a href="<?php echo base_url(); ?>category/tech/gadgets/">Gadgets<span class="td-cat-no">11</span></a>
 					</li>
 				</ul>
 			</div>
@@ -127,7 +127,7 @@
 	<div class="td-pb-row">
 		<div class="td-pb-span4 td-sub-footer-copy">
 			<div class="td-pb-padding-side">
-				&copy; Copyright 2015 - Newsmag by TagDiv </div>
+				&copy; Copyright 2016 - hatutorials.com, All right reservied</div>
 		</div>
 
 		<div class="td-pb-span8 td-sub-footer-menu">
