@@ -17,6 +17,7 @@
 <meta property="fb:admins" content="100003239486888"/>
 <link rel="stylesheet" href="<?php echo base_url();?>public/styles/settings.css" type="text/css" media="all" />
 <link rel="stylesheet" href="<?php echo base_url();?>public/styles/style.css" type="text/css" media="all" />
+<link rel="stylesheet" href="<?php echo base_url();?>public/styles/custom.css" type="text/css"/>
 <link rel="stylesheet" href="<?php echo base_url();?>public/styles/shCore.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo base_url();?>public/styles/shCoreDefault.css" type="text/css" />
 <script type="text/javascript" src="<?php echo base_url();?>public/scripts/jquery.js"></script>

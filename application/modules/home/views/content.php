@@ -177,7 +177,7 @@
 			<div class="wpb_column vc_column_container td-pb-span8">
 				<div class="wpb_wrapper"><div class="clearfix"></div>
 					<div class="td_block_wrap td_block_1 td_block_id_1325627023 td_uid_17_56c18169cb115_rand td_with_ajax_pagination">
-						<h4 class="block-title"><span>FASHION WEEK</span></h4>
+						<h4 class="block-title"><span class="yii-title">YII2 FRAMEWORK</span></h4>
 						<div class="td-wrapper-pulldown-filter">
 							<div class="td-pulldown-filter-display-option">
 								<div id="td-pulldown-td_uid_17_56c18169cb115-val"><span>All </span><i class="td-icon-menu-down"></i>
@@ -210,93 +210,30 @@
 											<div class="td-module-comments"><a href="http://localhost/wordpress/2016/01/22/health-star-ratings-kellogg-reveals-the-cereal/#respond">0</a>
 											</div>
 										</div>
-
 										<div class="td-excerpt">
-
-
 											And when we woke up, we had these bodies. They're like, except I'm having them! Oh, I think we should just stay friends. You'll... </div>
-
-
 									</div>
-
-
 								</div>
 								<!-- ./td-block-span6 -->
-
 								<div class="td-block-span6">
-
+									<?php if(isset($yii2frame)){ ?>
+									<?php foreach($yii2frame as $yii2){ ?>
 									<div class="td_module_6 td_module_wrap td-animation-stack">
-
 										<div class="td-module-thumb">
-											<a href="http://localhost/wordpress/2016/01/22/springfest-one-fashion-show-at-the-university-of-michigan/" rel="bookmark" title="SpringFest One Fashion Show at the University of Michigan"><img width="100" height="75" class="entry-thumb td-animation-stack-type0-2" src="http://localhost/wordpress/wp-content/uploads/2016/01/18-100x75.jpg" alt="" title="SpringFest One Fashion Show at the University of Michigan">
+											<a href="<?php echo base_url()."yii2-framework/".$yii2['post_title_rewrite']."-".$yii2['post_id'].".html"; ?>" title="<?php echo $yii2['post_title']; ?>">
+												<img width="100" height="75" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url()."uploads/news/thumb/".$yii2['post_image']; ?>" alt="<?php echo $yii2['post_title']; ?>" title="<?php echo $yii2['post_title']; ?>">
 											</a>
 										</div>
 										<div class="item-details">
-											<h3 class="entry-title td-module-title"><a href="http://localhost/wordpress/2016/01/22/springfest-one-fashion-show-at-the-university-of-michigan/" rel="bookmark" title="SpringFest One Fashion Show at the University of Michigan">SpringFest One Fashion Show at the University of Michigan</a></h3>
+											<h3 class="entry-title td-module-title"><a href="<?php echo base_url()."yii2-framework/".$yii2['post_title_rewrite']."-".$yii2['post_id'].".html"; ?>" rel="bookmark" title="<?php echo $yii2['post_title']; ?>"><?php echo $yii2['post_title']; ?></a></h3>
 											<div class="meta-info">
 												<div class="td-post-date">
-													<time class="entry-date updated td-module-date" datetime="2016-01-22T06:09:49+00:00">22nd January 2016</time>
+													<time class="entry-date updated td-module-date" datetime="2016-01-22T06:09:49+00:00">17nd <?php echo date('F Y'); ?></time>
 												</div>
 											</div>
 										</div>
-
 									</div>
-
-
-									<div class="td_module_6 td_module_wrap td-animation-stack">
-
-										<div class="td-module-thumb">
-											<a href="http://localhost/wordpress/2016/01/22/xbox-one-to-launch-in-china-this-month-after-all/" rel="bookmark" title="Xbox One to launch in China this month after all"><img width="100" height="75" class="entry-thumb td-animation-stack-type0-2" src="http://localhost/wordpress/wp-content/uploads/2016/01/1-100x75.jpg" alt="" title="Xbox One to launch in China this month after all">
-											</a>
-										</div>
-										<div class="item-details">
-											<h3 class="entry-title td-module-title"><a href="http://localhost/wordpress/2016/01/22/xbox-one-to-launch-in-china-this-month-after-all/" rel="bookmark" title="Xbox One to launch in China this month after all">Xbox One to launch in China this month after all</a></h3>
-											<div class="meta-info">
-												<div class="td-post-date">
-													<time class="entry-date updated td-module-date" datetime="2016-01-22T06:09:48+00:00">22nd January 2016</time>
-												</div>
-											</div>
-										</div>
-
-									</div>
-
-
-									<div class="td_module_6 td_module_wrap td-animation-stack">
-
-										<div class="td-module-thumb">
-											<a href="http://localhost/wordpress/2016/01/22/my-work-only-allows-internet-explorer-so-i-have-to-manually/" rel="bookmark" title="My work only allows Internet Explorer, so I have to manually"><img width="100" height="75" class="entry-thumb td-animation-stack-type0-2" src="http://localhost/wordpress/wp-content/uploads/2016/01/4-100x75.jpg" alt="" title="My work only allows Internet Explorer, so I have to manually">
-											</a>
-										</div>
-										<div class="item-details">
-											<h3 class="entry-title td-module-title"><a href="http://localhost/wordpress/2016/01/22/my-work-only-allows-internet-explorer-so-i-have-to-manually/" rel="bookmark" title="My work only allows Internet Explorer, so I have to manually">My work only allows Internet Explorer, so I have to manually</a></h3>
-											<div class="meta-info">
-												<div class="td-post-date">
-													<time class="entry-date updated td-module-date" datetime="2016-01-22T06:09:48+00:00">22nd January 2016</time>
-												</div>
-											</div>
-										</div>
-
-									</div>
-
-
-									<div class="td_module_6 td_module_wrap td-animation-stack">
-
-										<div class="td-module-thumb">
-											<a href="http://localhost/wordpress/2016/01/22/gadget-ogling-amazon-on-fire-virtual-reality-true-nature-and-energy-relief/" rel="bookmark" title="Gadget Ogling: Amazon on Fire, Virtual Reality, True Nature and Energy Relief"><img width="100" height="75" class="entry-thumb td-animation-stack-type0-2" src="http://localhost/wordpress/wp-content/uploads/2016/01/2-100x75.jpg" alt="" title="Gadget Ogling: Amazon on Fire, Virtual Reality, True Nature and Energy Relief"><span class="td-video-play-ico td-video-small"><img width="20" class="td-retina td-animation-stack-type0-2" src="http://localhost/wordpress/wp-content/themes/Newsmag/images/icons/video-small.png" alt="video"></span>
-											</a>
-										</div>
-										<div class="item-details">
-											<h3 class="entry-title td-module-title"><a href="http://localhost/wordpress/2016/01/22/gadget-ogling-amazon-on-fire-virtual-reality-true-nature-and-energy-relief/" rel="bookmark" title="Gadget Ogling: Amazon on Fire, Virtual Reality, True Nature and Energy Relief">Gadget Ogling: Amazon on Fire, Virtual Reality, True Nature and Energy...</a></h3>
-											<div class="meta-info">
-												<div class="td-post-date">
-													<time class="entry-date updated td-module-date" datetime="2016-01-22T06:09:48+00:00">22nd January 2016</time>
-												</div>
-											</div>
-										</div>
-
-									</div>
-
-
+									<?php } } ?>
 								</div>
 								<!-- ./td-block-span6 -->
 							</div>
