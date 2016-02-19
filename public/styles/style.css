@@ -1725,6 +1725,7 @@ body.compose-mode .control-btn-append {
 /* half - used when the block is on td-2-col */
 .td-block-span6 {
   width: 339px;
+  /*height: 284px;*/
   padding-left: 20px;
   padding-right: 19px;
 }
@@ -8613,6 +8614,7 @@ body .vc_btn:hover {
   }
 }
 .td_module_1 .entry-title {
+  min-height: 48px;
   margin: 0px 0px 11px 0px;
   /* responsive portrait tablet */
   /* responsive portrait phone */

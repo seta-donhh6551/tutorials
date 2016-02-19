@@ -7,7 +7,7 @@
 	   public function index(){
 		   $data['listcate']    = $this->listcate();
 		   $data['config'] 		= $this->config();
-		   $data['newest'] 		= $this->new_posts();
+		   $data['latestart']   = $this->new_posts();
 		   $data['category'] 	= $this->listcago();
 		   $data['phpbasic'] 	= $this->model_posts->phplist(3); // php basic
 		   $data['advance'] 	= $this->model_posts->phplist(4,15); // php advanced
