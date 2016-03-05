@@ -9,8 +9,8 @@
 		   $data['config'] 		= $this->config();
 		   $data['latestart']   = $this->new_posts();
 		   $data['category'] 	= $this->listcago();
-		   $data['phpbasic'] 	= $this->model_posts->phplist(3); // php basic
-		   $data['advance'] 	= $this->model_posts->phplist(4,15); // php advanced
+		   $data['phpbasic'] 	= $this->model_posts->phplist(3, 8); // php basic
+		   $data['advance'] 	= $this->model_posts->phplist(4, 15); // php advanced
 		   $data['yii2frame']	= $this->model_posts->phplist(5, 4); // php can ban
 		   $data['title'] 		= "Php web development tutorials, hatutorials.com";
 		   $this->load->view("layout",$data);

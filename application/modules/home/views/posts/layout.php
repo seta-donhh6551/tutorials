@@ -7,33 +7,32 @@
 <link rel="author" href="https://plus.google.com/102870804259820301805" />
 <link rel="canonical" href="<?php echo base_url(); ?>" />
 <link rel="shortcut icon" href="<?php echo base_url(); ?>favicon.ico" />
-<meta name="keywords" content="<?php echo $read['post_keys']; ?>" />
-<meta name="description" content="<?php echo $read['post_des']; ?>" />
+<meta name="keywords" content="<?php echo $result['post_keys']; ?>" />
+<meta name="description" content="<?php echo $result['post_des']; ?>" />
 <meta property="og:type" content="blog" />
 <meta property="og:title" content="<?php echo $title; ?>" />
-<meta property="og:description" content="<?php echo $read['post_des']; ?>" />
+<meta property="og:description" content="<?php echo $result['post_des']; ?>" />
 <meta property="og:url" content="<?php echo base_url(); ?>" />
 <meta property="og:site_name" content="<?php echo $config['config_title']; ?>" />
 <meta property="fb:admins" content="100003239486888"/>
-<meta name="twitter:card" content="summary" />
-<link rel="stylesheet" href="<?php echo base_url();?>public/styles/newstyle.css" type="text/css" media="screen" />
 <?php $this->load->view("scripts");?>
-<script type="text/javascript">
-document.write('<div id="fb-root"></div>');
-(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/vi_VN/all.js#xfbml=1&appId=199828456846777";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 </head>
 
 <body>
-<?php $this->load->view("header");?>
-<div id="main">
-    <?php $this->load->view("posts/content"); ?>
-    <?php $this->load->view("footer"); ?>
+<div id="td-outer-wrap">
+	<?php $this->load->view("head-mobile");?>
+
+	<!-- Content -->
+	<div class="td-transition-content-and-menu td-content-wrap">
+		<?php $this->load->view("header");?>
+
+		<?php $this->load->view("posts/content");?>
+
+		<!-- Footer -->
+		<?php $this->load->view("footer"); ?>
+		<!-- End footer -->
+	</div>
+	<!-- End content -->
 </div>
 </body>
 </html>

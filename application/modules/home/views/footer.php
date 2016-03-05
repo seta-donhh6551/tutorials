@@ -4,11 +4,11 @@
 		<div class="td-pb-span4">
 			<div class="td-footer-info td-pb-padding-side">
 				<div class="footer-logo-wrap">
-					<a href="<?php echo base_url(); ?>"><img class="td-retina-data" src="<?php echo base_url(); ?>wp-content/uploads/2016/01/newsmag-footer.png" data-retina="<?php echo base_url(); ?>wp-content/uploads/2016/01/newsmag-footer.png" alt="" />
+					<a href="<?php echo base_url(); ?>"><img class="td-retina-data" src="<?php echo base_url(); ?>public/images/ha-footer.png" data-retina="<?php echo base_url(); ?>wp-content/uploads/2016/01/newsmag-footer.png" alt="" />
 					</a>
 				</div>
-				<div class="footer-text-wrap">Newsmag is your news, entertainment, music fashion website. We provide you with the latest breaking news and videos straight from the entertainment industry.
-					<div class="footer-email-wrap">Contact us: <a href="mailto:contact@yoursite.com">contact@yoursite.com</a>
+				<div class="footer-text-wrap">Hatutorials is your news, entertainment, music fashion website. We provide you with the latest breaking news and videos straight from the entertainment industry.
+					<div class="footer-email-wrap">Contact us: <a href="mailto:contact@hatutorials.com">contact@hatutorials.com</a>
 					</div>
 				</div>
 				<div class="footer-social-wrap td-social-style2"><span class="td-social-icon-wrap"><a target="_blank" href="#" title="Facebook"><i class="td-icon-font td-icon-facebook"></i></a></span><span class="td-social-icon-wrap"><a target="_blank" href="#" title="Twitter"><i class="td-icon-font td-icon-twitter"></i></a></span><span class="td-social-icon-wrap"><a target="_blank" href="#" title="Vimeo"><i class="td-icon-font td-icon-vimeo"></i></a></span><span class="td-social-icon-wrap"><a target="_blank" href="#" title="VKontakte"><i class="td-icon-font td-icon-vk"></i></a></span><span class="td-social-icon-wrap"><a target="_blank" href="#" title="Youtube"><i class="td-icon-font td-icon-youtube"></i></a></span>
@@ -37,17 +37,12 @@
 									</div>
 								</div>
 							</div>
-
 						</div>
-
-
 					</div>
 					<!-- ./td-block-span12 -->
 
 					<div class="td-block-span12">
-
 						<div class="td_module_6 td_module_wrap td-animation-stack">
-
 							<div class="td-module-thumb">
 								<a href="<?php echo base_url(); ?>2016/01/22/springfest-one-fashion-show-at-the-university-of-michigan/" rel="bookmark" title="SpringFest One Fashion Show at the University of Michigan"><img width="100" height="75" class="entry-thumb" src="<?php echo base_url(); ?>wp-content/uploads/2016/01/18-100x75.jpg" alt="" title="SpringFest One Fashion Show at the University of Michigan" />
 								</a>
@@ -60,17 +55,12 @@
 									</div>
 								</div>
 							</div>
-
 						</div>
-
-
 					</div>
 					<!-- ./td-block-span12 -->
 
 					<div class="td-block-span12">
-
 						<div class="td_module_6 td_module_wrap td-animation-stack">
-
 							<div class="td-module-thumb">
 								<a href="<?php echo base_url(); ?>2016/01/22/xbox-one-to-launch-in-china-this-month-after-all/" rel="bookmark" title="Xbox One to launch in China this month after all"><img width="100" height="75" class="entry-thumb" src="<?php echo base_url(); ?>wp-content/uploads/2016/01/1-100x75.jpg" alt="" title="Xbox One to launch in China this month after all" />
 								</a>
@@ -83,10 +73,7 @@
 									</div>
 								</div>
 							</div>
-
 						</div>
-
-
 					</div>
 					<!-- ./td-block-span12 -->
 				</div>
@@ -98,29 +85,16 @@
 			<div class="td_block_wrap td_block_popular_categories widget widget_categories">
 				<h4 class="block-title"><span>POPULAR CATEGORY</span></h4>
 				<ul class="td-pb-padding-side">
-					<li><a href="<?php echo base_url(); ?>category/tech/internet/">Internet<span class="td-cat-no">15</span></a>
-					</li>
-					<li><a href="<?php echo base_url(); ?>category/travel/">Travel<span class="td-cat-no">15</span></a>
-					</li>
-					<li><a href="<?php echo base_url(); ?>category/video/">Video<span class="td-cat-no">11</span></a>
-					</li>
-					<li><a href="<?php echo base_url(); ?>category/tech/">Tech<span class="td-cat-no">11</span></a>
-					</li>
-					<li><a href="<?php echo base_url(); ?>category/tech/apple/">Apple<span class="td-cat-no">11</span></a>
-					</li>
-					<li><a href="<?php echo base_url(); ?>category/tech/entertainment/">Entertainment<span class="td-cat-no">11</span></a>
-					</li>
-					<li><a href="<?php echo base_url(); ?>category/tech/gadgets/">Gadgets<span class="td-cat-no">11</span></a>
-					</li>
+                    <?php if(isset($listcate)){ ?>
+                    <?php foreach($listcate as $category){ ?>
+					<li><a href="<?php echo base_url().$category['cate_rewrite']; ?>.html"><?php echo $category['cate_name']; ?></a></li>
+                    <?php } } ?>
 				</ul>
 			</div>
 			<!-- ./block -->
 		</div>
 	</div>
 </div>
-
-
-
 
 <!-- Sub Footer -->
 <div class="td-sub-footer-container td-container td-container-border ">

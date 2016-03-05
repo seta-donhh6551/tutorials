@@ -28,9 +28,10 @@
 			$this->db->limit(10);
 			return $this->db->get($this->_table)->result_array();
 		}
-		public function phplist($id,$limit=10){
-			$this->db->where("cate_id",$id);
-			$this->db->order_by("post_order","ASC");
+		public function phplist($id, $limit=10){
+            $this->db->join("tbl_category","tbl_category.cate_id = tbl_posts.cate_id");
+			$this->db->where("tbl_posts.cate_id",$id);
+			$this->db->order_by("tbl_posts.post_order","ASC");
 			$this->db->limit($limit);
 			return $this->db->get($this->_table)->result_array();
 		}
@@ -38,9 +39,44 @@
 			$query = $this->db->query("select * from tbl_posts where post_id != $id1 and cate_id = '$id2' order by post_id ASC limit $limit");
 			return $query->result_array();
 		}
-		public function getcate($id){
+        public function getPreNextPost($postId, $cateId, $condition = '>'){
+            $this->db->join("tbl_category","tbl_category.cate_id = tbl_posts.cate_id");
+            $this->db->where("tbl_posts.cate_id",$cateId);
+            $this->db->order_by("tbl_posts.post_order","asc");
+            $listPost = $this->db->get($this->_table)->result_array();
+            $listPostOrder = array();
+            $listPostId = array();
+            if($listPost){
+                $listPostId = array_column($listPost, 'post_title', 'post_id');
+                foreach($listPost as $postKey => $postVal)
+                {
+                    $listPostOrder[$postVal['post_id']] = $postVal;
+                }
+            }
+            if($listPostId){
+                if($condition == '<'){
+                    $keyPost = $this->getPrevNextKey($postId, '-', $listPostId);
+                }else{
+                    $keyPost = $this->getPrevNextKey($postId, '+', $listPostId);
+                }
+                print_r($listPostOrder[$keyPost]); die;
+                return $listPostOrder[$keyPost];
+            }
+        }
+        public function getcate($id){
 			$this->db->where("cago_id",$id);
 			$data = $this->db->get($this->_cago)->row_array();
 			return $data;
 		}
+        function getPrevNextKey($key, $condition, $hash = array())
+        {
+            $keys = array_keys($hash);
+            $found_index = array_search($key, $keys);
+            //print_r($keys); die;
+            if ($found_index === false)
+                return false;
+            $keyAdd = isset($keys[$found_index+1]) ? $keys[$found_index+1] : array();
+            $keyRrm = isset($keys[$found_index-1]) ? $keys[$found_index-1] : array();
+            return $condition == '+' ? $keyAdd : $keyRrm;
+        }
 	}
