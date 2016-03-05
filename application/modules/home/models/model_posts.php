@@ -59,8 +59,9 @@
                 }else{
                     $keyPost = $this->getPrevNextKey($postId, '+', $listPostId);
                 }
-                print_r($listPostOrder[$keyPost]); die;
-                return $listPostOrder[$keyPost];
+                //print_r($keyPost); die;
+                //print_r($listPostOrder[$keyPost]); die;
+                return isset($listPostOrder[$keyPost]) ? $listPostOrder[$keyPost] : null;
             }
         }
         public function getcate($id){
@@ -75,8 +76,8 @@
             //print_r($keys); die;
             if ($found_index === false)
                 return false;
-            $keyAdd = isset($keys[$found_index+1]) ? $keys[$found_index+1] : array();
-            $keyRrm = isset($keys[$found_index-1]) ? $keys[$found_index-1] : array();
+            $keyAdd = isset($keys[$found_index+1]) ? $keys[$found_index+1] : null;
+            $keyRrm = isset($keys[$found_index-1]) ? $keys[$found_index-1] : null;
             return $condition == '+' ? $keyAdd : $keyRrm;
         }
 	}
