@@ -59,8 +59,7 @@
                 }else{
                     $keyPost = $this->getPrevNextKey($postId, '+', $listPostId);
                 }
-                //print_r($keyPost); die;
-                //print_r($listPostOrder[$keyPost]); die;
+
                 return isset($listPostOrder[$keyPost]) ? $listPostOrder[$keyPost] : null;
             }
         }
