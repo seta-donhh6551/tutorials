@@ -225,7 +225,7 @@
 													</a>
 												</div>
 												<div class="item-details">
-													<h3 class="entry-title td-module-title"><a href="<?php echo base_url() . "yii2-framework/" . $yii2['post_title_rewrite'] . "-" . $yii2['post_id'] . ".html"; ?>" rel="bookmark" title="<?php echo $yii2['post_title']; ?>"><?php echo $yii2['post_title']; ?></a></h3>
+													<h3 class="entry-title td-module-title"><a href="<?php echo base_url()."yii2-framework/".$yii2['post_title_rewrite']."-".$yii2['post_id'].".html"; ?>" rel="bookmark" title="<?php echo $yii2['post_title']; ?>"><?php echo $yii2['post_title']; ?></a></h3>
 													<div class="meta-info">
 														<div class="td-post-date">
 															<time class="entry-date updated td-module-date">17nd <?php echo date('F Y'); ?></time>
@@ -365,7 +365,6 @@
 
 
 											<div class="td_module_9 td_module_wrap">
-
 												<div class="item-details">
 													<h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/android-l-will-keep-your-secrets-safer/" rel="bookmark" title="Android L Will Keep Your Secrets Safer">Android L Will Keep Your Secrets Safer</a></h3>
 													<div class="meta-info">
@@ -374,12 +373,9 @@
 															<time class="entry-date updated td-module-date" datetime="2016-01-22T06:09:47+00:00">22nd January 2016</time>
 														</div>
 													</div>
-
 													<div class="td-bottom-dotted-line"></div>
 												</div>
-
 											</div>
-
 
 											<div class="td_module_9 td_module_wrap">
 
@@ -391,15 +387,11 @@
 															<time class="entry-date updated td-module-date" datetime="2016-01-22T06:09:33+00:00">22nd January 2016</time>
 														</div>
 													</div>
-
 													<div class="td-bottom-dotted-line"></div>
 												</div>
-
 											</div>
 
-
 											<div class="td_module_9 td_module_wrap">
-
 												<div class="item-details">
 													<h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/starbucks-secret-menu-the-drinks-you-didnt-know-you-can-ask-for/" rel="bookmark" title="Starbucks secret menu the drinks you didn’t know you can ask for">Starbucks secret menu the drinks you didn’t know you can ask for</a></h3>
 													<div class="meta-info">
@@ -408,12 +400,9 @@
 															<time class="entry-date updated td-module-date" datetime="2016-01-22T06:09:16+00:00">22nd January 2016</time>
 														</div>
 													</div>
-
 													<div class="td-bottom-dotted-line"></div>
 												</div>
-
 											</div>
-
 										</div>
 									</div>
 									<!-- ./block -->
@@ -539,15 +528,14 @@
 									<div class="td_module_1 td_module_wrap td-animation-stack">
 										<div class="td-module-image">
 											<div class="td-module-thumb">
-												<a href="#" rel="bookmark" title="Health star"><img class="entry-thumb post-img" src="<?php echo base_url() . "uploads/news/" . $latest['post_image']; ?>" alt="<?php echo $latest['post_title']; ?>" title="<?php echo $latest['post_title']; ?>"></a>
-											</div> <a href="#" class="td-post-category">Internet</a> </div>
-										<h3 class="entry-title td-module-title"><a href="#" rel="bookmark" title="Health star ratings"><?php echo $latest['post_title']; ?></a></h3>
+												<a href="<?php echo base_url().$latest['cate_rewrite']."/".$latest['post_title_rewrite']."-".$latest['post_id'].".html"; ?>" rel="bookmark"><img class="entry-thumb post-img" src="<?php echo base_url()."uploads/news/".$latest['post_image']; ?>" alt="<?php echo $latest['post_title']; ?>" title="<?php echo $latest['post_title']; ?>"></a>
+											</div> <a href="<?php echo base_url().$latest['cate_rewrite'];?>.html" class="td-post-category"><?php echo $latest['cate_name']; ?></a> </div>
+										<h3 class="entry-title td-module-title"><a href="<?php echo base_url().$latest['cate_rewrite']."/".$latest['post_title_rewrite']."-".$latest['post_id'].".html"; ?>" rel="bookmark" title="<?php echo $latest['post_title']; ?>"><?php echo $latest['post_title']; ?></a></h3>
 										<div class="td-module-meta-info">
-											<div class="td-post-author-name"><a href="#">admin</a> <span>-</span> </div>
+											<div class="td-post-author-name"><a href="javascript:void(0)">TuanKiet</a> <span>-</span> </div>
 											<div class="td-post-date">
-												<time class="entry-date updated td-module-date">22nd January 2016</time>
+												<time class="entry-date updated td-module-date"><?php echo date('d F, Y'); ?></time>
 											</div>
-											<!--div class="td-module-comments"><a href="#">0</a></div-->
 										</div>
 									</div>
 								</div>
@@ -563,13 +551,13 @@
 				<div class="td-ss-main-sidebar" style="width: auto; position: static; top: auto; bottom: auto; z-index: 1;"><div class="clearfix"></div>
 					<div class="td_block_wrap td_block_social_counter td_block_widget td_block_id_2098386967 td_uid_26_56c18169f221e_rand">
 						<div class="td_social_type td-pb-margin-side td_social_facebook">
-							<div class="td-sp td-sp-facebook"></div><span class="td_social_info">0</span><span class="td_social_info td_social_info_name">Fans</span><span class="td_social_button"><a href="https://www.facebook.com/themeforest">Like</a></span>
+							<div class="td-sp td-sp-facebook"></div><span class="td_social_info">0</span><span class="td_social_info td_social_info_name">Fans</span><span class="td_social_button"><a href="https://www.facebook.com">Like</a></span>
 						</div>
 						<div class="td_social_type td-pb-margin-side td_social_twitter">
-							<div class="td-sp td-sp-twitter"></div><span class="td_social_info">57,546</span><span class="td_social_info td_social_info_name">Followers</span><span class="td_social_button"><a href="https://twitter.com/envato">Follow</a></span>
+							<div class="td-sp td-sp-twitter"></div><span class="td_social_info">57,546</span><span class="td_social_info td_social_info_name">Followers</span><span class="td_social_button"><a href="https://twitter.com">Follow</a></span>
 						</div>
 						<div class="td_social_type td-pb-margin-side td_social_youtube">
-							<div class="td-sp td-sp-youtube"></div><span class="td_social_info">9,891</span><span class="td_social_info td_social_info_name">Subscribers</span><span class="td_social_button"><a href="http://www.youtube.com/Envato">Subscribe</a></span>
+							<div class="td-sp td-sp-youtube"></div><span class="td_social_info">9,891</span><span class="td_social_info td_social_info_name">Subscribers</span><span class="td_social_button"><a href="http://www.youtube.com">Subscribe</a></span>
 						</div>
 					</div>
 					<!-- ./block -->

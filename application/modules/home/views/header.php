@@ -48,7 +48,7 @@
 	<div class="td-header-row td-header-header">
 		<div class="td-header-sp-logo">
 			<a href="<?php echo base_url(); ?>">
-				<img class="td-retina-data" data-retina="<?php echo base_url(); ?>wp-content/uploads/2016/01/newsmag.png" src="<?php echo base_url(); ?>wp-content/uploads/2016/01/newsmag.png" alt="">
+				<img class="td-retina-data" data-retina="<?php echo base_url(); ?>public/images/ha-logo.png" src="<?php echo base_url(); ?>public/images/ha-logo.png" alt="Php web development tutorials">
 			</a>
 		</div>
 		<div class="td-header-sp-ads">
@@ -69,10 +69,10 @@
 				<div id="td-top-mobile-toggle"><a href="#"><i class="td-icon-font td-icon-mobile"></i></a>
 				</div>
 				<div class="td-main-menu-logo">
-					<a class="td-mobile-logo td-sticky-mobile" href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>wp-content/uploads/2016/01/newsmag-footer.png" alt="">
+					<a class="td-mobile-logo td-sticky-mobile" href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>public/images/ha-footer.png" alt="">
 					</a>
 					<a class="td-header-logo td-sticky-mobile" href="<?php echo base_url(); ?>">
-						<img class="td-retina-data" data-retina="<?php echo base_url(); ?>wp-content/uploads/2016/01/newsmag.png" src="<?php echo base_url(); ?>wp-content/uploads/2016/01/newsmag.png" alt="">
+						<img class="td-retina-data" data-retina="<?php echo base_url(); ?>public/images/ha-logo.png" src="<?php echo base_url(); ?>public/images/ha-logo.png" alt="">
 					</a>
 				</div>
 				<div class="menu-td-demo-header-menu-container">

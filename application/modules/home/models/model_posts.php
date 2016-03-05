@@ -24,6 +24,7 @@
 			return $this->db->get($this->_table)->row_array();
 		}
 		public function newest(){
+			$this->db->join("tbl_category","tbl_category.cate_id = tbl_posts.cate_id");
 			$this->db->order_by("post_id","DESC");
 			$this->db->limit(10);
 			return $this->db->get($this->_table)->result_array();

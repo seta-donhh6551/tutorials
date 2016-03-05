@@ -59,7 +59,7 @@
                             <div class="info-post">
                                 <?php echo $result['post_info']; ?>
                             </div>
-                            <div class="full-post">
+                            <div class="full-post" style="margin-top:30px">
                                 <?php echo $result['post_value']; ?>
                             </div>
                         </div>
