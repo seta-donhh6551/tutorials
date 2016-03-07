@@ -25,7 +25,7 @@
 	<div class="td-transition-content-and-menu td-content-wrap">
 		<?php $this->load->view("header");?>
 
-		<?php $this->load->view("sub-content");?>
+		<?php $this->load->view("category/content");?>
 
 		<!-- Footer -->
 		<?php $this->load->view("footer"); ?>

@@ -29,7 +29,6 @@
 		  $data['link']     = $item;
 		  $data['listall'] 		= $this->model_category->listall($id,$config['per_page'],$start);
 		  $data['category'] 	= $this->listcago();
-		  $data['yii2frame']	= $this->model_posts->phplist(5, 4); // php can ban
 		  $data['title'] 		= $data['result']['cate_name'];
 		  $data['rewrite']      = $data['result']['cate_rewrite'];
 		  $this->load->view("category/layout",$data);
