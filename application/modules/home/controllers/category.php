@@ -25,19 +25,11 @@
 		  $start = (int)$this->uri->segment(2);
 		  $data['newest'] 		= $this->new_posts();
 		  $data['listcate'] = $this->listcate();
-	   	  $data['support'] 	= $this->support();
-		  $data['access'] 	= $this->access();
-		  $data['online'] 	= $this->online();
 		  $data['config'] 	= $this->config();
-		  $data['students'] = $this->random_student();
 		  $data['link']     = $item;
 		  $data['listall'] 		= $this->model_category->listall($id,$config['per_page'],$start);
-		  //$this->debug($data['listall']);
 		  $data['category'] 	= $this->listcago();
-		  $data['subjects']    = $this->model_home->subjects();
-		  $data['eq'] 			= "10";
-		  $data['topeq'] 		= "0";
-		  $data['image'] 		= "design.png";
+		  $data['yii2frame']	= $this->model_posts->phplist(5, 4); // php can ban
 		  $data['title'] 		= $data['result']['cate_name'];
 		  $data['rewrite']      = $data['result']['cate_rewrite'];
 		  $this->load->view("category/layout",$data);

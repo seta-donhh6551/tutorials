@@ -7,22 +7,31 @@
 <link rel="author" href="https://plus.google.com/102870804259820301805" />
 <link rel="canonical" href="<?php echo base_url(); ?>" />
 <link rel="shortcut icon" href="<?php echo base_url(); ?>favicon.ico" />
-<meta name="keywords" content="<?php echo $config['config_key']; ?>" />
-<meta name="description" content="<?php echo $config['config_des']; ?>" />
+<meta name="keywords" content="<?php echo $result['cate_keys']; ?>" />
+<meta name="description" content="<?php echo strip_tags($result['cate_ext']); ?>" />
 <meta property="og:type" content="blog" />
-<meta property="og:title" content="<?php echo $config['config_title']; ?>" />
-<meta property="og:description" content="<?php echo $config['config_des']; ?>" />
+<meta property="og:title" content="<?php echo $title; ?>" />
+<meta property="og:description" content="<?php echo strip_tags($result['cate_ext']); ?>" />
 <meta property="og:url" content="<?php echo base_url(); ?>" />
 <meta property="og:site_name" content="<?php echo $config['config_title']; ?>" />
-<meta name="twitter:card" content="summary" />
-<link rel="stylesheet" href="<?php echo base_url();?>public/styles/newstyle.css" type="text/css" media="screen" />
+<?php $this->load->view("scripts");?>
 </head>
 
 <body>
-<?php $this->load->view("header");?>
-<div id="main">
-    <?php $this->load->view("category/content"); ?>
-    <?php $this->load->view("footer"); ?>
+<div id="td-outer-wrap">
+	<?php $this->load->view("head-mobile");?>
+
+	<!-- Content -->
+	<div class="td-transition-content-and-menu td-content-wrap">
+		<?php $this->load->view("header");?>
+
+		<?php $this->load->view("sub-content");?>
+
+		<!-- Footer -->
+		<?php $this->load->view("footer"); ?>
+		<!-- End footer -->
+	</div>
+	<!-- End content -->
 </div>
 </body>
 </html>
