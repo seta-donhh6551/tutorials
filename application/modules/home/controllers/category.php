@@ -15,11 +15,11 @@
 		  $id = $data['result']['cate_id'];
 		  $config['base_url'] = base_url().$item;
 		  $config['total_rows'] = $this->model_category->count_all($id);
-		  $config['per_page'] = 10;
+		  $config['per_page'] = 5;
 		  $config['uri_segment'] = 2;
-		  $config['next_link'] = "Next";
-		  $config['prev_link'] = "Prev";
-		  $config['cur_tag_open'] = '<span class="curpage">';
+		  $config['next_link'] = "<i class='td-icon-menu-right'></i>";
+		  $config['prev_link'] = "<i class='td-icon-menu-left'></i>";
+		  $config['cur_tag_open'] = '<span class="current">';
 		  $config['cur_tag_close'] = '</span>';
 		  $this->load->library("pagination",$config);
 		  $start = (int)$this->uri->segment(2);
