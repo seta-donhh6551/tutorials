@@ -54,7 +54,7 @@
                         </div>
                         <div class="td-post-content td-pb-padding-side">
                             <div class="td-post-featured-image">
-                                <a href="<?php echo base_url(); ?>uploads/news/<?php echo $result['post_image']; ?>" class="td-modal-image"><img width="640" height="427" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url(); ?>uploads/news/<?php echo $result['post_image']; ?>" alt=""></a>
+                                <a href="<?php echo base_url(); ?>uploads/news/<?php echo $result['post_image']; ?>" class="td-modal-image"><img style="max-width:640px;margin:0px auto 20px auto" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url(); ?>uploads/news/<?php echo $result['post_image']; ?>" alt=""></a>
                             </div>
                             <div class="info-post">
                                 <?php echo $result['post_info']; ?>
@@ -116,19 +116,14 @@
                                 <a href="#"><img alt="" src="http://2.gravatar.com/avatar/eba6e84683ba37e0e34571de10cf5a16?s=96&amp;d=mm&amp;r=g" srcset="http://2.gravatar.com/avatar/eba6e84683ba37e0e34571de10cf5a16?s=192&amp;d=mm&amp;r=g 2x" class="avatar avatar-96 photo td-animation-stack-type0-2" height="96" width="96">
                                 </a>
                                 <div class="desc">
-                                    <div class="td-author-name vcard author"><span class="fn"><a href="#">admin</a></span>
+                                    <div class="td-author-name vcard author"><span class="fn"><a href="#">Tuan Kiet</a></span>
                                     </div>
                                     <div class="td-author-description"></div>
                                     <div class="td-author-social"></div>
                                     <div class="clearfix"></div>
                                 </div>
-                            </div> <span style="display: none;" itemprop="author" itemscope="" itemtype="https://schema.org/Person"><meta itemprop="name" content="admin"></span>
-                            <meta itemprop="datePublished" content="2016-02-29T03:49:13+00:00">
-                            <meta itemprop="dateModified" content="2016-02-29T03:49:13+00:00">
-                            <meta itemscope="" itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="http://localhost/wordpress/2016/02/29/health-star-ratings-kellogg-reveals-the-cereal/"><span style="display: none;" itemprop="publisher" itemscope="" itemtype="https://schema.org/Organization"><span style="display: none;" itemprop="logo" itemscope="" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="http://localhost/wordpress/wp-content/uploads/2016/02/newsmag.png"></span>
-                            <meta itemprop="name" content="Php web development tutorials, hatutorials.com">
-                            </span>
-                            <meta itemprop="headline " content="Health star ratings Kellogg reveals the cereal"><span style="display: none;" itemprop="image" itemscope="" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="http://localhost/wordpress/wp-content/uploads/2016/02/3.jpg"><meta itemprop="width" content="1068"><meta itemprop="height" content="712"></span> </footer>
+                            </div>
+						</footer>
                     </article>
                     <!-- /.post -->
                     <div class="td_block_wrap td_block_related_posts td_with_ajax_pagination td-pb-border-top">
@@ -183,8 +178,8 @@
                             <h4 class=""><span>NO COMMENTS</span></h4>
                         </div>
                         <div id="respond" class="comment-respond">
-                            <h3 id="reply-title" class="comment-reply-title">LEAVE A REPLY <small><a rel="nofollow" id="cancel-comment-reply-link" href="/wordpress/2016/02/29/creative-decorating-with-houseplants-from-floor-to-ceiling/#respond" style="display:none;">Cancel reply</a></small></h3>
-                            <form action="http://localhost/wordpress/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate="">
+                            <h3 id="reply-title" class="comment-reply-title">LEAVE A REPLY <small><a rel="nofollow" id="cancel-comment-reply-link" href="#" style="display:none;">Cancel reply</a></small></h3>
+                            <form action="#" method="post" id="commentform" class="comment-form" novalidate="">
                                 <div class="clearfix"></div>
                                 <p class="comment-form-input-wrap">
                                     <textarea placeholder="Comment:" id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>
