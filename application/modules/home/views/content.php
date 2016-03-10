@@ -533,7 +533,7 @@
 											</div> <a href="<?php echo base_url().$latest['cate_rewrite'];?>.html" class="td-post-category"><?php echo $latest['cate_name']; ?></a> </div>
 										<h3 class="entry-title td-module-title"><a href="<?php echo base_url().$latest['cate_rewrite']."/".$latest['post_title_rewrite']."-".$latest['post_id'].".html"; ?>" rel="bookmark" title="<?php echo $latest['post_title']; ?>"><?php echo $latest['post_title']; ?></a></h3>
 										<div class="td-module-meta-info">
-											<div class="td-post-author-name"><a href="javascript:void(0)">TuanKiet</a> <span>-</span> </div>
+											<div class="td-post-author-name"><a href="javascript:void(0)">Tuan Kiet</a> <span>-</span> </div>
 											<div class="td-post-date">
 												<time class="entry-date updated td-module-date"><?php echo date('d F, Y'); ?></time>
 											</div>
@@ -575,12 +575,12 @@
 							<div class="td-block-span12">
                                 <div class="td_module_8 td_module_wrap">
                                     <div class="item-details">
-                                        <h3 class="entry-title td-module-title"><a href="#" title=""><?php echo $latest['post_title']; ?></a></h3>
+                                        <h3 class="entry-title td-module-title"><a href="<?php echo base_url().$latest['cate_rewrite']."/".$latest['post_title_rewrite']."-".$latest['post_id'].".html"; ?>" title="<?php echo $latest['post_title']; ?>"><?php echo $latest['post_title']; ?></a></h3>
                                         <div class="meta-info">
-                                                <div class="td-post-author-name"><a href="#">admin</a> <span>-</span> </div>
-                                                <div class="td-post-date">
-                                                    <time class="entry-date updated td-module-date">22nd January 2016</time>
-                                                </div>
+											<div class="td-post-author-name"><a href="javascript:void(0)">Tuan Kiet</a> <span>-</span> </div>
+											<div class="td-post-date">
+												<time class="entry-date updated td-module-date">22nd January 2016</time>
+											</div>
                                         </div>
                                     </div>
                                 </div>

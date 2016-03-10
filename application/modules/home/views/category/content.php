@@ -42,7 +42,7 @@
 										</div>
 										<h3 class="entry-title td-module-title"><a href="#" rel="bookmark" title="Manual yii2 whole collection framework">Manual yii2 whole collection framework</a></h3>
 										<div class="meta-info">
-											<div class="td-post-author-name"><a href="javascript:void(0)">TuanKiet</a> <span>-</span></div>
+											<div class="td-post-author-name"><a href="javascript:void(0)">Tuan Kiet</a> <span>-</span></div>
 											<div class="td-post-date">
 												<time class="entry-date updated td-module-date" datetime="2016-01-22T06:09:49+00:00">22nd January 2016</time>
 											</div>
@@ -89,6 +89,7 @@
 							<div class="clearfix"></div>
 							<h4 class="block-title"><span>POPULAR ARTICLES</span></h4>
 							<?php if (isset($listall)) { ?>
+							<?php $this->load->library("string"); ?>
 							<?php $j = 1; foreach ($listall as $items) { ?>
 							<?php if($j > 4) { ?>
 							<div class="td_module_11 td_module_wrap td-animation-stack">
@@ -107,10 +108,9 @@
 										<div class="td-module-comments"><a href="<?php echo base_url().$result['cate_rewrite']."/".$items['post_title_rewrite']."-".$items['post_id'].".html"; ?>/#respond">0</a>
 										</div>
 									</div>
-									<div class="td-excerpt">
-										And when we woke up, we had these bodies. They're like, except I'm having them! Oh, I think we should just stay friends. You'll have all the Slurm you can drink when you're partying... </div>
+									<div class="td-excerpt"><?php echo $this->string->cut_str(strip_tags($items['post_info']),0,180); ?></div>
 									<div class="td-read-more">
-										<a href="#">Read more</a>
+										<a href="<?php echo base_url().$result['cate_rewrite']."/".$items['post_title_rewrite']."-".$items['post_id'].".html"; ?>">Read more</a>
 									</div>
 								</div>
 							</div>

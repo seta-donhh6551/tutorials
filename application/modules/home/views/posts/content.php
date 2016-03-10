@@ -127,45 +127,28 @@
                     </article>
                     <!-- /.post -->
                     <div class="td_block_wrap td_block_related_posts td_with_ajax_pagination td-pb-border-top">
-                        <h4 class="td-related-title"><a class="td-related-left td-cur-simple-item" href="#">RELATED ARTICLES</a><a class="td-related-right" href="#">MORE FROM AUTHOR</a></h4>
+                        <h4 class="td-related-title"><a class="td-related-left td-cur-simple-item" href="#">NEWEST ARTICLES</a></h4>
                         <div class="td_block_inner">
                             <div class="td-related-row">
+								<?php if(isset($latestart)){ ?>
+								<?php $k = 1; foreach($latestart as $lastest){ ?>
                                 <div class="td-related-span4">
                                     <div class="td_module_related_posts td-animation-stack td_mod_related_posts">
                                         <div class="td-module-image">
-                                            <div class="td-module-thumb"><a class="td-admin-edit" href="http://localhost/wordpress/wp-admin/post.php?post=136&amp;action=edit">edit</a>
-                                                <a href="http://localhost/wordpress/2016/02/29/melbourne-calling-three-reasons-why-you-should-visit-it/" rel="bookmark" title="Melbourne calling: Three reasons why you should visit it"><img width="238" height="178" class="entry-thumb td-animation-stack-type0-2" src="http://localhost/wordpress/wp-content/uploads/2016/02/3-238x178.jpg" alt="" title="Melbourne calling: Three reasons why you should visit it">
-                                                </a>
-                                            </div> <a href="http://localhost/wordpress/category/tech/internet/" class="td-post-category">Internet</a> </div>
+                                            <div class="td-module-thumb">
+												<a href="<?php echo base_url().$lastest['cate_rewrite']."/".$lastest['post_title_rewrite']."-".$lastest['post_id'].".html"; ?>" rel="bookmark">
+													<img style="min-height:130px !important" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url()."uploads/news/".$lastest['post_image']; ?>" alt="<?php echo $lastest['post_title']; ?>" title="<?php echo $lastest['post_title']; ?>">
+												</a>
+                                            </div>
                                         <div class="item-details">
-                                            <h3 class="entry-title td-module-title"><a href="http://localhost/wordpress/2016/02/29/melbourne-calling-three-reasons-why-you-should-visit-it/" rel="bookmark" title="Melbourne calling: Three reasons why you should visit it">Melbourne calling: Three reasons why you should visit it</a></h3> </div>
+                                            <h3 class="entry-title td-module-title"><a href="<?php echo base_url().$lastest['cate_rewrite']."/".$lastest['post_title_rewrite']."-".$lastest['post_id'].".html"; ?>" rel="bookmark" title="<?php echo $lastest['post_title']; ?>"><?php echo $lastest['post_title']; ?></a></h3>
+										</div>
                                     </div>
-                                </div>
+									</div>
+								</div>
+								<?php if($k == 3){ break; } ?>
                                 <!-- ./td-related-span4 -->
-                                <div class="td-related-span4">
-                                    <div class="td_module_related_posts td-animation-stack td_mod_related_posts">
-                                        <div class="td-module-image">
-                                            <div class="td-module-thumb"><a class="td-admin-edit" href="http://localhost/wordpress/wp-admin/post.php?post=129&amp;action=edit">edit</a>
-                                                <a href="http://localhost/wordpress/2016/02/29/the-dangers-of-eating-too-much-restaurant-food/" rel="bookmark" title="The dangers of eating too much restaurant food"><img width="238" height="178" class="entry-thumb td-animation-stack-type0-2" src="http://localhost/wordpress/wp-content/uploads/2016/02/15-238x178.jpg" alt="" title="The dangers of eating too much restaurant food">
-                                                </a>
-                                            </div> <a href="http://localhost/wordpress/category/tech/internet/" class="td-post-category">Internet</a> </div>
-                                        <div class="item-details">
-                                            <h3 class="entry-title td-module-title"><a href="http://localhost/wordpress/2016/02/29/the-dangers-of-eating-too-much-restaurant-food/" rel="bookmark" title="The dangers of eating too much restaurant food">The dangers of eating too much restaurant food</a></h3> </div>
-                                    </div>
-                                </div>
-                                <!-- ./td-related-span4 -->
-                                <div class="td-related-span4">
-                                    <div class="td_module_related_posts td-animation-stack td_mod_related_posts">
-                                        <div class="td-module-image">
-                                            <div class="td-module-thumb"><a class="td-admin-edit" href="http://localhost/wordpress/wp-admin/post.php?post=122&amp;action=edit">edit</a>
-                                                <a href="http://localhost/wordpress/2016/02/29/workout-routine-for-big-forearms-and-a-crushing-grip/" rel="bookmark" title="Workout Routine for Big Forearms and a Crushing Grip"><img width="238" height="178" class="entry-thumb td-animation-stack-type0-2" src="http://localhost/wordpress/wp-content/uploads/2016/02/5-238x178.jpg" alt="" title="Workout Routine for Big Forearms and a Crushing Grip">
-                                                </a>
-                                            </div> <a href="http://localhost/wordpress/category/tech/internet/" class="td-post-category">Internet</a> </div>
-                                        <div class="item-details">
-                                            <h3 class="entry-title td-module-title"><a href="http://localhost/wordpress/2016/02/29/workout-routine-for-big-forearms-and-a-crushing-grip/" rel="bookmark" title="Workout Routine for Big Forearms and a Crushing Grip">Workout Routine for Big Forearms and a Crushing Grip</a></h3> </div>
-                                    </div>
-                                </div>
-                                <!-- ./td-related-span4 -->
+								<?php ++$k; } } ?>
                             </div>
                             <!--./row-fluid-->
                         </div>
@@ -179,7 +162,7 @@
                         </div>
                         <div id="respond" class="comment-respond">
                             <h3 id="reply-title" class="comment-reply-title">LEAVE A REPLY <small><a rel="nofollow" id="cancel-comment-reply-link" href="#" style="display:none;">Cancel reply</a></small></h3>
-                            <form action="#" method="post" id="commentform" class="comment-form" novalidate="">
+                            <form action="javascript:void(0)" method="post" id="commentform" class="comment-form" novalidate="">
                                 <div class="clearfix"></div>
                                 <p class="comment-form-input-wrap">
                                     <textarea placeholder="Comment:" id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>

@@ -11,8 +11,7 @@
 		   $data['category'] 	= $this->listcago();
 		   $data['phpbasic'] 	= $this->model_posts->phplist(3, 8); // php basic
 		   $data['advance'] 	= $this->model_posts->phplist(4, 15); // php advanced
-		   $data['yii2frame']	= $this->model_posts->phplist(5, 4); // php can ban
-		   //$this->debug($data['yii2frame']);
+		   $data['yii2frame']	= $this->model_posts->phplist(5, 4); // yii2 fw
 		   $data['title'] 		= "Php web development tutorials, hatutorials.com";
 		   $this->load->view("layout",$data);
 	   }

@@ -23,14 +23,14 @@
 		  $config['cur_tag_close'] = '</span>';
 		  $this->load->library("pagination",$config);
 		  $start = (int)$this->uri->segment(2);
-		  $data['newest'] 		= $this->new_posts();
+		  $data['newest']	= $this->new_posts();
 		  $data['listcate'] = $this->listcate();
 		  $data['config'] 	= $this->config();
 		  $data['link']     = $item;
-		  $data['listall'] 		= $this->model_category->listall($id,$config['per_page'],$start);
-		  $data['category'] 	= $this->listcago();
-		  $data['title'] 		= $data['result']['cate_name'];
-		  $data['rewrite']      = $data['result']['cate_rewrite'];
+		  $data['listall'] 	= $this->model_category->listall($id,$config['per_page'],$start);
+		  $data['category'] = $this->listcago();
+		  $data['title'] 	= $data['result']['cate_name'];
+		  $data['rewrite']  = $data['result']['cate_rewrite'];
 		  $this->load->view("category/layout",$data);
 	   }
    }
