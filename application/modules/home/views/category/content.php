@@ -44,7 +44,7 @@
 										<div class="meta-info">
 											<div class="td-post-author-name"><a href="javascript:void(0)">Tuan Kiet</a> <span>-</span></div>
 											<div class="td-post-date">
-												<time class="entry-date updated td-module-date" datetime="2016-01-22T06:09:49+00:00">22nd January 2016</time>
+												<time class="entry-date updated td-module-date">22nd January 2016</time>
 											</div>
 											<!--div class="td-module-comments"><a href="#">0</a>
 											</div-->
@@ -68,7 +68,7 @@
 												<h3 class="entry-title td-module-title"><a href="<?php echo base_url()."yii2-framework/".$items['post_title_rewrite']."-".$items['post_id'].".html"; ?>" rel="bookmark" title="<?php echo $items['post_title']; ?>"><?php echo $items['post_title']; ?></a></h3>
 												<div class="meta-info">
 													<div class="td-post-date">
-														<time class="entry-date updated td-module-date">17nd <?php echo date('F Y'); ?></time>
+														<time class="entry-date updated td-module-date"><?php echo date('d F, Y', strtotime($items['post_date'])); ?></time>
 													</div>
 												</div>
 											</div>
@@ -103,7 +103,7 @@
 									<div class="meta-info">
 										<div class="td-post-author-name"><a href="#">Tuan Kiet</a> <span>-</span> </div>
 										<div class="td-post-date">
-											<time class="entry-date updated td-module-date">22nd January 2016</time>
+											<time class="entry-date updated td-module-date"><?php echo date('d F, Y', strtotime($items['post_date'])); ?></time>
 										</div>
 										<div class="td-module-comments"><a href="<?php echo base_url().$result['cate_rewrite']."/".$items['post_title_rewrite']."-".$items['post_id'].".html"; ?>/#respond">0</a>
 										</div>
@@ -133,32 +133,38 @@
 							</a>
 						</div>
 					</div>
-					<div class="td_block_wrap td_block_6 td_block_id_1612413631 td_uid_23_56c18169e010a_rand td-pb-border-top">
+                    <?php $random = rand(0,10); ?>
+                    <?php if(isset($newest[$random])){ ?>
+                    <?php $ranPost = $newest[$random]?>
+					<div class="td_block_wrap td_block_6 td-pb-border-top">
 						<h4 class="block-title"><span>RANDOM POST</span></h4>
 						<div id="td_uid_23_56c18169e010a" class="td_block_inner">
 							<div class="td-block-span12">
 								<div class="td_module_5 td_module_wrap td-animation-stack">
-									<h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/the-10-runway-trends-youll-be-wearing-this-year/" rel="bookmark" title="The 10 Runway Trends You’ll Be Wearing This Year">The 10 Runway Trends You’ll Be Wearing This Year</a></h3>
+									<h3 class="entry-title td-module-title"><a href="<?php echo base_url().$ranPost['cate_rewrite']."/".$ranPost['post_title_rewrite']."-".$ranPost['post_id'].".html"; ?>" rel="bookmark" title="<?php echo $ranPost['post_title']; ?>"><?php echo $ranPost['post_title']; ?></a></h3>
 									<div class="meta-info">
-										<div class="td-post-author-name"><a href="<?php echo base_url(); ?>author/admin/">admin</a> <span>-</span> </div>
+										<div class="td-post-author-name"><a href="javascript:void(0)">Tuan Kiet</a> <span>-</span> </div>
 										<div class="td-post-date">
-											<time class="entry-date updated td-module-date" datetime="2016-01-22T06:09:28+00:00">22nd January 2016</time>
+                                            <time class="entry-date updated td-module-date"><?php echo date('d F, Y', strtotime($ranPost['post_date'])); ?></time>
 										</div>
-										<div class="td-module-comments"><a href="<?php echo base_url(); ?>2016/01/22/the-10-runway-trends-youll-be-wearing-this-year/#respond">0</a>
+										<div class="td-module-comments"><a href="<?php echo base_url().$ranPost['cate_rewrite']."/".$ranPost['post_title_rewrite']."-".$ranPost['post_id'].".html"; ?>#respond">0</a>
 										</div>
 									</div>
 									<div class="td-module-image">
 										<div class="td-module-thumb">
-											<a href="<?php echo base_url(); ?>2016/01/22/the-10-runway-trends-youll-be-wearing-this-year/" rel="bookmark" title="The 10 Runway Trends You’ll Be Wearing This Year"><img width="300" height="194" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url(); ?>wp-content/uploads/2016/01/2-300x194.jpg" alt="" title="The 10 Runway Trends You’ll Be Wearing This Year">
+											<a href="<?php echo base_url().$ranPost['cate_rewrite']."/".$ranPost['post_title_rewrite']."-".$ranPost['post_id'].".html"; ?>" rel="bookmark" title="<?php echo $ranPost['post_title']; ?>">
+                                                <img width="300" height="194" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url()."uploads/news/".$ranPost['post_image']; ?>" alt="<?php echo $ranPost['post_title']; ?>" />
 											</a>
-										</div> <a href="<?php echo base_url(); ?>category/tech/apple/" class="td-post-category">Apple</a> </div>
+										</div> <a href="<?php echo base_url().$ranPost['cate_rewrite']; ?>.html" class="td-post-category"><?php echo $ranPost['cate_name']; ?></a></div>
 									<div class="td-excerpt">
-										And when we woke up, we had these bodies. They're like, except I'm having them! Oh, I think we should just stay friends. You'll... </div>
+                                        <?php echo $this->string->cut_str(strip_tags($ranPost['post_info']),0,180); ?>
+                                    </div>
 								</div>
 							</div>
 							<!-- ./td-block-span12 -->
 						</div>
 					</div>
+                    <?php } ?>
 					<!-- ./block -->
 					<div class="td_block_wrap td_block_8 td_block_id_870611808 td_uid_24_56c18169e187a_rand td-pb-border-top">
 						<h4 class="block-title"><span>HOLIDAY RECIPES</span></h4>

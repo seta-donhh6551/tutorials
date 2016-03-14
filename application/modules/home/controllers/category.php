@@ -15,7 +15,7 @@
 		  $id = $data['result']['cate_id'];
 		  $config['base_url'] = base_url().$item;
 		  $config['total_rows'] = $this->model_category->count_all($id);
-		  $config['per_page'] = 10;
+		  $config['per_page'] = 15;
 		  $config['uri_segment'] = 2;
 		  $config['next_link'] = "<i class='td-icon-menu-right'></i>";
 		  $config['prev_link'] = "<i class='td-icon-menu-left'></i>";

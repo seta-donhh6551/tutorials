@@ -2,178 +2,153 @@
 <div class="td-container">
 	<div class="td-container-border">
 		<div class="vc_row wpb_row td-pb-row">
-			<div class="wpb_column vc_column_container td-pb-span12">
-				<div class="wpb_wrapper">
-					<div class="td_block_wrap td_block_trending_now td_block_id_860801476 td_uid_14_56c18169c18bb_rand td-pb-border-top">
-						<div id="td_uid_14_56c18169c18bb" class="td_block_inner">
-
-							<div class="td-block-row">
-								<div class="td-trending-now-wrapper" id="td_uid_15_56c18169c302b" data-start="manual">
-									<div class="td-trending-now-title block-title">Trending Now</div>
-									<div class="td-trending-now-display-area">
-										<div class="td_module_trending_now td_module_wrap td-trending-now-post-0 td-trending-now-post">
-
-											<h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/we-found-the-sexiest-lingerie-on-the-internet/" rel="bookmark" title="We Found the Sexiest Lingerie on the Internet">We Found the Sexiest Lingerie on the Internet</a></h3>
-										</div>
-
-
-										<div class="td_module_trending_now td_module_wrap td-trending-now-post-1 td-trending-now-post">
-
-											<h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/mathematica-10-released-on-raspberry-pi/" rel="bookmark" title="Mathematica 10 released on Raspberry Pi">Mathematica 10 released on Raspberry Pi</a></h3>
-										</div>
-
-
-										<div class="td_module_trending_now td_module_wrap td-trending-now-post-2 td-trending-now-post">
-
-											<h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/hello-world/" rel="bookmark" title="Hello world!">Hello world!</a></h3>
-										</div>
-
-
-										<div class="td_module_trending_now td_module_wrap td-trending-now-post-3 td-trending-now-post">
-
-											<h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/uk-to-allow-driverless-cars-on-public-roads-in-january/" rel="bookmark" title="UK to allow driverless cars on public roads in January">UK to allow driverless cars on public roads in January</a></h3>
-										</div>
-
-
-										<div class="td_module_trending_now td_module_wrap td-trending-now-post-4 td-trending-now-post">
-
-											<h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/home-run-kitten-favored-in-competitive-san-simeon/" rel="bookmark" title="Home Run Kitten Favored in Competitive San Simeon">Home Run Kitten Favored in Competitive San Simeon</a></h3>
-										</div>
-
-									</div>
-								</div>
-							</div>
-							<!--./row-fluid-->
-						</div>
-					</div>
-					<!-- ./block -->
-					<div class="td_block_wrap td_block_big_grid td_block_id_1324889857 td_uid_16_56c18169c3fcc_rand td-grid-style-1 td-hover-1 td-pb-border-top">
-						<div id="td_uid_16_56c18169c3fcc" class="td_block_inner">
-							<div class="td-big-grid-wrapper">
-								<div class="td_module_mx5 td-animation-stack td-big-grid-post-0 td-big-grid-post td-big-thumb">
-									<div class="td-module-thumb">
-										<a href="<?php echo base_url(); ?>2016/01/22/apple-server-most-powerful-rack-optimized-server/" rel="bookmark" title="Apple Server Most Powerful rack optimized server"><img width="537" height="360" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url(); ?>wp-content/uploads/2016/01/10-537x360.jpg" alt="" title="Apple Server Most Powerful rack optimized server">
-										</a>
-									</div>
-									<div class="td-meta-info-container">
-										<div class="td-meta-align">
-											<div class="td-big-grid-meta">
-												<h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/apple-server-most-powerful-rack-optimized-server/" rel="bookmark" title="Apple Server Most Powerful rack optimized server">Apple Server Most Powerful rack optimized server</a></h3>
-												<div class="td-module-meta-info">
-													<div class="td-post-author-name"><a href="<?php echo base_url(); ?>author/admin/">admin</a> <span>-</span> </div>
-													<div class="td-post-date">
-														<time class="entry-date updated td-module-date" datetime="2016-01-22T06:09:16+00:00">22nd January 2016</time>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="td-module-comments"><a href="<?php echo base_url(); ?>2016/01/22/apple-server-most-powerful-rack-optimized-server/#respond">0</a>
-									</div>
-								</div>
-
-
-								<div class="td_module_mx6 td-animation-stack td-big-grid-post-1 td-big-grid-post td-tiny-thumb">
-									<div class="td-module-thumb">
-										<a href="<?php echo base_url(); ?>2016/01/22/express-recipes-how-to-make-creamy-papaya-raita/" rel="bookmark" title="Express Recipes: How to make Creamy Papaya Raita"><img width="238" height="178" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url(); ?>wp-content/uploads/2016/01/15-238x178.jpg" alt="" title="Express Recipes: How to make Creamy Papaya Raita">
-										</a>
-									</div>
-									<div class="td-meta-info-container">
-										<div class="td-meta-align">
-											<div class="td-big-grid-meta">
-												<h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/express-recipes-how-to-make-creamy-papaya-raita/" rel="bookmark" title="Express Recipes: How to make Creamy Papaya Raita">Express Recipes: How to make Creamy Papaya Raita</a></h3>
-												<div class="td-module-meta-info">
-													<div class="td-post-author-name"><a href="<?php echo base_url(); ?>author/admin/">admin</a> <span>-</span> </div>
-													<div class="td-post-date">
-														<time class="entry-date updated td-module-date" datetime="2016-01-22T06:09:15+00:00">22nd January 2016</time>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="td-module-comments"><a href="<?php echo base_url(); ?>2016/01/22/express-recipes-how-to-make-creamy-papaya-raita/#respond">0</a>
-									</div>
-								</div>
-
-
-								<div class="td_module_mx6 td-animation-stack td-big-grid-post-2 td-big-grid-post td-tiny-thumb">
-									<div class="td-module-thumb">
-										<a href="<?php echo base_url(); ?>2016/01/22/robots-helped-inspire-deep-learning-might-become/" rel="bookmark" title="Robots helped inspire deep learning might become"><img width="238" height="178" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url(); ?>wp-content/uploads/2016/01/9-238x178.jpg" alt="" title="Robots helped inspire deep learning might become"><span class="td-video-play-ico"><img width="40" class="td-retina td-animation-stack-type0-2" src="<?php echo base_url(); ?>wp-content/themes/Newsmag/images/icons/ico-video-large.png" alt="video"></span>
-										</a>
-									</div>
-									<div class="td-meta-info-container">
-										<div class="td-meta-align">
-											<div class="td-big-grid-meta">
-												<h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/robots-helped-inspire-deep-learning-might-become/" rel="bookmark" title="Robots helped inspire deep learning might become">Robots helped inspire deep learning might become</a></h3>
-												<div class="td-module-meta-info">
-													<div class="td-post-author-name"><a href="<?php echo base_url(); ?>author/admin/">admin</a> <span>-</span> </div>
-													<div class="td-post-date">
-														<time class="entry-date updated td-module-date" datetime="2016-01-22T06:09:14+00:00">22nd January 2016</time>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="td-module-comments"><a href="<?php echo base_url(); ?>2016/01/22/robots-helped-inspire-deep-learning-might-become/#respond">0</a>
-									</div>
-								</div>
-
-
-								<div class="td_module_mx6 td-animation-stack td-big-grid-post-3 td-big-grid-post td-tiny-thumb">
-									<div class="td-module-thumb">
-										<a href="<?php echo base_url(); ?>2016/01/22/what-do-i-need-to-make-it-in-business/" rel="bookmark" title="What Do I Need To Make It In Business?"><img width="238" height="178" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url(); ?>wp-content/uploads/2016/01/5-238x178.jpg" alt="" title="What Do I Need To Make It In Business?">
-										</a>
-									</div>
-									<div class="td-meta-info-container">
-										<div class="td-meta-align">
-											<div class="td-big-grid-meta">
-												<h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/what-do-i-need-to-make-it-in-business/" rel="bookmark" title="What Do I Need To Make It In Business?">What Do I Need To Make It In Business?</a></h3>
-												<div class="td-module-meta-info">
-													<div class="td-post-author-name"><a href="<?php echo base_url(); ?>author/admin/">admin</a> <span>-</span> </div>
-													<div class="td-post-date">
-														<time class="entry-date updated td-module-date" datetime="2016-01-22T06:09:13+00:00">22nd January 2016</time>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="td-module-comments"><a href="<?php echo base_url(); ?>2016/01/22/what-do-i-need-to-make-it-in-business/#respond">0</a>
-									</div>
-								</div>
-
-
-								<div class="td_module_mx6 td-animation-stack td-big-grid-post-4 td-big-grid-post td-tiny-thumb">
-									<div class="td-module-thumb">
-										<a href="<?php echo base_url(); ?>2016/01/22/simple-form-creation-and-storage-built-for-developers/" rel="bookmark" title="Simple form creation and storage, built for developers."><img width="238" height="178" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url(); ?>wp-content/uploads/2016/01/13-238x178.jpg" alt="" title="Simple form creation and storage, built for developers.">
-										</a>
-									</div>
-									<div class="td-meta-info-container">
-										<div class="td-meta-align">
-											<div class="td-big-grid-meta">
-												<h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/simple-form-creation-and-storage-built-for-developers/" rel="bookmark" title="Simple form creation and storage, built for developers.">Simple form creation and storage, built for developers.</a></h3>
-												<div class="td-module-meta-info">
-													<div class="td-post-author-name"><a href="<?php echo base_url(); ?>author/admin/">admin</a> <span>-</span> </div>
-													<div class="td-post-date">
-														<time class="entry-date updated td-module-date" datetime="2016-01-22T06:09:13+00:00">22nd January 2016</time>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="td-module-comments"><a href="<?php echo base_url(); ?>2016/01/22/simple-form-creation-and-storage-built-for-developers/#respond">0</a>
-									</div>
-								</div>
-
-							</div>
-							<div class="clearfix"></div>
-						</div>
-					</div>
-					<!-- ./block -->
-				</div>
-			</div>
-		</div>
+            <div class="wpb_column vc_column_container td-pb-span12">
+                <div class="wpb_wrapper">
+                    <div class="td_block_wrap td_block_trending_now td_block_id_860801476 td_uid_14_56c18169c18bb_rand td-pb-border-top">
+                        <div id="td_uid_14_56c18169c18bb" class="td_block_inner">
+                            <div class="td-block-row">
+                                <div class="td-trending-now-wrapper" id="td_uid_15_56c18169c302b" data-start="manual">
+                                    <div class="td-trending-now-title block-title">Trending Now</div>
+                                    <div class="td-trending-now-display-area">
+                                        <div class="td_module_trending_now td_module_wrap td-trending-now-post-0 td-trending-now-post">
+                                            <h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/we-found-the-sexiest-lingerie-on-the-internet/" rel="bookmark" title="We Found the Sexiest Lingerie on the Internet">We Found the Sexiest Lingerie on the Internet</a></h3>
+                                        </div>
+                                        <div class="td_module_trending_now td_module_wrap td-trending-now-post-1 td-trending-now-post">
+                                            <h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/mathematica-10-released-on-raspberry-pi/" rel="bookmark" title="Mathematica 10 released on Raspberry Pi">Mathematica 10 released on Raspberry Pi</a></h3>
+                                        </div>
+                                        <div class="td_module_trending_now td_module_wrap td-trending-now-post-2 td-trending-now-post">
+                                            <h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/hello-world/" rel="bookmark" title="Hello world!">Hello world!</a></h3>
+                                        </div>
+                                        <div class="td_module_trending_now td_module_wrap td-trending-now-post-3 td-trending-now-post">
+                                            <h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/uk-to-allow-driverless-cars-on-public-roads-in-january/" rel="bookmark" title="UK to allow driverless cars on public roads in January">UK to allow driverless cars on public roads in January</a></h3>
+                                        </div>
+                                        <div class="td_module_trending_now td_module_wrap td-trending-now-post-4 td-trending-now-post">
+                                            <h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/home-run-kitten-favored-in-competitive-san-simeon/" rel="bookmark" title="Home Run Kitten Favored in Competitive San Simeon">Home Run Kitten Favored in Competitive San Simeon</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--./row-fluid-->
+                        </div>
+                    </div>
+                    <!-- ./block -->
+                    <div class="td_block_wrap td_block_big_grid td_block_id_1324889857 td_uid_16_56c18169c3fcc_rand td-grid-style-1 td-hover-1 td-pb-border-top">
+                        <div id="td_uid_16_56c18169c3fcc" class="td_block_inner">
+                            <div class="td-big-grid-wrapper">
+                                <div class="td_module_mx5 td-animation-stack td-big-grid-post-0 td-big-grid-post td-big-thumb">
+                                    <div class="td-module-thumb">
+                                        <a href="<?php echo base_url(); ?>2016/01/22/apple-server-most-powerful-rack-optimized-server/" rel="bookmark" title="Apple Server Most Powerful rack optimized server"><img width="537" height="360" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url(); ?>wp-content/uploads/2016/01/10-537x360.jpg" alt="" title="Apple Server Most Powerful rack optimized server">
+                                                </a>
+                                    </div>
+                                    <div class="td-meta-info-container">
+                                        <div class="td-meta-align">
+                                            <div class="td-big-grid-meta">
+                                                <h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/apple-server-most-powerful-rack-optimized-server/" rel="bookmark" title="Apple Server Most Powerful rack optimized server">Apple Server Most Powerful rack optimized server</a></h3>
+                                                <div class="td-module-meta-info">
+                                                    <div class="td-post-author-name"><a href="<?php echo base_url(); ?>author/admin/">admin</a> <span>-</span> </div>
+                                                    <div class="td-post-date">
+                                                        <time class="entry-date updated td-module-date" datetime="2016-01-22T06:09:16+00:00">22nd January 2016</time>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="td-module-comments"><a href="<?php echo base_url(); ?>2016/01/22/apple-server-most-powerful-rack-optimized-server/#respond">0</a>
+                                    </div>
+                                </div>
+                                <div class="td_module_mx6 td-animation-stack td-big-grid-post-1 td-big-grid-post td-tiny-thumb">
+                                    <div class="td-module-thumb">
+                                        <a href="<?php echo base_url(); ?>2016/01/22/express-recipes-how-to-make-creamy-papaya-raita/" rel="bookmark" title="Express Recipes: How to make Creamy Papaya Raita"><img width="238" height="178" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url(); ?>wp-content/uploads/2016/01/15-238x178.jpg" alt="" title="Express Recipes: How to make Creamy Papaya Raita">
+                                                </a>
+                                    </div>
+                                    <div class="td-meta-info-container">
+                                        <div class="td-meta-align">
+                                            <div class="td-big-grid-meta">
+                                                <h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/express-recipes-how-to-make-creamy-papaya-raita/" rel="bookmark" title="Express Recipes: How to make Creamy Papaya Raita">Express Recipes: How to make Creamy Papaya Raita</a></h3>
+                                                <div class="td-module-meta-info">
+                                                    <div class="td-post-author-name"><a href="<?php echo base_url(); ?>author/admin/">admin</a> <span>-</span> </div>
+                                                    <div class="td-post-date">
+                                                        <time class="entry-date updated td-module-date" datetime="2016-01-22T06:09:15+00:00">22nd January 2016</time>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="td-module-comments"><a href="<?php echo base_url(); ?>2016/01/22/express-recipes-how-to-make-creamy-papaya-raita/#respond">0</a>
+                                    </div>
+                                </div>
+                                <div class="td_module_mx6 td-animation-stack td-big-grid-post-2 td-big-grid-post td-tiny-thumb">
+                                    <div class="td-module-thumb">
+                                        <a href="<?php echo base_url(); ?>2016/01/22/robots-helped-inspire-deep-learning-might-become/" rel="bookmark" title="Robots helped inspire deep learning might become"><img width="238" height="178" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url(); ?>wp-content/uploads/2016/01/9-238x178.jpg" alt="" title="Robots helped inspire deep learning might become"><span class="td-video-play-ico"><img width="40" class="td-retina td-animation-stack-type0-2" src="<?php echo base_url(); ?>wp-content/themes/Newsmag/images/icons/ico-video-large.png" alt="video"></span>
+                                                </a>
+                                    </div>
+                                    <div class="td-meta-info-container">
+                                        <div class="td-meta-align">
+                                            <div class="td-big-grid-meta">
+                                                <h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/robots-helped-inspire-deep-learning-might-become/" rel="bookmark" title="Robots helped inspire deep learning might become">Robots helped inspire deep learning might become</a></h3>
+                                                <div class="td-module-meta-info">
+                                                    <div class="td-post-author-name"><a href="<?php echo base_url(); ?>author/admin/">admin</a> <span>-</span> </div>
+                                                    <div class="td-post-date">
+                                                        <time class="entry-date updated td-module-date" datetime="2016-01-22T06:09:14+00:00">22nd January 2016</time>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="td-module-comments"><a href="<?php echo base_url(); ?>2016/01/22/robots-helped-inspire-deep-learning-might-become/#respond">0</a>
+                                    </div>
+                                </div>
+                                <div class="td_module_mx6 td-animation-stack td-big-grid-post-3 td-big-grid-post td-tiny-thumb">
+                                    <div class="td-module-thumb">
+                                        <a href="<?php echo base_url(); ?>2016/01/22/what-do-i-need-to-make-it-in-business/" rel="bookmark" title="What Do I Need To Make It In Business?"><img width="238" height="178" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url(); ?>wp-content/uploads/2016/01/5-238x178.jpg" alt="" title="What Do I Need To Make It In Business?">
+                                                </a>
+                                    </div>
+                                    <div class="td-meta-info-container">
+                                        <div class="td-meta-align">
+                                            <div class="td-big-grid-meta">
+                                                <h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/what-do-i-need-to-make-it-in-business/" rel="bookmark" title="What Do I Need To Make It In Business?">What Do I Need To Make It In Business?</a></h3>
+                                                <div class="td-module-meta-info">
+                                                    <div class="td-post-author-name"><a href="<?php echo base_url(); ?>author/admin/">admin</a> <span>-</span> </div>
+                                                    <div class="td-post-date">
+                                                        <time class="entry-date updated td-module-date" datetime="2016-01-22T06:09:13+00:00">22nd January 2016</time>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="td-module-comments"><a href="<?php echo base_url(); ?>2016/01/22/what-do-i-need-to-make-it-in-business/#respond">0</a>
+                                    </div>
+                                </div>
+                                <div class="td_module_mx6 td-animation-stack td-big-grid-post-4 td-big-grid-post td-tiny-thumb">
+                                    <div class="td-module-thumb">
+                                        <a href="<?php echo base_url(); ?>2016/01/22/simple-form-creation-and-storage-built-for-developers/" rel="bookmark" title="Simple form creation and storage, built for developers."><img width="238" height="178" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url(); ?>wp-content/uploads/2016/01/13-238x178.jpg" alt="" title="Simple form creation and storage, built for developers.">
+                                                </a>
+                                    </div>
+                                    <div class="td-meta-info-container">
+                                        <div class="td-meta-align">
+                                            <div class="td-big-grid-meta">
+                                                <h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/simple-form-creation-and-storage-built-for-developers/" rel="bookmark" title="Simple form creation and storage, built for developers.">Simple form creation and storage, built for developers.</a></h3>
+                                                <div class="td-module-meta-info">
+                                                    <div class="td-post-author-name"><a href="<?php echo base_url(); ?>author/admin/">admin</a> <span>-</span> </div>
+                                                    <div class="td-post-date">
+                                                        <time class="entry-date updated td-module-date" datetime="2016-01-22T06:09:13+00:00">22nd January 2016</time>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="td-module-comments"><a href="<?php echo base_url(); ?>2016/01/22/simple-form-creation-and-storage-built-for-developers/#respond">0</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <!-- ./block -->
+                </div>
+            </div>
+        </div>
 		<div class="vc_row wpb_row td-pb-row td-ss-row">
-
 			<div class="wpb_column vc_column_container td-pb-span8">
 				<div class="wpb_wrapper"><div class="clearfix"></div>
 					<div class="td_block_wrap td_block_1 td_block_id_1325627023 td_uid_17_56c18169cb115_rand td_with_ajax_pagination">
@@ -188,19 +163,16 @@
 								</ul>
 							</div>
 						</div>
-						<div id="td_uid_17_56c18169cb115" class="td_block_inner">
-
+						<div class="td_block_inner">
 							<div class="td-block-row">
-
 								<div class="td-block-span6">
-
 									<div class="td_module_4 td_module_wrap td-animation-stack">
 										<div class="td-module-image">
 											<div class="td-module-thumb">
-												<a href="<?php echo base_url() . 'yii2-framework.html'; ?>" rel="bookmark" title="Yii2 Framework Tutorials"><img width="300" height="194" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url(); ?>uploads/news/yii2framework.jpg" alt="Yii2 Framework Tutorials" title="Yii2 Framework Tutorials">
+												<a href="<?php echo base_url() . 'yii2-framework.html'; ?>" rel="bookmark" title="Yii2 Framework Tutorials">
+                                                    <img width="300" height="194" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url(); ?>uploads/news/yii2framework.jpg" alt="Yii2 Framework Tutorials" title="Yii2 Framework Tutorials">
 												</a>
 											</div> <a href="<?php echo base_url() . 'yii2-framework.html'; ?>" class="td-post-category">Yii2 Framework</a> </div>
-
 										<h3 class="entry-title td-module-title"><a href="#" rel="bookmark" title="Manual yii2 whole collection framework">Manual yii2 whole collection framework</a></h3>
 										<div class="meta-info">
 											<div class="td-post-author-name"><a href="javascript:void(0)">TuanKiet</a> <span>-</span></div>
@@ -256,7 +228,7 @@
 							</ul>
 							</div>
 						</div>
-						<div id="td_uid_19_56c6aa1c619cd" class="td_block_inner">
+						<div class="td_block_inner">
 							<div class="td-block-row">
 								<div class="td-block-span6">
 									<div class="td_module_mx1 td_module_wrap td-animation-stack">
@@ -308,111 +280,71 @@
 						<div class="wpb_column vc_column_container td-pb-span6">
 							<div class="vc_column-inner ">
 								<div class="wpb_wrapper">
-									<div class="td_block_wrap td_block_2 td_block_id_80205416 td_uid_21_56c18169dab19_rand td_with_ajax_pagination td-pb-border-top">
+									<div class="td_block_wrap td_block_2 td_with_ajax_pagination td-pb-border-top">
 										<h2 class="block-title"><span class="php-adv-title">PHP ADVANCED</span></h2>
-										<div id="td_uid_21_56c18169dab19" class="td_block_inner">
-
+                                        <?php if(isset($advance[0])){ ?>
+										<div class="td_block_inner">
 											<div class="td-block-span12">
-
 												<div class="td_module_4 td_module_wrap td-animation-stack">
 													<div class="td-module-image">
 														<div class="td-module-thumb">
-															<a href="<?php echo base_url(); ?>2016/01/22/the-10-runway-trends-youll-be-wearing-this-year/" rel="bookmark" title="The 10 Runway Trends You’ll Be Wearing This Year"><img width="300" height="194" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url(); ?>wp-content/uploads/2016/01/2-300x194.jpg" alt="" title="The 10 Runway Trends You’ll Be Wearing This Year">
+															<a href="<?php echo base_url().$advance[0]['cate_rewrite']; ?>.html" rel="bookmark" title="<?php echo $advance[0]['cate_name']; ?>">
+                                                                <img width="300" height="194" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url(); ?>wp-content/uploads/2016/01/2-300x194.jpg" alt="" title="">
 															</a>
 														</div> <a href="<?php echo base_url(); ?>category/tech/apple/" class="td-post-category">Apple</a> </div>
-
-													<h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/the-10-runway-trends-youll-be-wearing-this-year/" rel="bookmark" title="The 10 Runway Trends You’ll Be Wearing This Year">The 10 Runway Trends You’ll Be Wearing This Year</a></h3>
+													<h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/the-10-runway-trends-youll-be-wearing-this-year/" rel="bookmark" title="<?php echo $advance[0]['cate_name']; ?>"><?php echo $advance[0]['cate_name']; ?></a></h3>
 													<div class="meta-info">
-														<div class="td-post-author-name"><a href="<?php echo base_url(); ?>author/admin/">admin</a> <span>-</span> </div>
+														<div class="td-post-author-name"><a href="javascript:void(0)">Tuan Kiet</a> <span>-</span> </div>
 														<div class="td-post-date">
-															<time class="entry-date updated td-module-date" datetime="2016-01-22T06:09:28+00:00">22nd January 2016</time>
+															<time class="entry-date updated td-module-date">22nd January 2016</time>
 														</div>
 														<div class="td-module-comments"><a href="<?php echo base_url(); ?>2016/01/22/the-10-runway-trends-youll-be-wearing-this-year/#respond">0</a>
 														</div>
 													</div>
-
 													<div class="td-excerpt">
-														And when we woke up, we had these bodies. They're like, except I'm having them! Oh, I think we should just stay friends. You'll... </div>
+														<?php echo $advance[0]['cate_ext']; ?>
+                                                    </div>
 												</div>
 											</div>
-											<!-- ./td-block-span12 -->
 										</div>
+                                        <?php } ?>
 									</div>
 									<!-- ./block -->
 								</div>
 							</div>
 						</div>
 						<div class="wpb_column vc_column_container td-pb-span6">
-							<div class="vc_column-inner ">
-								<div class="wpb_wrapper">
-									<div class="td_block_wrap td_block_10 td_block_id_98498887 td_uid_22_56c18169dce41_rand td-pb-border-top">
-										<h4 class="block-title"><span>DON'T MISS</span></h4>
-										<div id="td_uid_22_56c18169dce41" class="td_block_inner">
-											<div class="td_module_9 td_module_wrap">
-
-												<div class="item-details">
-													<h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/designer-fashion-show-kicks-off-variety-week/" rel="bookmark" title="Designer fashion show kicks off Variety Week">Designer fashion show kicks off Variety Week</a></h3>
-													<div class="meta-info">
-														<div class="td-post-author-name"><a href="<?php echo base_url(); ?>author/admin/">admin</a> <span>-</span> </div>
-														<div class="td-post-date">
-															<time class="entry-date updated td-module-date" datetime="2016-01-22T06:09:17+00:00">22nd January 2016</time>
-														</div>
-													</div>
-
-													<div class="td-bottom-dotted-line"></div>
-												</div>
-
-											</div>
-
-
-											<div class="td_module_9 td_module_wrap">
-												<div class="item-details">
-													<h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/android-l-will-keep-your-secrets-safer/" rel="bookmark" title="Android L Will Keep Your Secrets Safer">Android L Will Keep Your Secrets Safer</a></h3>
-													<div class="meta-info">
-														<div class="td-post-author-name"><a href="<?php echo base_url(); ?>author/admin/">admin</a> <span>-</span> </div>
-														<div class="td-post-date">
-															<time class="entry-date updated td-module-date" datetime="2016-01-22T06:09:47+00:00">22nd January 2016</time>
-														</div>
-													</div>
-													<div class="td-bottom-dotted-line"></div>
-												</div>
-											</div>
-
-											<div class="td_module_9 td_module_wrap">
-
-												<div class="item-details">
-													<h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/thinklab-building-a-startup-team-to-fix-science-and-government/" rel="bookmark" title="Thinklab – Building a startup team to fix science and government">Thinklab – Building a startup team to fix science and government</a></h3>
-													<div class="meta-info">
-														<div class="td-post-author-name"><a href="<?php echo base_url(); ?>author/admin/">admin</a> <span>-</span> </div>
-														<div class="td-post-date">
-															<time class="entry-date updated td-module-date" datetime="2016-01-22T06:09:33+00:00">22nd January 2016</time>
-														</div>
-													</div>
-													<div class="td-bottom-dotted-line"></div>
-												</div>
-											</div>
-
-											<div class="td_module_9 td_module_wrap">
-												<div class="item-details">
-													<h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/starbucks-secret-menu-the-drinks-you-didnt-know-you-can-ask-for/" rel="bookmark" title="Starbucks secret menu the drinks you didn’t know you can ask for">Starbucks secret menu the drinks you didn’t know you can ask for</a></h3>
-													<div class="meta-info">
-														<div class="td-post-author-name"><a href="<?php echo base_url(); ?>author/admin/">admin</a> <span>-</span> </div>
-														<div class="td-post-date">
-															<time class="entry-date updated td-module-date" datetime="2016-01-22T06:09:16+00:00">22nd January 2016</time>
-														</div>
-													</div>
-													<div class="td-bottom-dotted-line"></div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- ./block -->
-								</div>
-							</div>
-						</div>
+                            <div class="vc_column-inner ">
+                                <div class="wpb_wrapper">
+                                    <div class="td_block_wrap td_block_10 td-pb-border-top">
+                                        <h4 class="block-title"><span>DON'T MISS</span></h4>
+                                        <div class="td_block_inner">
+                                            <?php if(isset($advance) && $advance){ ?>
+                                            <?php $l = 1; foreach($advance as $phpadv){ ?>
+                                            <div class="td_module_9 td_module_wrap">
+                                                <div class="item-details">
+                                                    <h3 class="entry-title td-module-title"><a href="<?php echo base_url().$phpadv['cate_rewrite']."/".$phpadv['post_title_rewrite']."-".$phpadv['post_id'].".html"; ?>" rel="bookmark" title="<?php echo $phpadv['post_title']; ?>"><?php echo $phpadv['post_title']; ?></a></h3>
+                                                    <div class="meta-info">
+                                                        <div class="td-post-author-name"><a href="<?php echo base_url(); ?>author/admin/">admin</a> <span>-</span> </div>
+                                                        <div class="td-post-date">
+                                                            <time class="entry-date updated td-module-date" datetime="2016-01-22T06:09:17+00:00">22nd January 2016</time>
+                                                        </div>
+                                                    </div>
+                                                    <div class="td-bottom-dotted-line"></div>
+                                                </div>
+                                            </div>
+                                            <?php if($l == 3){ break; } ?>
+                                            <?php ++$l; } } ?>
+                                        </div>
+                                    </div>
+                                    <!-- ./block -->
+                                </div>
+                            </div>
+                        </div>
 					</div>
 					<div class="clearfix"></div></div>
 			</div>
+            <?php $this->load->library("string"); ?>
 			<div class="wpb_column vc_column_container td-pb-span4">
 				<div class="wpb_wrapper" style="width: auto; position: static; top: auto; bottom: auto; z-index: 1;"><div class="clearfix"></div>
 					<div class="td-a-rec td-a-rec-id-sidebar ">
@@ -421,37 +353,38 @@
 							</a>
 						</div>
 					</div>
-					<div class="td_block_wrap td_block_6 td_block_id_1612413631 td_uid_23_56c18169e010a_rand td-pb-border-top">
+					<?php $random = rand(0,10); ?>
+                    <?php if(isset($latestart[$random])){ ?>
+                    <?php $ranPost = $latestart[$random]?>
+					<div class="td_block_wrap td_block_6 td-pb-border-top">
 						<h4 class="block-title"><span>RANDOM POST</span></h4>
 						<div id="td_uid_23_56c18169e010a" class="td_block_inner">
-
 							<div class="td-block-span12">
-
 								<div class="td_module_5 td_module_wrap td-animation-stack">
-
-									<h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/the-10-runway-trends-youll-be-wearing-this-year/" rel="bookmark" title="The 10 Runway Trends You’ll Be Wearing This Year">The 10 Runway Trends You’ll Be Wearing This Year</a></h3>
+									<h3 class="entry-title td-module-title"><a href="<?php echo base_url().$ranPost['cate_rewrite']."/".$ranPost['post_title_rewrite']."-".$ranPost['post_id'].".html"; ?>" rel="bookmark" title="<?php echo $ranPost['post_title']; ?>"><?php echo $ranPost['post_title']; ?></a></h3>
 									<div class="meta-info">
-										<div class="td-post-author-name"><a href="<?php echo base_url(); ?>author/admin/">admin</a> <span>-</span> </div>
+										<div class="td-post-author-name"><a href="javascript:void(0)">Tuan Kiet</a> <span>-</span> </div>
 										<div class="td-post-date">
-											<time class="entry-date updated td-module-date" datetime="2016-01-22T06:09:28+00:00">22nd January 2016</time>
+                                            <time class="entry-date updated td-module-date"><?php echo date('d F, Y', strtotime($ranPost['post_date'])); ?></time>
 										</div>
-										<div class="td-module-comments"><a href="<?php echo base_url(); ?>2016/01/22/the-10-runway-trends-youll-be-wearing-this-year/#respond">0</a>
+										<div class="td-module-comments"><a href="<?php echo base_url().$ranPost['cate_rewrite']."/".$ranPost['post_title_rewrite']."-".$ranPost['post_id'].".html"; ?>#respond">0</a>
 										</div>
 									</div>
-
 									<div class="td-module-image">
 										<div class="td-module-thumb">
-											<a href="<?php echo base_url(); ?>2016/01/22/the-10-runway-trends-youll-be-wearing-this-year/" rel="bookmark" title="The 10 Runway Trends You’ll Be Wearing This Year"><img width="300" height="194" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url(); ?>wp-content/uploads/2016/01/2-300x194.jpg" alt="" title="The 10 Runway Trends You’ll Be Wearing This Year">
+											<a href="<?php echo base_url().$ranPost['cate_rewrite']."/".$ranPost['post_title_rewrite']."-".$ranPost['post_id'].".html"; ?>" rel="bookmark" title="<?php echo $ranPost['post_title']; ?>">
+                                                <img width="300" height="194" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url()."uploads/news/".$ranPost['post_image']; ?>" alt="<?php echo $ranPost['post_title']; ?>" />
 											</a>
-										</div> <a href="<?php echo base_url(); ?>category/tech/apple/" class="td-post-category">Apple</a> </div>
-
+										</div> <a href="<?php echo base_url().$ranPost['cate_rewrite']; ?>.html" class="td-post-category"><?php echo $ranPost['cate_name']; ?></a></div>
 									<div class="td-excerpt">
-										And when we woke up, we had these bodies. They're like, except I'm having them! Oh, I think we should just stay friends. You'll... </div>
+                                        <?php echo $this->string->cut_str(strip_tags($ranPost['post_info']),0,180); ?>
+                                    </div>
 								</div>
 							</div>
 							<!-- ./td-block-span12 -->
 						</div>
 					</div>
+                    <?php } ?>
 					<!-- ./block -->
 					<div class="td_block_wrap td_block_8 td_block_id_870611808 td_uid_24_56c18169e187a_rand td-pb-border-top">
 						<h4 class="block-title"><span>HOLIDAY RECIPES</span></h4>
