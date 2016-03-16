@@ -26,6 +26,7 @@
 		  $data['newest']	= $this->new_posts();
 		  $data['listcate'] = $this->listcate();
 		  $data['config'] 	= $this->config();
+		  $data['ranposts']	= $this->random_posts();
 		  $data['link']     = $item;
 		  $data['listall'] 	= $this->model_category->listall($id,$config['per_page'],$start);
 		  $data['category'] = $this->listcago();

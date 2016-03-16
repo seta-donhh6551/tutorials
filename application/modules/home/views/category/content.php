@@ -4,8 +4,8 @@
 		<div class="vc_row wpb_row td-pb-row">
 			<div class="wpb_column vc_column_container td-pb-span12">
 				<div class="wpb_wrapper">
-					<div class="td_block_wrap td_block_trending_now td_block_id_860801476 td_uid_14_56c18169c18bb_rand td-pb-border-top">
-						<div id="td_uid_14_56c18169c18bb" class="td_block_inner">
+					<div class="td_block_wrap td_block_trending_now td-pb-border-top">
+						<div class="td_block_inner">
 
 							<div class="td-block-row">
 								<div class="td-trending-now-wrapper" id="td_uid_15_56c18169c302b" data-start="manual">
@@ -35,16 +35,16 @@
 									<div class="td_module_4 td_module_wrap td-animation-stack">
 										<div class="td-module-image">
 											<div class="td-module-thumb">
-												<a href="<?php echo base_url().$result['cate_name']; ?>.html" rel="bookmark" title="<?php echo $result['cate_name']; ?>">
+												<a href="<?php echo base_url().$result['cate_rewrite']; ?>.html" rel="bookmark" title="<?php echo $result['cate_name']; ?>">
 													<img width="300" height="194" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url().'uploads/cate/'.$result['cate_images'];; ?>" alt="<?php echo $result['cate_name']; ?>" title="<?php echo $result['cate_name']; ?>">
 												</a>
 											</div>
 										</div>
-										<h3 class="entry-title td-module-title"><a href="#" rel="bookmark" title="Manual yii2 whole collection framework">Manual yii2 whole collection framework</a></h3>
+										<h3 class="entry-title td-module-title"><a href="<?php echo base_url().$result['cate_rewrite']; ?>.html" rel="bookmark" title="<?php echo $result['cate_name']; ?>"><?php echo $result['cate_name']; ?></a></h3>
 										<div class="meta-info">
 											<div class="td-post-author-name"><a href="javascript:void(0)">Tuan Kiet</a> <span>-</span></div>
 											<div class="td-post-date">
-												<time class="entry-date updated td-module-date">22nd January 2016</time>
+												<time class="entry-date updated td-module-date"><?php echo date('d F, Y'); ?></time>
 											</div>
 											<!--div class="td-module-comments"><a href="#">0</a>
 											</div-->

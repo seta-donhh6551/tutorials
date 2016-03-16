@@ -7,7 +7,7 @@
 					<a href="<?php echo base_url(); ?>"><img class="td-retina-data" src="<?php echo base_url(); ?>public/images/ha-footer.png" data-retina="<?php echo base_url(); ?>wp-content/uploads/2016/01/newsmag-footer.png" alt="" />
 					</a>
 				</div>
-				<div class="footer-text-wrap">Hatutorials is your news, entertainment, music fashion website. We provide you with the latest breaking news and videos straight from the entertainment industry.
+				<div class="footer-text-wrap">Hatutorials.com is an individual blog sharing the knowledge of programming and web development. The instructing posts are written by Tuan Kiet- an IT engineer in his free time.
 					<div class="footer-email-wrap">Contact us: <a href="mailto:contact@hatutorials.com">contact@hatutorials.com</a>
 					</div>
 				</div>
