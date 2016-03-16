@@ -17,65 +17,29 @@
 		</div>
 
 		<div class="td-pb-span4">
-			<div class="td_block_wrap td_block_7 td_block_id_2032531319 td_uid_28_56c1816a031e8_rand">
-				<h4 class="block-title"><span>EVEN MORE NEWS</span></h4>
-				<div id=td_uid_28_56c1816a031e8 class="td_block_inner">
-
+			<div class="td_block_wrap td_block_7">
+				<h4 class="block-title"><span>RANDOM ARTICLES</span></h4>
+				<div class="td_block_inner">
+					<?php if(isset($ranposts)){ ?>
+					<?php foreach($ranposts as $randp){ ?>
 					<div class="td-block-span12">
-
 						<div class="td_module_6 td_module_wrap td-animation-stack">
-
 							<div class="td-module-thumb">
-								<a href="<?php echo base_url(); ?>2016/01/22/health-star-ratings-kellogg-reveals-the-cereal/" rel="bookmark" title="Health star ratings Kellogg reveals the cereal"><img width="100" height="75" class="entry-thumb" src="<?php echo base_url(); ?>wp-content/uploads/2016/01/3-100x75.jpg" alt="" title="Health star ratings Kellogg reveals the cereal" />
+								<a href="<?php echo base_url().$randp['cate_rewrite']."/".$randp['post_title_rewrite']."-".$randp['post_id'].".html"; ?>" rel="bookmark">
+									<img width="100" height="75" class="entry-thumb" src="<?php echo base_url()."uploads/news/thumb/".$randp['post_image']; ?>" alt="<?php echo $randp['post_title']; ?>" />
 								</a>
 							</div>
 							<div class="item-details">
-								<h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/health-star-ratings-kellogg-reveals-the-cereal/" rel="bookmark" title="Health star ratings Kellogg reveals the cereal">Health star ratings Kellogg reveals the cereal</a></h3>
+								<h3 class="entry-title td-module-title"><a href="<?php echo base_url().$randp['cate_rewrite']."/".$randp['post_title_rewrite']."-".$randp['post_id'].".html"; ?>" rel="bookmark" title="<?php echo $randp['post_title']; ?>"><?php echo $randp['post_title']; ?></a></h3>
 								<div class="meta-info">
 									<div class="td-post-date">
-										<time class="entry-date updated td-module-date" datetime="2016-01-22T06:09:49+00:00">22nd January 2016</time>
+										<time class="entry-date updated td-module-date"><?php echo date('d F, Y', strtotime($randp['created_at'])); ?></time>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<!-- ./td-block-span12 -->
-
-					<div class="td-block-span12">
-						<div class="td_module_6 td_module_wrap td-animation-stack">
-							<div class="td-module-thumb">
-								<a href="<?php echo base_url(); ?>2016/01/22/springfest-one-fashion-show-at-the-university-of-michigan/" rel="bookmark" title="SpringFest One Fashion Show at the University of Michigan"><img width="100" height="75" class="entry-thumb" src="<?php echo base_url(); ?>wp-content/uploads/2016/01/18-100x75.jpg" alt="" title="SpringFest One Fashion Show at the University of Michigan" />
-								</a>
-							</div>
-							<div class="item-details">
-								<h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/springfest-one-fashion-show-at-the-university-of-michigan/" rel="bookmark" title="SpringFest One Fashion Show at the University of Michigan">SpringFest One Fashion Show at the University of Michigan</a></h3>
-								<div class="meta-info">
-									<div class="td-post-date">
-										<time class="entry-date updated td-module-date" datetime="2016-01-22T06:09:49+00:00">22nd January 2016</time>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- ./td-block-span12 -->
-
-					<div class="td-block-span12">
-						<div class="td_module_6 td_module_wrap td-animation-stack">
-							<div class="td-module-thumb">
-								<a href="<?php echo base_url(); ?>2016/01/22/xbox-one-to-launch-in-china-this-month-after-all/" rel="bookmark" title="Xbox One to launch in China this month after all"><img width="100" height="75" class="entry-thumb" src="<?php echo base_url(); ?>wp-content/uploads/2016/01/1-100x75.jpg" alt="" title="Xbox One to launch in China this month after all" />
-								</a>
-							</div>
-							<div class="item-details">
-								<h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/xbox-one-to-launch-in-china-this-month-after-all/" rel="bookmark" title="Xbox One to launch in China this month after all">Xbox One to launch in China this month after all</a></h3>
-								<div class="meta-info">
-									<div class="td-post-date">
-										<time class="entry-date updated td-module-date" datetime="2016-01-22T06:09:48+00:00">22nd January 2016</time>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- ./td-block-span12 -->
+					<?php } } ?>
 				</div>
 			</div>
 			<!-- ./block -->

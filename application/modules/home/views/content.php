@@ -13,18 +13,6 @@
                                         <div class="td_module_trending_now td_module_wrap td-trending-now-post-0 td-trending-now-post">
                                             <h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/we-found-the-sexiest-lingerie-on-the-internet/" rel="bookmark" title="We Found the Sexiest Lingerie on the Internet">We Found the Sexiest Lingerie on the Internet</a></h3>
                                         </div>
-                                        <div class="td_module_trending_now td_module_wrap td-trending-now-post-1 td-trending-now-post">
-                                            <h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/mathematica-10-released-on-raspberry-pi/" rel="bookmark" title="Mathematica 10 released on Raspberry Pi">Mathematica 10 released on Raspberry Pi</a></h3>
-                                        </div>
-                                        <div class="td_module_trending_now td_module_wrap td-trending-now-post-2 td-trending-now-post">
-                                            <h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/hello-world/" rel="bookmark" title="Hello world!">Hello world!</a></h3>
-                                        </div>
-                                        <div class="td_module_trending_now td_module_wrap td-trending-now-post-3 td-trending-now-post">
-                                            <h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/uk-to-allow-driverless-cars-on-public-roads-in-january/" rel="bookmark" title="UK to allow driverless cars on public roads in January">UK to allow driverless cars on public roads in January</a></h3>
-                                        </div>
-                                        <div class="td_module_trending_now td_module_wrap td-trending-now-post-4 td-trending-now-post">
-                                            <h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/home-run-kitten-favored-in-competitive-san-simeon/" rel="bookmark" title="Home Run Kitten Favored in Competitive San Simeon">Home Run Kitten Favored in Competitive San Simeon</a></h3>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -32,8 +20,8 @@
                         </div>
                     </div>
                     <!-- ./block -->
-                    <div class="td_block_wrap td_block_big_grid td_block_id_1324889857 td_uid_16_56c18169c3fcc_rand td-grid-style-1 td-hover-1 td-pb-border-top">
-                        <div id="td_uid_16_56c18169c3fcc" class="td_block_inner">
+                    <div class="td_block_wrap td_block_big_grid td-grid-style-1 td-hover-1 td-pb-border-top">
+                        <div class="td_block_inner">
                             <div class="td-big-grid-wrapper">
                                 <div class="td_module_mx5 td-animation-stack td-big-grid-post-0 td-big-grid-post td-big-thumb">
                                     <div class="td-module-thumb">
@@ -151,7 +139,7 @@
 		<div class="vc_row wpb_row td-pb-row td-ss-row">
 			<div class="wpb_column vc_column_container td-pb-span8">
 				<div class="wpb_wrapper"><div class="clearfix"></div>
-					<div class="td_block_wrap td_block_1 td_block_id_1325627023 td_uid_17_56c18169cb115_rand td_with_ajax_pagination">
+					<div class="td_block_wrap td_block_1 td_with_ajax_pagination">
 						<h2 class="block-title"><span class="yii-title">YII2 FRAMEWORK</span></h2>
 						<div class="td-wrapper-pulldown-filter">
 							<div class="td-pulldown-filter-display-option">
@@ -169,18 +157,14 @@
 									<div class="td_module_4 td_module_wrap td-animation-stack">
 										<div class="td-module-image">
 											<div class="td-module-thumb">
-												<a href="<?php echo base_url() . 'yii2-framework.html'; ?>" rel="bookmark" title="Yii2 Framework Tutorials">
+												<a href="<?php echo base_url().'yii2-framework.html'; ?>" rel="bookmark" title="Yii2 Framework Tutorials">
                                                     <img width="300" height="194" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url(); ?>uploads/news/yii2framework.jpg" alt="Yii2 Framework Tutorials" title="Yii2 Framework Tutorials">
 												</a>
-											</div> <a href="<?php echo base_url() . 'yii2-framework.html'; ?>" class="td-post-category">Yii2 Framework</a> </div>
-										<h3 class="entry-title td-module-title"><a href="#" rel="bookmark" title="Manual yii2 whole collection framework">Manual yii2 whole collection framework</a></h3>
+											</div> </div>
+										<?php $yiiTitle = isset($yii2frame[0]['cate_ext']) ? $yii2frame[0]['cate_ext'] : ''; ?>
+										<h3 class="entry-title td-module-title"><a href="<?php echo base_url().'yii2-framework.html'; ?>" rel="bookmark" title="<?php echo $yiiTitle; ?>"><?php echo $yiiTitle; ?></a></h3>
 										<div class="meta-info">
-											<div class="td-post-author-name"><a href="javascript:void(0)">TuanKiet</a> <span>-</span></div>
-											<div class="td-post-date">
-												<time class="entry-date updated td-module-date" datetime="2016-01-22T06:09:49+00:00">22nd January 2016</time>
-											</div>
-											<!--div class="td-module-comments"><a href="#">0</a>
-											</div-->
+											<div class="td-post-author-name"><a href="javascript:void(0)">TuanKiet</a><span>-</span></div>
 										</div>
 										<div class="td-excerpt">
 											<?php if(isset($yii2frame[0]['cate_ext'])){ echo $yii2frame[0]['cate_ext']; } ?>
@@ -219,9 +203,6 @@
 					<div class="td_block_wrap td_block_15 td-pb-full-cell td_with_ajax_pagination td-pb-border-top">
 						<h4 class="block-title"><span>PHP BASIC TUTORIALS</span></h4>
 						<div class="td-wrapper-pulldown-filter"><div class="td-pulldown-filter-display-option">
-							<div id="td-pulldown-td_uid_19_56c6aa1c619cd-val">
-								<span>All </span><i class="td-icon-menu-down"></i>
-							</div>
 							<ul class="td-pulldown-filter-list">
 								<li class="td-pulldown-filter-item"><a class="td-pulldown-filter-link" href="#">All</a>
 								</li>
@@ -266,7 +247,7 @@
 											<h3 class="entry-title td-module-title"><a href="<?php echo base_url().$basic['cate_rewrite']."/".$basic['post_title_rewrite']."-".$basic['post_id'].".html"; ?>" rel="bookmark" title="<?php echo $basic['post_title']; ?>"><?php echo $basic['post_title']; ?></a></h3>
                                             <div class="meta-info">
 												<div class="td-post-date">
-                                                    <time class="entry-date updated td-module-date">22nd January 2016</time>
+                                                    <time class="entry-date updated td-module-date"><?php echo date('d F, Y', strtotime($basic['created_at'])); ?></time>
                                                 </div>
                                             </div>
 										</div>
@@ -289,16 +270,15 @@
 													<div class="td-module-image">
 														<div class="td-module-thumb">
 															<a href="<?php echo base_url().$advance[0]['cate_rewrite']; ?>.html" rel="bookmark" title="<?php echo $advance[0]['cate_name']; ?>">
-                                                                <img width="300" height="194" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url(); ?>wp-content/uploads/2016/01/2-300x194.jpg" alt="" title="">
+                                                                <img width="300" height="194" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url().'uploads/cate/'.$advance[0]['cate_images']; ?>" alt="<?php echo $advance[0]['cate_name']; ?>">
 															</a>
-														</div> <a href="<?php echo base_url(); ?>category/tech/apple/" class="td-post-category">Apple</a> </div>
-													<h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/the-10-runway-trends-youll-be-wearing-this-year/" rel="bookmark" title="<?php echo $advance[0]['cate_name']; ?>"><?php echo $advance[0]['cate_name']; ?></a></h3>
+														</div>
+													</div>
+													<h3 class="entry-title td-module-title"><a href="<?php echo base_url().$advance[0]['cate_rewrite']; ?>" rel="bookmark" title="<?php echo $advance[0]['cate_name']; ?>"><?php echo $advance[0]['cate_name']; ?></a></h3>
 													<div class="meta-info">
 														<div class="td-post-author-name"><a href="javascript:void(0)">Tuan Kiet</a> <span>-</span> </div>
 														<div class="td-post-date">
-															<time class="entry-date updated td-module-date">22nd January 2016</time>
-														</div>
-														<div class="td-module-comments"><a href="<?php echo base_url(); ?>2016/01/22/the-10-runway-trends-youll-be-wearing-this-year/#respond">0</a>
+															<time class="entry-date updated td-module-date"><?php echo date('d F, Y', strtotime($advance[0]['created_at'])); ?></time>
 														</div>
 													</div>
 													<div class="td-excerpt">
@@ -325,9 +305,9 @@
                                                 <div class="item-details">
                                                     <h3 class="entry-title td-module-title"><a href="<?php echo base_url().$phpadv['cate_rewrite']."/".$phpadv['post_title_rewrite']."-".$phpadv['post_id'].".html"; ?>" rel="bookmark" title="<?php echo $phpadv['post_title']; ?>"><?php echo $phpadv['post_title']; ?></a></h3>
                                                     <div class="meta-info">
-                                                        <div class="td-post-author-name"><a href="<?php echo base_url(); ?>author/admin/">admin</a> <span>-</span> </div>
+                                                        <div class="td-post-author-name"><a href="javascript:void(0)">admin</a> <span>-</span> </div>
                                                         <div class="td-post-date">
-                                                            <time class="entry-date updated td-module-date" datetime="2016-01-22T06:09:17+00:00">22nd January 2016</time>
+                                                            <time class="entry-date updated td-module-date"><?php echo date('d F, Y', strtotime($phpadv['created_at'])); ?></time>
                                                         </div>
                                                     </div>
                                                     <div class="td-bottom-dotted-line"></div>
@@ -358,7 +338,7 @@
                     <?php $ranPost = $latestart[$random]?>
 					<div class="td_block_wrap td_block_6 td-pb-border-top">
 						<h4 class="block-title"><span>RANDOM POST</span></h4>
-						<div id="td_uid_23_56c18169e010a" class="td_block_inner">
+						<div class="td_block_inner">
 							<div class="td-block-span12">
 								<div class="td_module_5 td_module_wrap td-animation-stack">
 									<h3 class="entry-title td-module-title"><a href="<?php echo base_url().$ranPost['cate_rewrite']."/".$ranPost['post_title_rewrite']."-".$ranPost['post_id'].".html"; ?>" rel="bookmark" title="<?php echo $ranPost['post_title']; ?>"><?php echo $ranPost['post_title']; ?></a></h3>
@@ -386,9 +366,9 @@
 					</div>
                     <?php } ?>
 					<!-- ./block -->
-					<div class="td_block_wrap td_block_8 td_block_id_870611808 td_uid_24_56c18169e187a_rand td-pb-border-top">
+					<div class="td_block_wrap td_block_8 td-pb-border-top">
 						<h4 class="block-title"><span>HOLIDAY RECIPES</span></h4>
-						<div id="td_uid_24_56c18169e187a" class="td_block_inner">
+						<div class="td_block_inner">
 
 							<div class="td-block-span12">
 
@@ -436,9 +416,9 @@
 		<div class="vc_row wpb_row td-pb-row">
 			<div class="wpb_column vc_column_container td-pb-span12">
 				<div class="wpb_wrapper">
-					<div class="td_block_wrap td_block_14 td_block_id_734758908 td_uid_25_56c18169e37bb_rand td-pb-full-cell td_with_ajax_pagination td-pb-border-top">
+					<div class="td_block_wrap td_block_14 td-pb-full-cell td_with_ajax_pagination td-pb-border-top">
 						<h4 class="block-title"><span>EVEN MORE NEWS</span></h4>
-						<div id="td_uid_25_56c18169e37bb" class="td_block_inner"></div>
+						<div class="td_block_inner"></div>
 					</div>
 					<!-- ./block -->
 				</div>
@@ -458,21 +438,21 @@
 						<?php if (isset($latestart) && $latestart != null) { ?>
 						<div class="td-block-row">
                         <?php foreach ($latestart as $key => $latest) { ?>
-								<div class="td-block-span6">
-									<div class="td_module_1 td_module_wrap td-animation-stack">
-										<div class="td-module-image">
-											<div class="td-module-thumb">
-												<a href="<?php echo base_url().$latest['cate_rewrite']."/".$latest['post_title_rewrite']."-".$latest['post_id'].".html"; ?>" rel="bookmark"><img class="entry-thumb post-img" src="<?php echo base_url()."uploads/news/".$latest['post_image']; ?>" alt="<?php echo $latest['post_title']; ?>" title="<?php echo $latest['post_title']; ?>"></a>
-											</div> <a href="<?php echo base_url().$latest['cate_rewrite'];?>.html" class="td-post-category"><?php echo $latest['cate_name']; ?></a> </div>
-										<h3 class="entry-title td-module-title"><a href="<?php echo base_url().$latest['cate_rewrite']."/".$latest['post_title_rewrite']."-".$latest['post_id'].".html"; ?>" rel="bookmark" title="<?php echo $latest['post_title']; ?>"><?php echo $latest['post_title']; ?></a></h3>
-										<div class="td-module-meta-info">
-											<div class="td-post-author-name"><a href="javascript:void(0)">Tuan Kiet</a> <span>-</span> </div>
-											<div class="td-post-date">
-												<time class="entry-date updated td-module-date"><?php echo date('d F, Y'); ?></time>
-											</div>
+							<div class="td-block-span6">
+								<div class="td_module_1 td_module_wrap td-animation-stack">
+									<div class="td-module-image">
+										<div class="td-module-thumb">
+											<a href="<?php echo base_url().$latest['cate_rewrite']."/".$latest['post_title_rewrite']."-".$latest['post_id'].".html"; ?>" rel="bookmark"><img class="entry-thumb post-img" src="<?php echo base_url()."uploads/news/".$latest['post_image']; ?>" alt="<?php echo $latest['post_title']; ?>" title="<?php echo $latest['post_title']; ?>"></a>
+										</div> <a href="<?php echo base_url().$latest['cate_rewrite'];?>.html" class="td-post-category"><?php echo $latest['cate_name']; ?></a> </div>
+									<h3 class="entry-title td-module-title"><a href="<?php echo base_url().$latest['cate_rewrite']."/".$latest['post_title_rewrite']."-".$latest['post_id'].".html"; ?>" rel="bookmark" title="<?php echo $latest['post_title']; ?>"><?php echo $latest['post_title']; ?></a></h3>
+									<div class="td-module-meta-info">
+										<div class="td-post-author-name"><a href="javascript:void(0)">Tuan Kiet</a> <span>-</span> </div>
+										<div class="td-post-date">
+											<time class="entry-date updated td-module-date"><?php echo date('d F, Y', strtotime($latest['created_at'])); ?></time>
 										</div>
 									</div>
 								</div>
+							</div>
 						<?php } ?>
 						</div>
                         <?php } ?>
@@ -483,7 +463,7 @@
 			</div>
 			<div class="td-pb-span4 td-main-sidebar">
 				<div class="td-ss-main-sidebar" style="width: auto; position: static; top: auto; bottom: auto; z-index: 1;"><div class="clearfix"></div>
-					<div class="td_block_wrap td_block_social_counter td_block_widget td_block_id_2098386967 td_uid_26_56c18169f221e_rand">
+					<div class="td_block_wrap td_block_social_counter td_block_widget">
 						<div class="td_social_type td-pb-margin-side td_social_facebook">
 							<div class="td-sp td-sp-facebook"></div><span class="td_social_info">0</span><span class="td_social_info td_social_info_name">Fans</span><span class="td_social_button"><a href="https://www.facebook.com">Like</a></span>
 						</div>
@@ -500,7 +480,7 @@
 							<a href="#"><img src="<?php echo base_url(); ?>public/images/adsense-300x250.gif"></a>
 						</div>
 					</div>
-					<div class="td_block_wrap td_block_9 td_block_widget td_block_id_599293524 td_uid_27_56c18169f29ee_rand td_with_ajax_pagination td-pb-border-top">
+					<div class="td_block_wrap td_block_9 td_block_widget td_with_ajax_pagination td-pb-border-top">
 						<h4 class="block-title"><span>EDITOR PICKS</span></h4>
 						<div class="td_block_inner">
                             <?php if(isset($latestart) && $latestart != null){ ?>
@@ -512,7 +492,7 @@
                                         <div class="meta-info">
 											<div class="td-post-author-name"><a href="javascript:void(0)">Tuan Kiet</a> <span>-</span> </div>
 											<div class="td-post-date">
-												<time class="entry-date updated td-module-date">22nd January 2016</time>
+												<time class="entry-date updated td-module-date"><?php echo date('d F, Y', strtotime($latest['created_at'])); ?></time>
 											</div>
                                         </div>
                                     </div>

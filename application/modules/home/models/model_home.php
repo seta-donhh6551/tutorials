@@ -27,11 +27,11 @@
 			$this->db->where("education_rewrite !=",$id);
 			return $this->db->get($this->_times)->result_array();
 		}
-		public function random_student(){
-			$this->db->where("student_status",1);
-			$this->db->order_by("student_id","RANDOM");
+		public function random_posts(){
+			$this->db->join("tbl_category","tbl_category.cate_id = tbl_posts.cate_id");
+			$this->db->order_by("post_id","RANDOM");
 			$this->db->limit(3);
-			return $this->db->get($this->_table)->result_array();	
+			return $this->db->get('tbl_posts')->result_array();
 		}
 		public function count_all_student(){
 			$this->db->where("student_status","1");
