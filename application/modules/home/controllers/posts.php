@@ -13,7 +13,6 @@
 		   $data['listcate'] = $this->listcate();
 		   $data['ranposts'] = $this->random_posts();
 		   $data['link'] = base_url().uri_string().".html";
-           $data['students'] = $this->random_student();
 		   $data['result'] = $this->model_posts->detail($id);
 		   if($data['result'] == NULL){
 		   		redirect(base_url());
