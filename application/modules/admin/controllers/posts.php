@@ -45,10 +45,10 @@
 							"post_author" 	=> $this->input->post("post_author"),						
 							"post_info" 	=> $this->input->post("post_info"),
 							"post_value"	=> $this->input->post("post_value"),		
-							"post_date"    	=> date("d/m/Y"),
 							"post_keys"     => $this->input->post("post_keys"),									
 							"post_des"		=> $this->input->post("post_des"),
-							"post_order"     => $this->input->post("post_order"),	
+							"post_order"    => $this->input->post("post_order"),
+							"created_at"    => date('Y-m-d H:i:s'),
 							"cate_id"		=> $this->input->post("cate_id")
 						);
 						if($_FILES['img']['name'] != NULL){
@@ -101,10 +101,9 @@
 							"post_author" 	=> $this->input->post("post_author"),						
 							"post_info" 	=> $this->input->post("post_info"),
 							"post_value"	=> $this->input->post("post_value"),		
-							"post_date"    	=> date("d/m/Y"),
 							"post_keys"     => $this->input->post("post_keys"),		
 							"post_des"		=> $this->input->post("post_des"),
-							"post_order"     => $this->input->post("post_order"),
+							"post_order"    => $this->input->post("post_order"),
 							"cate_id"		=> $this->input->post("cate_id")
 					  );
 						if($_FILES['img']['name'] != NULL){

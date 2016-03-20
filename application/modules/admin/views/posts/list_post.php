@@ -69,7 +69,7 @@
 										echo "<td><input type='checkbox' name='check[]' value='".$item['post_id']."'/></td>";
 										echo "<td>".$item['post_title']."</td>";
 										echo "<td>".$item['cate_name']."</td>";
-										echo "<td>".$item['post_date']."</td>";
+										echo "<td>".date('d/m/Y H:i', strtotime($item['created_at']))."</td>";
 										echo "<td>";
 												echo "<div class='actions_menu'><ul>";
 													echo "<li><a href='".base_url()."admin/posts/update/".$item['post_id']."' class='edit'>Edit</a></li>";

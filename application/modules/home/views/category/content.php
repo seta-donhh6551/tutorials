@@ -68,7 +68,7 @@
 												<h3 class="entry-title td-module-title"><a href="<?php echo base_url()."yii2-framework/".$items['post_title_rewrite']."-".$items['post_id'].".html"; ?>" rel="bookmark" title="<?php echo $items['post_title']; ?>"><?php echo $items['post_title']; ?></a></h3>
 												<div class="meta-info">
 													<div class="td-post-date">
-														<time class="entry-date updated td-module-date"><?php echo date('d F, Y', strtotime($items['post_date'])); ?></time>
+														<time class="entry-date updated td-module-date"><?php echo date('d F, Y', strtotime($items['created_at'])); ?></time>
 													</div>
 												</div>
 											</div>
@@ -103,7 +103,7 @@
 									<div class="meta-info">
 										<div class="td-post-author-name"><a href="#">Tuan Kiet</a> <span>-</span> </div>
 										<div class="td-post-date">
-											<time class="entry-date updated td-module-date"><?php echo date('d F, Y', strtotime($items['post_date'])); ?></time>
+											<time class="entry-date updated td-module-date"><?php echo date('d F, Y', strtotime($items['created_at'])); ?></time>
 										</div>
 										<div class="td-module-comments"><a href="<?php echo base_url().$result['cate_rewrite']."/".$items['post_title_rewrite']."-".$items['post_id'].".html"; ?>/#respond">0</a>
 										</div>
@@ -145,7 +145,7 @@
 									<div class="meta-info">
 										<div class="td-post-author-name"><a href="javascript:void(0)">Tuan Kiet</a> <span>-</span> </div>
 										<div class="td-post-date">
-                                            <time class="entry-date updated td-module-date"><?php echo date('d F, Y', strtotime($ranPost['post_date'])); ?></time>
+                                            <time class="entry-date updated td-module-date"><?php echo date('d F, Y', strtotime($ranPost['created_at'])); ?></time>
 										</div>
 										<div class="td-module-comments"><a href="<?php echo base_url().$ranPost['cate_rewrite']."/".$ranPost['post_title_rewrite']."-".$ranPost['post_id'].".html"; ?>#respond">0</a>
 										</div>

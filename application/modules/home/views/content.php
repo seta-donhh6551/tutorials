@@ -4,10 +4,10 @@
 		<div class="vc_row wpb_row td-pb-row">
             <div class="wpb_column vc_column_container td-pb-span12">
                 <div class="wpb_wrapper">
-                    <div class="td_block_wrap td_block_trending_now td_block_id_860801476 td_uid_14_56c18169c18bb_rand td-pb-border-top">
+                    <div class="td_block_wrap td_block_trending_now td-pb-border-top">
                         <div id="td_uid_14_56c18169c18bb" class="td_block_inner">
                             <div class="td-block-row">
-                                <div class="td-trending-now-wrapper" id="td_uid_15_56c18169c302b" data-start="manual">
+                                <div class="td-trending-now-wrapper">
                                     <div class="td-trending-now-title block-title">Trending Now</div>
                                     <div class="td-trending-now-display-area">
                                         <div class="td_module_trending_now td_module_wrap td-trending-now-post-0 td-trending-now-post">
@@ -185,7 +185,7 @@
 													<h3 class="entry-title td-module-title"><a href="<?php echo base_url()."yii2-framework/".$yii2['post_title_rewrite']."-".$yii2['post_id'].".html"; ?>" rel="bookmark" title="<?php echo $yii2['post_title']; ?>"><?php echo $yii2['post_title']; ?></a></h3>
 													<div class="meta-info">
 														<div class="td-post-date">
-															<time class="entry-date updated td-module-date">17nd <?php echo date('F Y'); ?></time>
+															<time class="entry-date updated td-module-date"><?php echo date('d F, Y', strtotime($yii2['created_at'])); ?></time>
 														</div>
 													</div>
 												</div>
@@ -345,7 +345,7 @@
 									<div class="meta-info">
 										<div class="td-post-author-name"><a href="javascript:void(0)">Tuan Kiet</a> <span>-</span> </div>
 										<div class="td-post-date">
-                                            <time class="entry-date updated td-module-date"><?php echo date('d F, Y', strtotime($ranPost['post_date'])); ?></time>
+                                            <time class="entry-date updated td-module-date"><?php echo date('d F, Y', strtotime($ranPost['created_at'])); ?></time>
 										</div>
 										<div class="td-module-comments"><a href="<?php echo base_url().$ranPost['cate_rewrite']."/".$ranPost['post_title_rewrite']."-".$ranPost['post_id'].".html"; ?>#respond">0</a>
 										</div>
