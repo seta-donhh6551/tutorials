@@ -61,7 +61,7 @@
 										<div class="td_module_6 td_module_wrap td-animation-stack">
 											<div class="td-module-thumb">
 												<a href="<?php echo base_url().$result['cate_rewrite']."/".$items['post_title_rewrite']."-".$items['post_id'].".html"; ?>" title="<?php echo $items['post_title']; ?>">
-													<img style="height:75px;width:100px;overflow:hidden" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url()."uploads/news/thumb/".$items['post_image']; ?>" alt="<?php echo $items['post_title']; ?>" title="<?php echo $items['post_title']; ?>">
+													<img style="height:75px;width:100px;overflow:hidden" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url()."uploads/news/".$items['post_image']; ?>" alt="<?php echo $items['post_title']; ?>" title="<?php echo $items['post_title']; ?>">
 												</a>
 											</div>
 											<div class="item-details">
