@@ -23,11 +23,11 @@
 						<span class="title_wrapper_bottom"></span>
 					</div>
 					<!--[if !IE]>end title wrapper<![endif]-->
-					
+
 					<!--[if !IE]>start section content<![endif]-->
 					<div class="section_content">
 						<span class="section_content_top"></span>
-						
+
 						<div class="section_content_inner">
                         	<div class="table_tabs_menu">
 							<!--[if !IE]>start  tabs<![endif]-->
@@ -63,6 +63,13 @@
                                     	<div class="form_items_left">Tác giả</div>
                                         <div class="form_items_right"><input name="post_author" type="text" id="post_author" value="<?php echo $get['post_author']; ?>" size="35" /></div>
                                     </div>
+									<div class="form_items">
+                                    	<div class="form_items_left">Trang thái</div>
+                                        <div class="form_items_right">
+											<input type="radio" name="post_status" value="1" <?php echo $get['post_status'] == 1 ? 'checked' : ''; ?>/>Active
+											<input type="radio" name="post_status" value="0" <?php echo $get['post_status'] == 0 ? 'checked' : ''; ?>/>Not Active
+										</div>
+                                    </div>
                                     <div class="form_items">
                                     	<div class="form_items_left">Keywords</div>
                                         <div class="form_items_right">
@@ -84,26 +91,26 @@
                                     <div class="form_items">
                                     	<div class="form_items_left">Mô tả</div>
                                         <div class="form_items_right">
-                                          	<?php 
+                                          	<?php
 											$fck = new FCKeditor('post_info');
 											$fck->BasePath = sBASEPATH;
 											$fck->Value  = $get['post_info'];
 											$fck->Width  = '100%';
 											$fck->Height = 400;
 											$fck->Create();
-											?> 
+											?>
                                    		</div>
                                     <div class="form_items">
                                     	<div class="form_items_left">Nội dung chi tiết</div>
                                         <div class="form_items_right">
-                                        	<?php 
+                                        	<?php
 											$fck = new FCKeditor('post_value');
 											$fck->BasePath = sBASEPATH;
 											$fck->Value  = $get['post_value'];
 											$fck->Width  = '100%';
 											$fck->Height = 400;
 											$fck->Create();
-											?> 
+											?>
                                         </div>
                                     </div>
                                     <div class="form_items">

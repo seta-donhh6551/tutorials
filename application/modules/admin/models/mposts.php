@@ -8,13 +8,13 @@
 			$this->load->database();
 		}
 		public function count_all(){
-			$this->db->select("post_id,post_title,created_at,cate_name");
+			$this->db->select("post_id,post_title,post_status,cate_name");
 			$this->db->from($this->_table);
 			$this->db->join("tbl_category","tbl_category.cate_id = tbl_posts.cate_id");
 			return $this->db->count_all_results();
 		}
 		public function listall($off,$start){
-			$this->db->select("post_id,post_title,created_at,cate_name");
+			$this->db->select("post_id,post_title,post_status,cate_name");
 			$this->db->from($this->_table);
 			$this->db->join("tbl_category","tbl_category.cate_id = tbl_posts.cate_id");
 			$this->db->order_by("tbl_posts.cate_id","ASC");

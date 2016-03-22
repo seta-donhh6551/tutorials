@@ -35,11 +35,11 @@
 						<span class="title_wrapper_bottom"></span>
 					</div>
 					<!--[if !IE]>end title wrapper<![endif]-->
-					
+
 					<!--[if !IE]>start section content<![endif]-->
 					<div class="section_content">
 						<span class="section_content_top"></span>
-						
+
 						<div class="section_content_inner minheight">
                         	<div class="table_tabs_menu">
                             <ul class="table_tabs">
@@ -59,17 +59,18 @@
 									  <th width="31"><input type="checkbox" name="checkall" onclick="chkallClick(this)"/></th>
 									  <th width="453"><a href="#">Tiêu đề tin</a></th>
 									  <th width="168"><a href="#">Thuộc mục</a></th>
-									  <th width="160"><a href="#">Ngày đăng</a></th>
+									  <th width="160"><a href="#">Trạng thái</a></th>
 									  <th width="91">Actions</th>
 									</tr>
                                <?php
 								if(isset($info) && $info != NULL){
 									foreach($info as $item){
-										echo "<tr>";	
+										echo "<tr>";
 										echo "<td><input type='checkbox' name='check[]' value='".$item['post_id']."'/></td>";
 										echo "<td>".$item['post_title']."</td>";
-										echo "<td>".$item['cate_name']."</td>";
-										echo "<td>".date('d/m/Y H:i', strtotime($item['created_at']))."</td>";
+										echo "<td>".$item['cate_name']."</td>"; ?>
+										<td><?php echo $item['post_status'] == 1 ? 'Active' : 'Not active' ;?></td>
+								<?php
 										echo "<td>";
 												echo "<div class='actions_menu'><ul>";
 													echo "<li><a href='".base_url()."admin/posts/update/".$item['post_id']."' class='edit'>Edit</a></li>";
@@ -80,7 +81,7 @@
 										echo "</tr>";
 									}
 								}else{
-									echo "<tr>";	
+									echo "<tr>";
 									echo "<td colspan='5'>Không có tin tức</td>";
 									echo "</tr>";
 								}
@@ -114,7 +115,7 @@
 							<div class="pagination">
 								<!--<ul class="pag_list">
                                 	<?php  //echo $this->pagination->create_links();?>
-                                	
+
 									<li><a href="#" class="pag_nav"><span><span>Previous</span></span></a> </li>
 									<li><a href="#">1</a></li>
 									<li><a href="#" class="current_page"><span><span>2</span></span></a></li>

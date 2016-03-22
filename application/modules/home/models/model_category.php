@@ -16,6 +16,7 @@
 		}
 		public function listall($id,$off,$start){
 			$this->db->where("cate_id",$id);
+			$this->db->where("post_status", 1);
 			$this->db->order_by("post_order","ASC");
 			$this->db->limit($off,$start);
 			return $this->db->get($this->_table)->result_array();

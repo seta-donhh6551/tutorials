@@ -25,6 +25,7 @@
 		}
 		public function newest(){
 			$this->db->join("tbl_category","tbl_category.cate_id = tbl_posts.cate_id");
+			$this->db->where("tbl_posts.post_status", 1);
 			$this->db->order_by("post_id","DESC");
 			$this->db->limit(10);
 			return $this->db->get($this->_table)->result_array();
@@ -32,17 +33,19 @@
 		public function phplist($id, $limit=10){
             $this->db->join("tbl_category","tbl_category.cate_id = tbl_posts.cate_id");
 			$this->db->where("tbl_posts.cate_id",$id);
+			$this->db->where("tbl_posts.post_status", 1);
 			$this->db->order_by("tbl_posts.post_order","ASC");
 			$this->db->limit($limit);
 			return $this->db->get($this->_table)->result_array();
 		}
 		public function relate($id1,$id2,$limit){
-			$query = $this->db->query("select * from tbl_posts where post_id != $id1 and cate_id = '$id2' order by post_id ASC limit $limit");
+			$query = $this->db->query("select * from tbl_posts where post_status = 1 and post_id != $id1 and cate_id = '$id2' order by post_id ASC limit $limit");
 			return $query->result_array();
 		}
         public function getPreNextPost($postId, $cateId, $condition = '>'){
             $this->db->join("tbl_category","tbl_category.cate_id = tbl_posts.cate_id");
             $this->db->where("tbl_posts.cate_id",$cateId);
+			$this->db->where("tbl_posts.post_status", 1);
             $this->db->order_by("tbl_posts.post_order","asc");
             $listPost = $this->db->get($this->_table)->result_array();
             $listPostOrder = array();
