@@ -24,7 +24,7 @@
                                     <div class="td-post-date">
                                         <time class="entry-date updated td-module-date"><?php echo date('F j, Y', strtotime($result['created_at'])); ?></time>
                                     </div>
-                                    <div class="td-post-views"><i class="td-icon-views"></i><span class="td-nr-views-143">1</span>
+                                    <div class="td-post-views"><i class="td-icon-views"></i><span class="td-nr-views-143">0</span>
                                     </div>
                                     <div class="td-post-comments"><a href="#respond"><i class="td-icon-comments"></i>0</a>
                                     </div>

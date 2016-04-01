@@ -313,7 +313,7 @@
                                                     <div class="td-bottom-dotted-line"></div>
                                                 </div>
                                             </div>
-                                            <?php if($l == 3){ break; } ?>
+                                            <?php if($l == 4){ break; } ?>
                                             <?php ++$l; } } ?>
                                         </div>
                                     </div>
