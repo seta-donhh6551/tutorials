@@ -161,13 +161,13 @@
                                                     <img width="300" height="194" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url(); ?>uploads/news/yii2framework.jpg" alt="Yii2 Framework Tutorials" title="Yii2 Framework Tutorials">
 												</a>
 											</div> </div>
-										<?php $yiiTitle = isset($yii2frame[0]['cate_ext']) ? $yii2frame[0]['cate_ext'] : ''; ?>
+										<?php $yiiTitle = 'Collect lessons instructing how to use yii2 framework from basic to advanced'; ?>
 										<h3 class="entry-title td-module-title"><a href="<?php echo base_url().'yii2-framework.html'; ?>" rel="bookmark" title="<?php echo $yiiTitle; ?>"><?php echo $yiiTitle; ?></a></h3>
 										<div class="meta-info">
-											<div class="td-post-author-name"><a href="javascript:void(0)">TuanKiet</a><span>-</span></div>
+											<div class="td-post-author-name"><a href="javascript:void(0)">Tuan Kiet</a></div>
 										</div>
 										<div class="td-excerpt">
-											<?php if(isset($yii2frame[0]['cate_ext'])){ echo $yii2frame[0]['cate_ext']; } ?>
+											Yii2 framework, one of the most common-used framework at present
 										</div>
 									</div>
 								</div>
@@ -201,7 +201,7 @@
 					</div>
 					<!-- ./block -->
 					<div class="td_block_wrap td_block_15 td-pb-full-cell td_with_ajax_pagination td-pb-border-top">
-						<h4 class="block-title"><span>PHP BASIC TUTORIALS</span></h4>
+						<h4 class="block-title"><span>LARAVEL 5</span></h4>
 						<div class="td-wrapper-pulldown-filter"><div class="td-pulldown-filter-display-option">
 							<ul class="td-pulldown-filter-list">
 								<li class="td-pulldown-filter-item"><a class="td-pulldown-filter-link" href="#">All</a>
@@ -214,21 +214,19 @@
 								<div class="td-block-span6">
 									<div class="td_module_mx1 td_module_wrap td-animation-stack">
 										<div class="td-block14-border"></div>
-										<div class="td-module-thumb"><a href="<?php echo base_url(); ?>2016/01/22/kim-kardashian-shows-off-deep-cleavage-in-plunging-top-mini/" rel="bookmark" title="Kim Kardashian Shows Off Deep Cleavage In Plunging Top &amp; Mini"><img width="341" height="220" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url(); ?>wp-content/uploads/2016/01/8-341x220.jpg" alt="" title="Kim Kardashian Shows Off Deep Cleavage In Plunging Top &amp; Mini"></a></div>
-										<div class="meta-info">
-											<h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/kim-kardashian-shows-off-deep-cleavage-in-plunging-top-mini/" rel="bookmark" title="Kim Kardashian Shows Off Deep Cleavage In Plunging Top &amp; Mini">Kim Kardashian Shows Off Deep Cleavage In Plunging Top &amp; Mini</a></h3>            <div class="td-editor-date">
-											<div class="td-post-author-name"><a href="<?php echo base_url(); ?>author/admin/">admin</a> <span>-</span> </div>                <div class="td-post-date"><time class="entry-date updated td-module-date" datetime="2016-01-22T06:09:37+00:00">22nd January 2016</time></div>            </div>
-										</div>
+										<div class="td-module-thumb"><a href="<?php echo base_url(); ?>laravel-5.html" rel="bookmark" title="Laravel 5"><img width="341" height="220" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url(); ?>public/images/laravel-5.jpg" alt="Laravel 5"></a></div>
 									</div>
 								</div> <!-- ./td-block-span6 -->
 
 								<div class="td-block-span6">
 									<div class="td_module_mx1 td_module_wrap td-animation-stack">
 										<div class="td-block14-border"></div>
-										<div class="td-module-thumb"><a href="<?php echo base_url(); ?>2016/01/22/we-found-the-sexiest-lingerie-on-the-internet-2/" rel="bookmark" title="We Found the Sexiest Lingerie on the Internet"><img width="341" height="220" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url(); ?>wp-content/uploads/2016/01/7-341x220.jpg" alt="" title="We Found the Sexiest Lingerie on the Internet"></a></div>
+										<div class="td-module-thumb"><a href="<?php echo base_url(); ?>" rel="bookmark" title="Use template in laravel 5.0"><img width="341" height="220" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url(); ?>wp-content/uploads/2016/01/7-341x220.jpg" alt="" title="Use template in laravel 5.0"></a></div>
 										<div class="meta-info">
-											<h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/we-found-the-sexiest-lingerie-on-the-internet-2/" rel="bookmark" title="We Found the Sexiest Lingerie on the Internet">We Found the Sexiest Lingerie on the Internet</a></h3>            <div class="td-editor-date">
-												<div class="td-post-author-name"><a href="<?php echo base_url(); ?>author/admin/">admin</a> <span>-</span> </div>                <div class="td-post-date"><time class="entry-date updated td-module-date" datetime="2016-01-22T06:09:28+00:00">22nd January 2016</time></div>            </div>
+											<h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>laravel-5/use-template-in-laravel-50-98.html" rel="bookmark" title="Use template in laravel 5.0">Use template in laravel 5.0</a></h3>
+											<div class="td-editor-date">
+												<div class="td-post-date"><time class="entry-date updated td-module-date">22nd January 2016</time></div>
+											</div>
 										</div>
 									</div>
 								</div> <!-- ./td-block-span6 --></div><!--./row-fluid-->
@@ -262,7 +260,7 @@
 							<div class="vc_column-inner ">
 								<div class="wpb_wrapper">
 									<div class="td_block_wrap td_block_2 td_with_ajax_pagination td-pb-border-top">
-										<h2 class="block-title"><span class="php-adv-title">PHP ADVANCED</span></h2>
+										<h2 class="block-title"><span class="php-adv-title">CODEIGNITER FRAMEWORK</span></h2>
                                         <?php if(isset($advance[0])){ ?>
 										<div class="td_block_inner">
 											<div class="td-block-span12">
@@ -427,85 +425,3 @@
 	</div>
 </div>
 <!-- End container -->
-
-<!-- Posts list -->
-<div class="td-container td-pb-article-list">
-	<div class="td-container-border">
-		<div class="td-pb-row">
-			<div class="td-pb-span8 td-main-content" role="main">
-				<div class="td-ss-main-content"><div class="clearfix"></div>
-					<h3 class="block-title"><span>LATEST ARTICLES</span></h3>
-						<?php if (isset($latestart) && $latestart != null) { ?>
-						<div class="td-block-row">
-                        <?php foreach ($latestart as $key => $latest) { ?>
-							<div class="td-block-span6">
-								<div class="td_module_1 td_module_wrap td-animation-stack">
-									<div class="td-module-image">
-										<div class="td-module-thumb">
-											<a href="<?php echo base_url().$latest['cate_rewrite']."/".$latest['post_title_rewrite']."-".$latest['post_id'].".html"; ?>" rel="bookmark"><img class="entry-thumb post-img" src="<?php echo base_url()."uploads/news/".$latest['post_image']; ?>" alt="<?php echo $latest['post_title']; ?>" title="<?php echo $latest['post_title']; ?>"></a>
-										</div> <a href="<?php echo base_url().$latest['cate_rewrite'];?>.html" class="td-post-category"><?php echo $latest['cate_name']; ?></a> </div>
-									<h3 class="entry-title td-module-title"><a href="<?php echo base_url().$latest['cate_rewrite']."/".$latest['post_title_rewrite']."-".$latest['post_id'].".html"; ?>" rel="bookmark" title="<?php echo $latest['post_title']; ?>"><?php echo $latest['post_title']; ?></a></h3>
-									<div class="td-module-meta-info">
-										<div class="td-post-author-name"><a href="javascript:void(0)">Tuan Kiet</a> <span>-</span> </div>
-										<div class="td-post-date">
-											<time class="entry-date updated td-module-date"><?php echo date('d F, Y', strtotime($latest['created_at'])); ?></time>
-										</div>
-									</div>
-								</div>
-							</div>
-						<?php } ?>
-						</div>
-                        <?php } ?>
-					<!--./row-fluid-->
-					<div class="page-nav td-pb-padding-side"><span class="current">1</span><a href="<?php echo base_url(); ?>page/2/" class="page" title="2">2</a><a href="<?php echo base_url(); ?>page/3/" class="page" title="3">3</a><span class="extend">...</span><a href="<?php echo base_url(); ?>page/8/" class="last" title="8">8</a><a href="<?php echo base_url(); ?>page/2/"><i class="td-icon-menu-right"></i></a><span class="pages">Page 1 of 8</span>
-					</div>
-					<div class="clearfix"></div></div>
-			</div>
-			<div class="td-pb-span4 td-main-sidebar">
-				<div class="td-ss-main-sidebar" style="width: auto; position: static; top: auto; bottom: auto; z-index: 1;"><div class="clearfix"></div>
-					<div class="td_block_wrap td_block_social_counter td_block_widget">
-						<div class="td_social_type td-pb-margin-side td_social_facebook">
-							<div class="td-sp td-sp-facebook"></div><span class="td_social_info">0</span><span class="td_social_info td_social_info_name">Fans</span><span class="td_social_button"><a href="https://www.facebook.com">Like</a></span>
-						</div>
-						<div class="td_social_type td-pb-margin-side td_social_twitter">
-							<div class="td-sp td-sp-twitter"></div><span class="td_social_info">57,546</span><span class="td_social_info td_social_info_name">Followers</span><span class="td_social_button"><a href="https://twitter.com">Follow</a></span>
-						</div>
-						<div class="td_social_type td-pb-margin-side td_social_youtube">
-							<div class="td-sp td-sp-youtube"></div><span class="td_social_info">9,891</span><span class="td_social_info td_social_info_name">Subscribers</span><span class="td_social_button"><a href="http://www.youtube.com">Subscribe</a></span>
-						</div>
-					</div>
-					<!-- ./block -->
-					<div class="td-a-rec td-a-rec-id-sidebar "><span class="td-adspot-title">- Advertisement -</span>
-						<div class="td-all-devices">
-							<a href="#"><img src="<?php echo base_url(); ?>public/images/adsense-300x250.gif"></a>
-						</div>
-					</div>
-					<div class="td_block_wrap td_block_9 td_block_widget td_with_ajax_pagination td-pb-border-top">
-						<h4 class="block-title"><span>EDITOR PICKS</span></h4>
-						<div class="td_block_inner">
-                            <?php if(isset($latestart) && $latestart != null){ ?>
-                            <?php foreach ($latestart as $key => $latest) { ?>
-							<div class="td-block-span12">
-                                <div class="td_module_8 td_module_wrap">
-                                    <div class="item-details">
-                                        <h3 class="entry-title td-module-title"><a href="<?php echo base_url().$latest['cate_rewrite']."/".$latest['post_title_rewrite']."-".$latest['post_id'].".html"; ?>" title="<?php echo $latest['post_title']; ?>"><?php echo $latest['post_title']; ?></a></h3>
-                                        <div class="meta-info">
-											<div class="td-post-author-name"><a href="javascript:void(0)">Tuan Kiet</a> <span>-</span> </div>
-											<div class="td-post-date">
-												<time class="entry-date updated td-module-date"><?php echo date('d F, Y', strtotime($latest['created_at'])); ?></time>
-											</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <?php } } ?>
-						</div>
-					</div>
-					<!-- ./block -->
-					<div class="clearfix"></div></div>
-			</div>
-		</div>
-		<!-- /.td-pb-row -->
-	</div>
-</div>
-<!-- End posts -->
