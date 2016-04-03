@@ -81,7 +81,7 @@
                                    		 </div>
                                          <div class="form_items">
                                     		<div class="form_items_left">&nbsp;</div>
-                                        	<div class="form_items_right"><input type="submit" name="ok" id="ok" value="Sửa chuyện mục" class="magin"></div>
+                                        	<div class="form_items_right"><input type="submit" name="ok" id="ok" value="Sửa" class="magin"></div>
                                    		 </div>
                                     </form>
 								</div>

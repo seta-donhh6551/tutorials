@@ -1,13 +1,17 @@
 <div class="td-pb-span4 td-main-sidebar" role="complementary">
     <div class="td-ss-main-sidebar" style="width: auto; position: static; top: auto; bottom: auto; z-index: 1;">
-        <div class="clearfix"></div>
-        <div class="clearfix"></div>
         <div class="td-a-rec td-a-rec-id-sidebar "><span class="td-adspot-title">- Advertisement -</span>
             <div class="td-all-devices">
                 <a href="#"><img src="<?php echo base_url(); ?>public/images/adsense-300x250.gif"></a>
             </div>
         </div>
         <div class="td_block_wrap td_block_9 td_block_widget td-pb-border-top">
+			<div id="quick-view">
+				<h3>IN THIS POST</h3>
+				<ul>
+
+				</ul>
+			</div>
             <h4 class="block-title"><span>RELATED ARTICLES</span></h4>
             <div class="td_block_inner">
                 <?php if(isset($relate)){ ?>

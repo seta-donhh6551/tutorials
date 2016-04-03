@@ -79,7 +79,7 @@
 					<ul id="menu-td-demo-header-menu-1" class="sf-menu sf-js-enabled">
 						<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item menu-item-first td-menu-item"><a href="<?php echo base_url(); ?>">Home</a></li>
 						<li class="menu-item td-menu-item"><a href="<?php echo base_url(); ?>html-css.html" class="sf-with-ul">Html css</a></li>
-						<li class="menu-item td-menu-item"><a href="<?php echo base_url(); ?>javascript-jquery.html" class="sf-with-ul">Javascript & jQuery</a></li>
+						<!--li class="menu-item td-menu-item"><a href="<?php echo base_url(); ?>javascript-jquery.html" class="sf-with-ul">Javascript & jQuery</a></li-->
 						<li class="menu-item menu-item-has-children td-menu-item td-normal-menu"><a href="#" class="sf-with-ul">PHP Tutorials<i class="td-icon-menu-down"></i></a>
 							<ul class="sub-menu">
 								<li class="menu-item menu-item-type-post_type menu-item-object-page td-menu-item td-normal-menu"><a href="<?php echo base_url(); ?>php-basic.html">PHP Basic</a></li>
@@ -89,7 +89,7 @@
 						<li class="menu-item menu-item-has-children td-menu-item td-normal-menu"><a href="#" class="sf-with-ul">PHP Framework<i class="td-icon-menu-down"></i></a>
 							<ul class="sub-menu">
 								<li class="menu-item menu-item-type-post_type menu-item-object-page td-menu-item td-normal-menu"><a href="<?php echo base_url(); ?>yii2-framework.html">Yii2 Framework</a></li>
-								<li class="menu-item menu-item-type-post_type menu-item-object-page td-menu-item td-normal-menu"><a href="<?php echo base_url(); ?>codeigniter-framework.html">Codeigniter Framework</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page td-menu-item td-normal-menu"><a href="<?php echo base_url(); ?>codeigniter-3.html">Codeigniter 3</a></li>
 								<li class="menu-item menu-item-type-post_type menu-item-object-page td-menu-item td-normal-menu"><a href="<?php echo base_url(); ?>laravel-5.html">Laravel 5</a></li>
 								<li class="menu-item menu-item-type-post_type menu-item-object-page td-menu-item td-normal-menu"><a href="<?php echo base_url(); ?>zend2-framework.html">Zend2 Framework</a></li>
 							</ul>

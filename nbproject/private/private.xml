@@ -3,8 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/tutorials/application/modules/home/views/content.php</file>
-            <file>file:/C:/xampp/htdocs/tutorials/application/modules/home/controllers/index.php</file>
+            <file>file:/C:/xampp/htdocs/tutorials/application/modules/home/views/posts/content.php</file>
+            <file>file:/C:/xampp/htdocs/tutorials/public/scripts/articles.js</file>
+            <file>file:/C:/xampp/htdocs/tutorials/public/styles/style.css</file>
+            <file>file:/C:/xampp/htdocs/tutorials/public/styles/shCoreDefault.css</file>
+            <file>file:/C:/xampp/htdocs/tutorials/application/modules/home/views/layouts/right-bar.php</file>
+            <file>file:/C:/xampp/htdocs/tutorials/application/modules/home/views/scripts.php</file>
         </group>
     </open-files>
 </project-private>

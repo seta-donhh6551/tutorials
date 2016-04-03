@@ -10,4 +10,5 @@
 <script type="text/javascript" src="<?php echo base_url();?>public/scripts/shBrushCss.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>public/scripts/shBrushXml.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>public/scripts/custom.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>public/scripts/articles.js"></script>
 <script type="text/javascript">SyntaxHighlighter.all();</script>
