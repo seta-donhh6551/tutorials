@@ -15,9 +15,10 @@
 			return $this->db->get($this->_cate)->row_array();
 		}
 		public function listall($id,$off,$start){
-			$this->db->where("cate_id",$id);
-			$this->db->where("post_status", 1);
-			$this->db->order_by("post_order","ASC");
+			$this->db->join("tbl_category","tbl_category.cate_id = tbl_posts.cate_id", "left");
+			$this->db->where("tbl_posts.cate_id",$id);
+			$this->db->where("tbl_posts.post_status", 1);
+			$this->db->order_by("tbl_posts.post_order","ASC");
 			$this->db->limit($off,$start);
 			return $this->db->get($this->_table)->result_array();
 		}
