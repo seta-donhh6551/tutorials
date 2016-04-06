@@ -118,7 +118,6 @@
 							<?php ++$j; } } ?>
 							<div class="page-nav td-pb-padding-side">
 								<?php echo $this->pagination->create_links(); ?>
-								<span class="pages">Page 1 of 8</span>
 							</div>
 							<div class="clearfix"></div>
 						</div>
