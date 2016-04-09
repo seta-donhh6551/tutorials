@@ -5,7 +5,7 @@
             <div class="wpb_column vc_column_container td-pb-span12">
                 <div class="wpb_wrapper">
                     <div class="td_block_wrap td_block_trending_now td-pb-border-top">
-                        <div id="td_uid_14_56c18169c18bb" class="td_block_inner">
+                        <div class="td_block_inner">
                             <div class="td-block-row">
                                 <div class="td-trending-now-wrapper">
                                     <div class="td-trending-now-title block-title">Trending Now</div>
@@ -25,23 +25,21 @@
                             <div class="td-big-grid-wrapper">
                                 <div class="td_module_mx5 td-animation-stack td-big-grid-post-0 td-big-grid-post td-big-thumb">
                                     <div class="td-module-thumb">
-                                        <a href="<?php echo base_url(); ?>2016/01/22/apple-server-most-powerful-rack-optimized-server/" rel="bookmark" title="Apple Server Most Powerful rack optimized server"><img width="537" height="360" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url(); ?>wp-content/uploads/2016/01/10-537x360.jpg" alt="" title="Apple Server Most Powerful rack optimized server">
+                                        <a href="<?php echo base_url(); ?>hosting-domain/assess-web-hosting-service-in-stablehost-109.html" rel="bookmark" title="Apple Server Most Powerful rack optimized server"><img width="537" height="360" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url(); ?>uploaded/articles/stablehost-reseller-hosting.jpg" alt="" title="Assess web hosting service in Stablehost">
                                                 </a>
                                     </div>
                                     <div class="td-meta-info-container">
                                         <div class="td-meta-align">
                                             <div class="td-big-grid-meta">
-                                                <h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/apple-server-most-powerful-rack-optimized-server/" rel="bookmark" title="Apple Server Most Powerful rack optimized server">Apple Server Most Powerful rack optimized server</a></h3>
+                                                <h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>hosting-domain/assess-web-hosting-service-in-stablehost-109.html" rel="bookmark" title="Assess web hosting service in Stablehost">Assess web hosting service in Stablehost</a></h3>
                                                 <div class="td-module-meta-info">
                                                     <div class="td-post-author-name"><a href="<?php echo base_url(); ?>author/admin/">admin</a> <span>-</span> </div>
                                                     <div class="td-post-date">
-                                                        <time class="entry-date updated td-module-date" datetime="2016-01-22T06:09:16+00:00">22nd January 2016</time>
+                                                        <time class="entry-date updated td-module-date">April 8, 2016</time>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="td-module-comments"><a href="<?php echo base_url(); ?>2016/01/22/apple-server-most-powerful-rack-optimized-server/#respond">0</a>
                                     </div>
                                 </div>
                                 <div class="td_module_mx6 td-animation-stack td-big-grid-post-1 td-big-grid-post td-tiny-thumb">
@@ -88,8 +86,7 @@
                                 </div>
                                 <div class="td_module_mx6 td-animation-stack td-big-grid-post-3 td-big-grid-post td-tiny-thumb">
                                     <div class="td-module-thumb">
-                                        <a href="<?php echo base_url(); ?>2016/01/22/what-do-i-need-to-make-it-in-business/" rel="bookmark" title="What Do I Need To Make It In Business?"><img width="238" height="178" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url(); ?>wp-content/uploads/2016/01/5-238x178.jpg" alt="" title="What Do I Need To Make It In Business?">
-                                                </a>
+                                        <a href="<?php echo base_url(); ?>2016/01/22/what-do-i-need-to-make-it-in-business/" rel="bookmark" title="What Do I Need To Make It In Business?"><img width="238" height="178" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url(); ?>wp-content/uploads/2016/01/5-238x178.jpg" alt="" title="What Do I Need To Make It In Business?"></a>
                                     </div>
                                     <div class="td-meta-info-container">
                                         <div class="td-meta-align">
