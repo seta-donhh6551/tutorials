@@ -361,49 +361,7 @@
 					</div>
                     <?php } ?>
 					<!-- ./block -->
-					<div class="td_block_wrap td_block_8 td-pb-border-top">
-						<h4 class="block-title"><span>HOLIDAY RECIPES</span></h4>
-						<div class="td_block_inner">
-
-							<div class="td-block-span12">
-
-								<div class="td_module_7 td_module_wrap td-animation-stack">
-									<div class="td-module-thumb">
-										<a href="<?php echo base_url(); ?>2016/01/22/simple-form-creation-and-storage-built-for-developers/" rel="bookmark" title="Simple form creation and storage, built for developers."><img width="100" height="75" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url(); ?>wp-content/uploads/2016/01/13-100x75.jpg" alt="" title="Simple form creation and storage, built for developers.">
-										</a>
-									</div>
-									<div class="item-details">
-										<h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/simple-form-creation-and-storage-built-for-developers/" rel="bookmark" title="Simple form creation and storage, built for developers.">Simple form creation and storage, built for developers.</a></h3>
-										<div class="meta-info">
-											<div class="td-post-date">
-												<time class="entry-date updated td-module-date" datetime="2016-01-22T06:09:13+00:00">22nd January 2016</time>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- ./td-block-span12 -->
-
-							<div class="td-block-span12">
-
-								<div class="td_module_7 td_module_wrap td-animation-stack">
-									<div class="td-module-thumb">
-										<a href="<?php echo base_url(); ?>2016/01/22/express-recipes-how-to-make-creamy-papaya-raita/" rel="bookmark" title="Express Recipes: How to make Creamy Papaya Raita"><img width="100" height="75" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url(); ?>wp-content/uploads/2016/01/15-100x75.jpg" alt="" title="Express Recipes: How to make Creamy Papaya Raita">
-										</a>
-									</div>
-									<div class="item-details">
-										<h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/express-recipes-how-to-make-creamy-papaya-raita/" rel="bookmark" title="Express Recipes: How to make Creamy Papaya Raita">Express Recipes: How to make Creamy Papaya Raita</a></h3>
-										<div class="meta-info">
-											<div class="td-post-date">
-												<time class="entry-date updated td-module-date" datetime="2016-01-22T06:09:15+00:00">22nd January 2016</time>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- ./td-block-span12 -->
-						</div>
-					</div>
+					<?php $this->load->view('layouts/review-hosting'); ?>
 					<!-- ./block -->
 					<div class="clearfix"></div></div>
 			</div>

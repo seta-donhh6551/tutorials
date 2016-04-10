@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.2.11
+-- version 4.4.14
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 08, 2016 at 12:23 PM
--- Server version: 5.6.21
--- PHP Version: 5.6.3
+-- Generation Time: Apr 10, 2016 at 05:04 PM
+-- Server version: 5.6.26
+-- PHP Version: 5.6.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -14,7 +14,7 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
+/*!40101 SET NAMES utf8mb4 */;
 
 --
 -- Database: `myhome`
@@ -27,7 +27,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_answers` (
-`answer_id` int(11) unsigned NOT NULL,
+  `answer_id` int(11) unsigned NOT NULL,
   `answer_info` text NOT NULL,
   `answer_up` int(11) NOT NULL,
   `answer_down` int(11) NOT NULL,
@@ -62,7 +62,7 @@ INSERT INTO `tbl_answers` (`answer_id`, `answer_info`, `answer_up`, `answer_down
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_articles` (
-`article_id` int(10) unsigned NOT NULL,
+  `article_id` int(10) unsigned NOT NULL,
   `article_title` varchar(200) CHARACTER SET utf8 NOT NULL,
   `article_title_rewrite` varchar(200) CHARACTER SET utf8 NOT NULL,
   `article_info` text CHARACTER SET utf8 NOT NULL,
@@ -80,7 +80,7 @@ CREATE TABLE IF NOT EXISTS `tbl_articles` (
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_categorie` (
-`cago_id` int(10) unsigned NOT NULL,
+  `cago_id` int(10) unsigned NOT NULL,
   `cago_name` varchar(100) NOT NULL,
   `cago_rewrite` varchar(255) NOT NULL,
   `cago_info` text NOT NULL,
@@ -109,7 +109,7 @@ INSERT INTO `tbl_categorie` (`cago_id`, `cago_name`, `cago_rewrite`, `cago_info`
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_category` (
-`cate_id` int(10) unsigned NOT NULL,
+  `cate_id` int(10) unsigned NOT NULL,
   `cate_name` varchar(50) NOT NULL,
   `cate_rewrite` varchar(255) NOT NULL,
   `cate_link` varchar(250) NOT NULL,
@@ -125,14 +125,14 @@ CREATE TABLE IF NOT EXISTS `tbl_category` (
 --
 
 INSERT INTO `tbl_category` (`cate_id`, `cate_name`, `cate_rewrite`, `cate_link`, `cate_images`, `cate_keys`, `cate_ext`, `cate_status`, `cate_order`) VALUES
-(4, 'PHP Advanced', 'php-advanced', 'php-nang-cao.html', 'php-nang-cao3.jpg', '', 'PHP nâng cao bao gồm các bài viết chuyên sâu về ngôn ngữ lập trình PHP, để hiểu được các bạn viết trong mục này các bạn phải hiểu được PHP căn bản trước nhé.', 1, 3),
-(3, 'PHP Basic', 'php-basic', 'php-can-ban.html', 'php-can-ban.jpg', '', 'PHP căn bản dành cho các bạn mới tìm hiểu về lập trình PHP, chuyên mục này bao gồm các bài viết cơ bản được viết theo thứ tự từ cơ bản cho đến nâng cao giúp các bạn học PHP một cách tốt nhất.', 1, 2),
+(4, 'PHP Advanced', 'php-advanced', 'php-nang-cao.html', 'php-nang-cao3.jpg', '', '', 1, 3),
+(3, 'PHP Basic', 'php-basic', 'php-can-ban.html', 'php-can-ban.jpg', '', '', 1, 2),
 (1, 'Html Css', 'html-css', '', 'html-css1.jpg', '', 'Html css interface is used to build websites, the layout on the page frame, split columns, specified font and color scheme ... for the components of the site', 0, 0),
-(5, 'Yii2 Framework', 'yii2-framework', '', 'yii-php-framework-logo.png', '', '<b>Yii2 Framework</b> Tổng hợp những bài hướng sử dụng Yii2 framework từ cơ bản đến nâng cao', 1, 5),
-(6, 'Hosting domain', 'hosting-domain', '', 'php-training1.jpg', '', 'PHP training tổng hợp các bài tập thực hành PHP', 1, 4),
+(5, 'Yii2 Framework', 'yii2-framework', '', 'yii-php-framework-logo.png', '', '<div>Programming with <strong>Yii2 framework</strong> - tuts+ code tutorials&#160;</div>\r\n<div>Building your startup with PHP - tuts+ code tutorials</div>', 1, 5),
+(6, 'Hosting domain', 'hosting-domain', '', 'php-training1.jpg', '', 'Detailed assessment of quality hosting, best foreign host, the list of best host for WordPress, hosting review', 1, 4),
 (2, 'Javascript', 'javascript', '', '', '', '&#160;', 0, 1),
-(7, 'Laravel 5', 'laravel-5', '', 'laravel-5.jpg', '', 'Tổng hợp các bài viết hướng dẫn về <strong>Laravel 5.0</strong>', 1, 6),
-(8, 'Zend Framework', 'zend-framework', '', '', '', '&#160;Zend Framework, tổng hợp các bài viết hướng dẫn từ cơ bản đến nâng cao trong Zend', 1, 7),
+(7, 'Laravel 5', 'laravel-5', '', 'laravel-5.jpg', '', 'Posts manual laravel free 5 simple and easy to understand, to help readers access faster Laravel 5', 1, 6),
+(8, 'Zend Framework', 'zend-framework', '', 'zend2-framework.jpg', '', '&#160;', 1, 7),
 (9, 'Codeigniter 3', 'codeigniter-3', '', 'codeigniter-framework.jpg', '', 'Serial article codeigniter manual version 3.0 from basic to advanced', 1, 9);
 
 -- --------------------------------------------------------
@@ -142,7 +142,7 @@ INSERT INTO `tbl_category` (`cate_id`, `cate_name`, `cate_rewrite`, `cate_link`,
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_config` (
-`config_id` int(10) unsigned NOT NULL,
+  `config_id` int(10) unsigned NOT NULL,
   `config_title` varchar(200) NOT NULL,
   `config_key` text NOT NULL,
   `config_des` text NOT NULL,
@@ -164,7 +164,7 @@ INSERT INTO `tbl_config` (`config_id`, `config_title`, `config_key`, `config_des
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_contact` (
-`con_id` int(10) unsigned NOT NULL,
+  `con_id` int(10) unsigned NOT NULL,
   `con_name` varchar(150) CHARACTER SET utf8 NOT NULL,
   `con_email` varchar(100) CHARACTER SET utf8 NOT NULL,
   `con_phone` varchar(50) CHARACTER SET utf8 NOT NULL,
@@ -227,7 +227,7 @@ INSERT INTO `tbl_contact` (`con_id`, `con_name`, `con_email`, `con_phone`, `con_
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_contact_info` (
-`contact_id` int(10) unsigned NOT NULL,
+  `contact_id` int(10) unsigned NOT NULL,
   `contact_value` text CHARACTER SET utf8 NOT NULL,
   `contact_status` int(1) NOT NULL DEFAULT '1'
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
@@ -246,7 +246,7 @@ INSERT INTO `tbl_contact_info` (`contact_id`, `contact_value`, `contact_status`)
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_content` (
-`con_id` int(10) unsigned NOT NULL,
+  `con_id` int(10) unsigned NOT NULL,
   `con_title` varchar(255) NOT NULL,
   `con_rewrite` varchar(200) NOT NULL,
   `con_author` varchar(100) NOT NULL,
@@ -278,7 +278,7 @@ INSERT INTO `tbl_content` (`con_id`, `con_title`, `con_rewrite`, `con_author`, `
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_customer` (
-`customer_id` int(10) unsigned NOT NULL,
+  `customer_id` int(10) unsigned NOT NULL,
   `customer_name` varchar(200) CHARACTER SET utf8 NOT NULL,
   `customer_user` varchar(200) CHARACTER SET utf8 NOT NULL,
   `customer_address` varchar(200) CHARACTER SET utf8 NOT NULL,
@@ -316,7 +316,7 @@ INSERT INTO `tbl_customer` (`customer_id`, `customer_name`, `customer_user`, `cu
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_education` (
-`edu_id` int(10) unsigned NOT NULL,
+  `edu_id` int(10) unsigned NOT NULL,
   `edu_info` text CHARACTER SET utf8 NOT NULL,
   `edu_full` longtext CHARACTER SET utf8 NOT NULL,
   `edu_status` int(1) NOT NULL DEFAULT '1'
@@ -336,7 +336,7 @@ INSERT INTO `tbl_education` (`edu_id`, `edu_info`, `edu_full`, `edu_status`) VAL
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_intro` (
-`in_id` int(10) unsigned NOT NULL,
+  `in_id` int(10) unsigned NOT NULL,
   `in_name` varchar(200) CHARACTER SET utf8 NOT NULL,
   `in_name_rewrite` varchar(200) CHARACTER SET utf8 NOT NULL,
   `in_value` longtext CHARACTER SET utf8 NOT NULL,
@@ -361,7 +361,7 @@ INSERT INTO `tbl_intro` (`in_id`, `in_name`, `in_name_rewrite`, `in_value`, `in_
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_intro_one` (
-`intro_id` int(10) unsigned NOT NULL,
+  `intro_id` int(10) unsigned NOT NULL,
   `intro_full` longtext CHARACTER SET utf8 NOT NULL,
   `intro_status` int(1) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
@@ -380,7 +380,7 @@ INSERT INTO `tbl_intro_one` (`intro_id`, `intro_full`, `intro_status`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_menu` (
-`menu_id` int(10) unsigned NOT NULL,
+  `menu_id` int(10) unsigned NOT NULL,
   `menu_name` varchar(200) CHARACTER SET utf8 NOT NULL,
   `menu_rewrite` varchar(200) CHARACTER SET utf8 NOT NULL,
   `menu_order` int(1) NOT NULL,
@@ -403,7 +403,7 @@ INSERT INTO `tbl_menu` (`menu_id`, `menu_name`, `menu_rewrite`, `menu_order`, `m
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_news` (
-`news_id` int(10) unsigned NOT NULL,
+  `news_id` int(10) unsigned NOT NULL,
   `news_title` varchar(255) NOT NULL,
   `news_rewrite` varchar(200) NOT NULL,
   `news_author` varchar(100) NOT NULL,
@@ -439,7 +439,7 @@ INSERT INTO `tbl_news` (`news_id`, `news_title`, `news_rewrite`, `news_author`, 
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_online` (
-`id` int(11) unsigned NOT NULL,
+  `id` int(11) unsigned NOT NULL,
   `time` varchar(100) CHARACTER SET utf8 NOT NULL,
   `user_ip` varchar(100) CHARACTER SET utf8 NOT NULL,
   `local` varchar(150) CHARACTER SET utf8 NOT NULL,
@@ -460,7 +460,7 @@ INSERT INTO `tbl_online` (`id`, `time`, `user_ip`, `local`, `date`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_order` (
-`id` int(10) unsigned NOT NULL,
+  `id` int(10) unsigned NOT NULL,
   `name` varchar(200) CHARACTER SET utf8 NOT NULL,
   `local` varchar(255) CHARACTER SET utf8 NOT NULL,
   `phone` varchar(100) CHARACTER SET utf8 NOT NULL,
@@ -486,7 +486,7 @@ CREATE TABLE IF NOT EXISTS `tbl_order` (
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_posts` (
-`post_id` int(10) unsigned NOT NULL,
+  `post_id` int(10) unsigned NOT NULL,
   `post_title` varchar(200) CHARACTER SET utf8 NOT NULL,
   `post_title_rewrite` varchar(200) CHARACTER SET utf8 NOT NULL,
   `post_author` varchar(100) CHARACTER SET utf8 NOT NULL,
@@ -501,7 +501,7 @@ CREATE TABLE IF NOT EXISTS `tbl_posts` (
   `post_des` text CHARACTER SET utf8 NOT NULL,
   `created_at` datetime NOT NULL,
   `cate_id` int(10) NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=110 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=111 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `tbl_posts`
@@ -515,13 +515,13 @@ INSERT INTO `tbl_posts` (`post_id`, `post_title`, `post_title_rewrite`, `post_au
 (106, 'Part 4. Load model in Codeigniter', 'part-4-load-model-in-codeigniter', 'Tuan Kiet', 0, 'In this post, I will instruct you how to create a new model in codeigniter, the content includes', '<h3>1. Database configuration.</h3>\r\n<div>In codeidniter, to <strong>connect with database</strong>, we will have to configure true information. Access application/config/database.php file and then draw to the corner to edit some information below:</div>\r\n<pre title="code" class="brush: php;">\r\n$db[''default''][''hostname''] = ''localhost'';\r\n$db[''default''][''username''] = ''User of Database'';\r\n$db[''default''][''password''] = ''Password'';\r\n$db[''default''][''database''] = ''Database name'';\r\n$db[''default''][''dbdriver''] = ''mysql'';</pre>\r\nAfter finishing editing, save and access any Controller column and run the following command: <strong>$this-&gt;load-&gt;database()</strong>; If you don’t see any error, config database is correct or else you have to recheck the information.<br />\r\n<div>&#160;</div>\r\n<h3>2. Create a new model in Codeigniter.</h3>\r\n<div>All model files are put in <strong>application/models</strong>, therefore, create a new file in that folder &#160;called <strong>news_model.php</strong> with the following content:</div>\r\n<pre title="code" class="brush: php;">\r\nclass News_model extends CI_Model\r\n{\r\n    public function getList()\r\n    {\r\n        // Code get list\r\n    }\r\n}</pre>\r\nIn which, <strong>news_model</strong> is your model’s name that is the same as <strong>news_model.php</strong> and the first letter must be capitaliszation. All models have to inherit CI_model to operate. That’s all for news_model.<br />\r\n<br />\r\n<h3>3. Load model in Controller.</h3>\r\n<div>To <strong>load model in controller</strong>, we use the syntax: <u>$this-&gt;load-&gt;model(‘model_name’)</u>, and to call function in model, we use the syntax: &#160;<u>$this-&gt;model_name-&gt;function_name()</u>.</div>\r\n<div>&#160;</div>\r\n<div>For example: to create a new Controller that is News.php with the following content:</div>\r\n<pre title="code" class="brush: php;">\r\nclass News extends CI_Controller\r\n{\r\n    function news_list()\r\n    {\r\n        // Load model\r\n        $this-&gt;load-&gt;model(''news_model'');\r\n  \r\n        // call getList function in model\r\n        $news_list = $this-&gt;news_model-&gt;getList();\r\n    }\r\n}</pre>\r\nIn the application, if any model is always used, you can use the function of Autoload of Codeigniter, open <u>application/config/autoload.php</u> and find to the line:<br />\r\n<pre title="code" class="brush: php;">\r\n$autoload[''libraries''] = array();</pre>\r\nAfter that add the model you need to load. For example, add news_model mpdel:&#160;<br />\r\n<pre title="code" class="brush: php;">\r\nautoload[''libraries''] = array(‘news_model’).</pre>\r\n<div>After adding model to autoload, in controller, you just need to use it without loading that model.<br />\r\n<br />\r\n<div>If your model lays in a folder. For example, your model is in <u>application/models/news/news_model.php</u> folder, use the following syntax: &#160;</div>\r\n<div><u>$this-&gt;load-&gt;model(‘news/news_model’)</u> and still use the old syntax to call variable in model: $this-&gt;news_model-&gt;getList();<br />\r\n<br />\r\nFor example: Model file in the folder: : application/models/news/news_model.php</div>\r\n<pre title="code" class="brush: php;">\r\nclass News extends CI_Controller\r\n{\r\n    function news_list()\r\n    {\r\n        // Load model\r\n        $this-&gt;load-&gt;model(''news/news_model'');\r\n   \r\n        // call getList function in model\r\n        $news_list = $this-&gt;news_model-&gt;getList();\r\n    }\r\n}</pre>\r\n</div>\r\nIn this post, you have learnt how to create a new model in codeigniter, way to call model in controller &#160;and configure database in codeigniter. In next post, we will learn about Session in codeigniter', '', '', 'codeigniter-framework.jpg', 1, 'Load model codeigniter, Active record in Codeigniter, Get data model codeigniter', 'How to load model in codeigniter, Access database using active record in Codeigniter', '2016-04-02 17:34:15', 9),
 (107, 'Part 5. Load library session in Codeigniter', 'part-5-load-library-session-in-codeigniter', 'Tuan Kiet', 0, 'Session is a crucial library in CI framework because we use it for managing working shift in task of login , session in the cart.', '<h3>1. What is session.</h3>\r\n<div>On CI, it is written in class form or called as library session. The outstanding point is that it does not use original php for the tasks. Session is built based on a special key that is named after <strong>Encryption</strong> key to increase the interaction and the level security of application. To declare library session and call inside methods, you need to access config file and find config.php file and then ctr+f clicking encryption key.</div>\r\n<pre title="code" class="brush: php;">\r\n$config[''encryption_key''] = '''';</pre>\r\nTo start the task with session, with “, you can fill anything. For example, I fill a character. Suppose that I successfully configure special key in session.<br />\r\n<pre title="code" class="brush: php;">\r\n$config[''encryption_key''] = ''hatutorials.com'';</pre>\r\n<div><u><strong>Note that</strong></u>: This is obligated. If you leave it blank and call library session to use, a notification of error will appear.</div>\r\n<div><em>"In order to use the Section class, you are required to set an encryption key in your config file"</em></div>\r\n<br />\r\n<h3>2. Load library session</h3>\r\n<div>In order to use library session, first you are required to load it into controller. For example here, I start up with <strong>controller demo</strong> and action will be <strong>index</strong>. In constructor variable, I will call it out with the following syntax:</div>\r\n<pre title="code" class="brush: php;">\r\n$this-&gt;load-&gt;library("session");</pre>\r\n<u>Code constructor</u><br />\r\n<pre title="code" class="brush: php;">\r\nclass Demo extends CI_Controller{\r\n    public function __construct(){\r\n        parent::__construct();\r\n        $this-&gt;load-&gt;library("session");\r\n    }\r\n  \r\n    public function index(){\r\n  \r\n    }\r\n}</pre>\r\nTo use code, I will the method of $this-&gt;session that is similar to the way to call Model<br />\r\n<br />\r\n<div>&#160;</div>\r\n<h3>3. Session set value.</h3>\r\n<div>In Codeigniter, to set a session is easily. We can do as following:</div>\r\n<pre title="code" class="brush: php;">\r\n$this-&gt;session-&gt;set_userdata("name", "value")</pre>\r\nThe data transmitted having two selections, one is transmitting name and the rest is transmitting to its what value. In addition, we can start up them with array.<br />\r\n<pre title="code" class="brush: php;">\r\n$data = array(\r\n    "username" =&gt; "Tuan Kiet",\r\n    "email" =&gt; "tuankiet@hatutorials.com",\r\n    "website" =&gt; "hatutorials.com",\r\n    "gender" =&gt; "Male",\r\n);</pre>\r\nAnd at that time, I am assigning 4 values to start up all values and using the following syntax:<br />\r\n<pre title="code" class="brush: php;">\r\n$this-&gt;session-&gt;set_userdata($data);</pre>\r\nAfter finishing start-up, to use, similar to set_userdata, I have the syntax using session as below. Here I transmit into session name that is username.<br />\r\n<pre title="code" class="brush: php;">\r\n$this-&gt;session-&gt;userdata("username");</pre>\r\n<br />\r\n<h3>4. Practice with session</h3>\r\n<div>I will have an example to help you have a comprehensive of the session’s operation &#160;processing. In application/controllers folder, I create a new file that is namely demo.php. I call URL and library session help into controller.</div>\r\n<pre title="code" class="brush: php;">\r\nclass Demo extends CI_Controller{\r\n    public function __construct(){\r\n        parent::__construct();\r\n        $this-&gt;load-&gt;helper("url");\r\n        $this-&gt;load-&gt;library("session");\r\n    }\r\n  \r\n    public function index(){\r\n        $data=array(\r\n            "username" =&gt; "Tuan Kiet",\r\n            "email" =&gt; "tuankiet@hatutorials.com",\r\n            "website" =&gt; "hatutorials.com",\r\n            "gender" =&gt; "Male",\r\n        );\r\n        $this-&gt;session-&gt;set_userdata($data);\r\n        \r\n        redirect(base_url(),"index.php/demo/get_session");\r\n    }\r\n}</pre>\r\n<div><br />\r\nSave and refresh the brower,&#160;If the screen redirect to <u>localhost/citest/index.php/demo/get_session</u> link and the result is output as following. It means that session us set session successfully.<br />\r\n<br />\r\nIn get_session action, we get session</div>\r\n<pre title="code" class="brush: php;">\r\npublic function get_session(){\r\n    $user = $this-&gt;session-&gt;userdata("username");\r\n    $site = $this-&gt;session-&gt;userdata("website");\r\n    $email = $this-&gt;session-&gt;userdata("email");\r\n  \r\n    echo "Username: $user, Email: $email, Website: $site";\r\n}</pre>\r\nResult in the browser:<br />\r\n<br />\r\nUsername: Tuan Kiet, Email: tuankiet@hatutorials.com, Website: hatutorials.com<br />\r\n<h4>Get all session in Codeigniter:</h4>\r\n<pre title="code" class="brush: php;">\r\n$this-&gt;session-&gt;all_userdata()</pre>\r\n<br />\r\n<h3>5. Session destroy</h3>\r\n<div>To unset session, there are two ways. We can use the following syntax, here I cancel username session.</div>\r\n<pre title="code" class="brush: php;">\r\n$this-&gt;session-&gt;unset_data("username");</pre>\r\nAnd similar to start up session with array, I can unset session with the following syntax:<br />\r\n<pre title="code" class="brush: php;">\r\n$item = array(''username'' =&gt; '''', ''email'' =&gt; '''', ''website'' =&gt; '''',);\r\n$this-&gt;session-&gt;unset_userdata($items);</pre>\r\nWith this task, I can cancel all session, however, it takes times to do that. In nature, CI support a variable of totally cancel session quickly because it is similar to session cancel in original PHP.<br />\r\n<pre title="code" class="brush: php;">\r\n$this-&gt;session-&gt;sess_destroy();</pre>\r\n<div>&#160;</div>\r\n<br />', '', '', 'codeigniter-framework.jpg', 1, 'Using session codeigniter, Login session in codeginiter, Session in the cart', 'Session is a crucial library in CI framework (codeigniter) because we use it for managing working shift in task of login , session in the cart. ', '2016-04-02 17:34:15', 9),
 (86, 'Yii2 part 1 - Introduction and installment', 'yii2-part-1-introduction-and-installment', 'haanhdon', 0, 'In this section, we will instruct you how to install and use Yii framework. In this 2.0 version of Yii, there are two version, namely, Yiis Basic and Yii2 Advanced. However, in this part, we will use the latter.', 'To install Yii2, you can get access to the homepage of <strong>Yii Framework</strong> to download Zip and the configuration and after that run the program. In this post, we will instruct you how to install Composer to install Yii2 from home page.<br />\r\n<br />\r\nWhy use Composer? The reason is that it takes less time. And if you want to install extensions for Yii, the only thing needed to do is to insert some commands for Composer enter.<br />\r\n<br />\r\n<strong>1.&#160;<span span="">Install Yii2 Framework by composer.</span></strong><br />\r\n<br />\r\n-&#160;Get access to the <a href="https://getcomposer.org/download/" target="_blank">homepage of composer</a> which belongs to the operating system that you use. &#160;At present, because I use Windows, I download file “<a href="https://getcomposer.org/Composer-Setup.exe" target="_blank">setup.exe</a>”. After that, you download and install as usual.<br />\r\n<br />\r\n*&#160;Composer installation.<br />\r\n<img src="http://localhost/tutorials/uploaded/articles/composer-install.jpg" width="510" height="395" alt="" /><br />\r\n<br />\r\n-&#160;Note that: in this step, you need to choose php.exe file in local server. I use xampp which is the path to php.exe.<br />\r\n<br />\r\n<img src="http://localhost/tutorials/uploaded/articles/composer-install-php-location.jpg" width="510" height="396" alt="" /><br />\r\n-&#160;Continue to install till all are completed. After installation is finished, download composer.phar file to your computer.<span><br />\r\n</span>- Open <strong>Command Line</strong> ( Windows button+R) and get access to your web server. My web server is C:/xampp/htdocs.<br />\r\n<br />\r\nAfter that, type the following command to download <strong>compose.phar</strong>.<br />\r\n<pre title="code" class="brush: php;">\r\nphp -r "readfile&#40;''https://getcomposer.org/installer''&#41;;" | php</pre>\r\n<br />\r\nYou can see the following image<br />\r\n<img src="http://localhost/tutorials/uploaded/articles/download-composer.phar.jpg" alt="Composer install, download composer.phar" /><br />\r\n- After completion, you can see <strong>composer.phar</strong> file in the htdocs folder.<br />\r\n<br />\r\n<br />\r\n<strong>* Install Yii Advanced</strong><br />\r\n<br />\r\n-&#160;<span>After installing Composer, run the following command to install the&#160;</span><a href="https://github.com/francoispluchino/composer-asset-plugin">Composer Asset Plugin</a><br />\r\n<br />\r\n<pre title="code" class="brush: php;">\r\nphp composer.phar global require "fxp/composer-asset-plugin:~1.1.1"</pre>\r\n<br />\r\n<br />\r\n- Type the following command to download Yii2<br />\r\n<br />\r\n<pre title="code" class="brush: php;">\r\ncomposer create-project --prefer-dist --stability=dev yiisoft/yii2-app-advanced yii2adv</pre>\r\n<br />\r\nMeanwhile, “Yii2-app-advanced” is the version of Yii2 Advanced. However, if you want to install the Basic version, you need the replacement as “yii2-app-basic”.yii2adv which is your web folder.<br />\r\n<img src="http://localhost/tutorials/uploaded/articles/composer-install-yii2.jpg" alt="Install Yii2 advanced composer" /><br />\r\n- <strong>Note</strong> :&#160;During downloading process, composer will require token from&#160;<a href="http://github.com/" target="_blank">github.com</a>. At that time,you have to enter token, if you still have not known how to take token from Github yet, <a href="https://help.github.com/articles/creating-an-access-token-for-command-line-use/" target="_blank">click here</a> to have token''s code.<br />\r\n<br />\r\n<br />\r\n<strong>2.&#160;<span class="Apple-tab-span" span="">Install Yii2 Framework by Zip version.</span></strong><br />\r\n<br />\r\nIf you want to install the program by Zip, download file&#160;<a href="https://github.com/yiisoft/yii2/releases/download/2.0.3/yii-advanced-app-2.0.3.tgz" target="_blank">here&#160;</a>, and then extract it into your project folder. When you install <strong>Yii2 Framework</strong> by zip or composer, you can run Yii2 immediately. Open Command line and type the following command<br />\r\n<br />\r\n- Have access to your project folder, and then type&#160;<strong>Init</strong><br />\r\n<img src="http://localhost/tutorials/uploaded/articles/yii2-select-version.jpg" alt="Yii2 Advanced Init, develop or production?" /><br />\r\n-&#160;Next, Yii2 will ask you whether you use the program on <strong>Production </strong>or <strong>Development</strong>, you have two option 0 or 1, and then select Yes. To me, I choose 0<br />\r\n<br />\r\nThe task of typing init command aims to generate <strong>common/config/main.php</strong> and <strong>web/index.php</strong>. when downloading Yii2, these files are not available , therefore, you have to run Init command to create them.<br />\r\n<br />\r\nWait until running time is finished, you can see yii2adv folder in xampp/htdocs which contains source of <strong>Yii2 Advanced</strong><br />\r\n<br type="_moz" />\r\n<img src="http://phpandmysql.net/uploaded/articles/yii2-advanced-folder-structure.jpg" alt="Structure Yii2 Advanced folder" width="510" height="289" /><br />\r\n- With the structure of Yii2 Advanced, the application is clearly decentralized into two parts which are <strong>Backend</strong> and <strong>Frontend</strong><br />\r\n<br />\r\n- Common is the folder with database configuration which contains mutual model for backend and frontend.<br />\r\n- Console is the folder running bacth. For example, when you want the timer to automatically run any fuctions<br />\r\n- Vendor is core folder of Yii2, containing extensions<br />\r\n<br />\r\n* Run Yii2 on browse&#160;<br />\r\n<br />\r\n<pre title="code" class="brush: php;">\r\nhttp://localhost/yii2adv/frontend/web/</pre>\r\n<br />\r\n<img src="http://phpandmysql.net/uploaded/articles/yii2-install-completed.jpg" alt="Yii2 installation completed successfully" width="510" height="249" />&#160;<br />\r\n<br />\r\n<br />\r\nSo hatutorials.com has already instruct you successfully how to install Yii2 Advanced. If you have any troubles when installing, give comments below. Have a nice day', '', '', 'yii2framework.jpg', 1, 'Yii2 Framework, Yii2 framework install, How to using yii2 framrework', 'Guide to install and use Yii2 Advance Framework from basic to advance. Install Yii2 Framework with using composer and zip', '2016-03-17 16:56:48', 5),
-(87, 'Yii2 part 2 - Frontend and backend configuration', 'yii2-part-2-frontend-and-backend-configuration', 'haanhdon', 0, '<div>After successful installation, we will run the first application which is the basic configuration application on <strong>Yii2 Advanced</strong> with Yii2.</div>\r\n<div>&#160;</div>\r\n<div>As saying, Yii2 Advanced is divided into two parts which are fronted and backend. When having access to weeb root by browse, the application will not run. Instead, we need to get direct access to fronted or backend.&#160;</div>', '<h3><strong><span new="">1.&#160;Virtual host configuration</span></strong></h3>\r\n<br />\r\n-&#160;If we use the default apache web url is <a href="http://localhost/yii2adv/">http://localhost/yii2adv/</a> before, now we will change into the &#160;url <a href="http://yiiadvanced/">http://yiiadvanced/</a> configuration.<a href="http://yiiadvanced/"><br />\r\n</a><br />\r\nAnd &#160;yiiadvanced is the name we call and the domain which pint to our website: <strong>C:/xampp/htdocs/yii2adv</strong><br />\r\n<br />\r\nIf you have no idea of virtual host, you can see the instruction here<br />\r\n<h3><strong><br />\r\n</strong><strong>2. Yii2 configuration, remove fronted /web and backend/web</strong></h3>\r\n<br />\r\nAfter configuration and virtual host are finished, to default when accessing the webroot, which configuration we need? In this part, we will instruct you to create file .htaccess to default when accessing the frontend and as a result, webroot will run first.<br />\r\n<br />\r\nIn web root that we create <strong>.htaccess</strong> file with the following content<br />\r\n<br />\r\n<pre title="code" class="brush: php;">\r\n# prevent directory listings\r\nOptions -Indexes\r\n# follow symbolic links\r\nOptions FollowSymlinks\r\nRewriteEngine on\r\n\r\nRewriteCond %{REQUEST_URI} ^/system/$\r\nRewriteRule ^(system)/$ /$1 [R=301,L]\r\nRewriteCond %{REQUEST_URI} ^/system\r\nRewriteRule ^system&#40;/.+&#41;?$ /backend/web/$1 [L,PT]\r\nRewriteCond $1 !^(index\\.php|uploads|favicon\\.ico)\r\nRewriteRule ^(.*)$ frontend/web/$1 [L]\r\n</pre>\r\n<img src="http://localhost/tutorials/uploaded/articles/yii2-remove-frontend-web.jpg" alt="Yii2 framework remove frontend web" width="600" height="312" /><br />\r\n<em>Create file .htaccess &#160;in root to redirect to frontend/web.</em><br />\r\n<br />\r\nIn particular, the path that is access to &#160;the backend will be <a href="http://yiiadvanced/system">http://yiiadvanced/system</a>, default also while default when accessing the web root will be on frontend<br />\r\n<br />\r\nIn the folder of &#160;<strong>backend/web</strong> and <strong>frontend/web</strong> &#160;we add file .htaccess with content as below<br />\r\n<br />\r\n<pre title="code" class="brush: php;">\r\nRewriteEngine on\r\n\r\nRewriteCond %{REQUEST_FILENAME} !-f\r\nRewriteCond %{REQUEST_FILENAME} !-d \r\n\r\nRewriteRule . index.php</pre>\r\n<br />\r\n<img src="http://localhost/tutorials/uploaded/articles/yii2-create-htaccess-file.jpg" alt="Yii2 remove frontend/web and backend/web from url" width="600" height="256" /><br />\r\n<br />\r\nThat’s fine, now, you can access yii2 without frontend/web. when accessing to web root frontend will be defaulted.<br />\r\n<br />\r\n-&#160;Url frontend will be defaulted.<br />\r\n<pre title="code" class="brush: php;">\r\nhttp://yiiadvanced/</pre>\r\n<img src="http://localhost/tutorials/uploaded/articles/yii2-fronent-config.jpg" alt="Url frontend in yii2 framework" width="600" height="350" /><br />\r\n<br />\r\n<br />\r\n- Url backend<br />\r\n<pre title="code" class="brush: php;">\r\nhttp://yiiadvanced/system</pre>\r\nI use the path to the backend here is system, and if you want to change the admin or something, you edit the .htaccess file, it’s up to you.<br />\r\n<br />\r\n<img src="http://localhost/tutorials/uploaded/articles/yii2-url-backend-config.jpg" alt="Yii2 url backend configuration" width="600" height="379" /><br />\r\n<br />\r\n<br />\r\nSo, we finish the frontend and backend configuration in web application on yii2 framework. Next time, we will conduct to run the first application', '', '', 'yii2framework1.jpg', 1, 'Yii2 framework, Yii2 configuration, Yii2 started', 'Fronted and backend yii2 framework, remove fronted/we on URL in yii2 framework', '2016-03-18 08:31:17', 5),
+(87, 'Yii2 part 2 - Frontend and backend configuration', 'yii2-part-2-frontend-and-backend-configuration', 'haanhdon', 0, '<div>After successful installation, we will run the first application which is the basic configuration application on <strong>Yii2 Advanced</strong> with Yii2.</div>\r\n<div>&#160;</div>\r\n<div>As saying, Yii2 Advanced is divided into two parts which are fronted and backend. When having access to weeb root by browse, the application will not run. Instead, we need to get direct access to fronted or backend.&#160;</div>', '<h3><strong><span new="">1.&#160;Virtual host configuration</span></strong></h3>\r\n<br />\r\n-&#160;If we use the default apache web url is <a href="http://localhost/yii2adv/">http://localhost/yii2adv/</a> before, now we will change into the &#160;url <a href="http://yiiadvanced/">http://yiiadvanced/</a> configuration.<a href="http://yiiadvanced/"><br />\r\n</a><br />\r\nAnd &#160;yiiadvanced is the name we call and the domain which pint to our website: <strong>C:/xampp/htdocs/yii2adv</strong><br />\r\n<br />\r\nIf you have no idea of virtual host, you can see the instruction here<br />\r\n<h3><strong><br />\r\n</strong><strong>2. Yii2 configuration, remove fronted /web and backend/web</strong></h3>\r\n<br />\r\nAfter configuration and virtual host are finished, to default when accessing the webroot, which configuration we need? In this part, we will instruct you to create file .htaccess to default when accessing the frontend and as a result, webroot will run first.<br />\r\n<br />\r\nIn web root that we create <strong>.htaccess</strong> file with the following content<br />\r\n<br />\r\n<pre title="code" class="brush: php;">\r\n# prevent directory listings\r\nOptions -Indexes\r\n# follow symbolic links\r\nOptions FollowSymlinks\r\nRewriteEngine on\r\n\r\nRewriteCond %{REQUEST_URI} ^/system/$\r\nRewriteRule ^(system)/$ /$1 [R=301,L]\r\nRewriteCond %{REQUEST_URI} ^/system\r\nRewriteRule ^system&#40;/.+&#41;?$ /backend/web/$1 [L,PT]\r\nRewriteCond $1 !^(index\\.php|uploads|favicon\\.ico)\r\nRewriteRule ^(.*)$ frontend/web/$1 [L]\r\n</pre>\r\n<img src="http://localhost/tutorials/uploaded/articles/yii2-remove-frontend-web.jpg" alt="Yii2 framework remove frontend web" width="600" height="312" /><br />\r\n<em>Create file .htaccess &#160;in root to redirect to frontend/web.</em><br />\r\n<br />\r\nIn particular, the path that is access to &#160;the backend will be <a href="http://yiiadvanced/system">http://yiiadvanced/system</a>, default also while default when accessing the web root will be on frontend<br />\r\n<br />\r\nIn the folder of &#160;<strong>backend/web</strong> and <strong>frontend/web</strong> &#160;we add file .htaccess with content as below<br />\r\n<br />\r\n<pre title="code" class="brush: php;">\r\nRewriteEngine on\r\n\r\nRewriteCond %{REQUEST_FILENAME} !-f\r\nRewriteCond %{REQUEST_FILENAME} !-d \r\n\r\nRewriteRule . index.php</pre>\r\n<br />\r\n<img src="http://localhost/tutorials/uploaded/articles/yii2-create-htaccess-file.jpg" alt="Yii2 remove frontend/web and backend/web from url" width="600" height="256" /><br />\r\n<br />\r\nThat’s fine, now, you can access yii2 without frontend/web. when accessing to web root frontend will be defaulted.<br />\r\n<br />\r\n-&#160;Url frontend will be defaulted.<br />\r\n<pre title="code" class="brush: php;">\r\nhttp://yiiadvanced/</pre>\r\n<img src="http://localhost/tutorials/uploaded/articles/yii2-fronent-config.jpg" alt="Url frontend in yii2 framework" width="600" height="350" /><br />\r\n<br />\r\n<br />\r\n- Url backend<br />\r\n<pre title="code" class="brush: php;">\r\nhttp://yiiadvanced/system</pre>\r\nI use the path to the backend here is system, and if you want to change the admin or something, you edit the .htaccess file, it’s up to you.<br />\r\n<br />\r\n<img src="http://localhost/tutorials/uploaded/articles/yii2-url-backend-config.jpg" alt="Yii2 url backend configuration" width="600" height="379" /><br />\r\n<br />\r\n<br />\r\nSo, we finish the frontend and backend configuration in web application on yii2 framework. Next time, we will conduct to run the first application', '', '', 'yii2framework.jpg', 1, 'Yii2 framework, Yii2 configuration, Yii2 started', 'Fronted and backend yii2 framework, remove fronted/we on URL in yii2 framework', '2016-03-18 08:31:17', 5),
 (103, 'Part 1. Install codeigniter, folder codeigniter structure', 'part-1-install-codeigniter-folder-codeigniter-structure', 'Tuan Kiet', 0, 'Certainly when you want to learn <strong>Codeigniter Framework</strong>, I’m sure that you have already known the definition of Web Server. Therefore, I will not instruct you how to install. If you have no idea of that, read the post of guiding to install <strong>Xampp</strong>.', '<h3>&#160;1. Download and install</h3>\r\n<div>It is easy to download and <strong>install Codeigniter</strong>. First, access the following page to <a href="https://github.com/bcit-ci/CodeIgniter/archive/3.0.0.zip">download source</a> (select version 3.x).</div>\r\n<div>&#160;</div>\r\n<div>After finishing downloading, you will receive a .rar archive file, access folder htdocs of web server to create a new folder namely codeigniter and then copy the file that has already been downloaded into this new folder and extract here.</div>\r\n<div>&#160;</div>\r\n<div>After extracting, come to web browser and type localhost/codeigniter, if the result emerges, it means that your installation is successful and vice versa.<br />\r\n<br />\r\n<img src="http://localhost/tutorials/uploaded/articles/codeigniter-welcome-screen.jpg" alt="Codeigniter 3.0 - welcome screen" width="600" height="316" /><br />\r\n<h3>2. Folder codeigniter structure.</h3>\r\n<div>After extracting Codeigniter, there will be folder structuring folder codeigniter as following:<br />\r\n<br />\r\n<img src="http://localhost/tutorials/uploaded/articles/folder-codeigniter-structure.jpg" alt="Folder structure in codeigniter 3.0" width="273" height="436" align="left" hspace="5" /><br />\r\n<strong>Application</strong> : contain source of application\r\n<div><strong>Cache </strong>: contain cache file</div>\r\n<div><strong>Config </strong>: contain config file of application</div>\r\n<div><strong>Controllers </strong>: contain controllers of application</div>\r\n<div><strong>Core </strong>: If want custom core of CI, put it here</div>\r\n<div><strong>Errors </strong>: views inform error of CI</div>\r\n<div><strong>Helpers &#160;</strong>: contain helpers of application</div>\r\n<div><strong>Hooks </strong>: hooks mechanism</div>\r\n<div><strong>Language </strong>: contain language of application</div>\r\n<div><strong>Libraries </strong>: contain added liabrary</div>\r\n<div><strong>Logs </strong>: contain logs file &#40;save logs&#41;</div>\r\n<div><strong>Models </strong>: contain models of application</div>\r\n<div><strong>Third party</strong> : Contain third liabrary, the labruary is out of CI</div>\r\n<div><strong>Views </strong>: contain views of application</div>\r\n<div><strong>System</strong> : contain source of CI</div>\r\n<div><strong>User-guide</strong> : Manual document folder</div>\r\n<div><strong>index.php</strong> : All requests run into this file</div>\r\n<br />\r\n<div><br />\r\nIn which, folder <strong>system</strong> is a core set of CI, we can’t have any works with but just only calling and using.</div>\r\n<div>&#160;</div>\r\n<div>Folder <strong>user_guide</strong> is only folder document. You can delete I if it is not necessary for applicaion while it is not problem if you want to reserve it for referring.</div>\r\n<div>&#160;</div>\r\n<div>Folder <strong>Application</strong> is the one containing source web during its period of development. All files are put in this folder and depending on the type of file, we save them in different folders. In next post, I will share with you.</div>\r\n<div>&#160;</div>\r\n<div>In application, you can see the most important folders that are <strong>Controllers</strong>, <strong>models</strong> and <strong>views</strong>. It’s MVC model that is popular at this time. If you havn’t had any performance with MVC before, I suggest you write the application by MVC and OOP &#160;application .&#160;</div>\r\n<div>&#160;</div>\r\n<div>To the rest one, we will mention later because if I share with you all folders at the same time, certainly you can not remember. Only when it is necessary to use folder, I will share with you without any hesitation and you can have comprehensive of this issue.<br />\r\n&#160;</div>\r\n<div>In this post, I jusst have basic introduction of folder Codeigniter IC that has already been downloaded. In next post, we will learrn Controller in Codeigniter</div>\r\n</div>\r\n</div>', '', '', 'codeigniter-install.jpg', 1, 'Install codeigniter, folder codeigniter structure, How to install codeigniter', 'How to install codeigniter framework? folder structure in codeigniter.', '2016-04-02 10:32:01', 9),
 (89, 'Yii2 part 3 - Operation with controller in yii2 framework', 'yii2-part-3-operation-with-controller-in-yii2-framework', 'haanhdon', 12, '<div>In the previous section, we already configured frontend and backend. In this post, we will create and run the first controller in the application of web <strong>yii2 framework</strong>.&#160;</div>\r\n<div>&#160;</div>\r\n<div>Like other frameworks, yii2 is also divided into three items, namely: <strong>controllers</strong>, <strong>models</strong>, <strong>views</strong>. Controller receives request from users and then process, take data through models, then poures out the result to the user views.</div>', 'Cũng như các framework khác, yii2 cũng chia làm 3 mục controllers, models, views. Controller nhận request từ người dùng sau đó xử lý, lấy dữ liệu từ database lên thông qua models, sau đó kết quả đổ ra views cho người dùng.<br />\r\n<br />\r\n<img src="http://localhost/tutorials/uploaded/articles/yii2-mvc-model.jpg" alt="Yii2 framework - Mvc model" width="600" height="229" />\r\n<div><em>MVC model in Yii2 framework.</em></div>\r\n<br />\r\n<div>There is a part on Yii2 which can helps us create controllers, models, views…Especially, it can create a complete CRUD with full list, add, edit and delete which is&#160;</div>\r\n<div>Gii. In this part, Hatutorials will instruct you through this simple and detailed post by creating a simple file.</div>\r\n<br />\r\n<h3>1. Create Hello Controller</h3>\r\n- Create <strong>frontend\\controllers\\helloController.php</strong> file, Yii2 regulate that in the word Controller, the first letter must be capitalized and enclosed with Controller in which also must capitalize C.<br />\r\n<pre title="code" class="brush: php;">\r\n&lt;?php\r\n\r\nnamespace frontend\\controllers;\r\n\r\nuse Yii;\r\nuse yii\\web\\Controller;\r\n\r\nClass HelloController extends Controller\r\n{\r\n    public function actionIndex()\r\n    {\r\n        Yii::$app-&gt;view-&gt;title = ''Yii2 Framework - Hello world'';\r\n        \r\n        return $this-&gt;render(''index'', [''hello'' =&gt; ''Yii2 Franework - Hello world'']);\r\n    }\r\n}</pre>\r\n<br />\r\n<u><strong>In which:</strong></u><br />\r\n<ul>\r\n    <li>Yii2 use namespace. It is simply understood that&#160;</li>\r\n    <li>The definition of use is like that of include file</li>\r\n    <li>Class names must be written like the file name</li>\r\n    <li>Class that we write must be extends from class Controller of yii2</li>\r\n    <li>One action in Yii2 is originated from the word “action” and then the name action, the first letter has to be capitalized. Here we have actionIndex()</li>\r\n</ul>\r\n<br />\r\n-&#160;Give title to view, we have syntax<br />\r\n<pre title="code" class="brush: php;">\r\nYii::$app-&gt;view-&gt;title = ''Title'';</pre>\r\n<br />\r\n- Call view in controller, we have syntax<br />\r\n<pre title="code" class="brush: php;">\r\nreturn $this-&gt;render(''index''); //type view url</pre>\r\n<br />\r\nLike other frameworks, Yii2 use arrays to convey value from controller to view, in php 5.4 version or higher, we will consider the definition of array as [] (square brackets).<br />\r\n<br />\r\n<pre title="code" class="brush: php;">\r\n\r\n$this-&gt;render(''index'', [''hello'' =&gt; ''Yii2 Franework - Hello world'']);\r\n</pre>\r\n<br />\r\n<h3>2. Create View file</h3>\r\nCreate <strong>fronted\\views\\hello\\index.php</strong>&#160;to display &#160;results from the controller. Here, &#160;our controller is Hello in Views folder &#160;so we will have &#160;hello folder which is corresponding to controller. <br />\r\n<br />\r\nIn <u><em>fronted\\views\\hello\\index.php</em></u> file, we will receive the value transmitted from controller to view, echo the result:<br />\r\n<pre title="code" class="brush: php;">\r\n&lt;h3&gt;&lt;?= $hello ?&gt;&lt;/h3&gt;</pre>\r\n<br />\r\nAfter finishing creation, we start to run controller by the following url<br />\r\n<pre title="code" class="brush: php;">\r\nhttp://yiiadvanced/?r=hello</pre>\r\n<br />\r\nIf at first, we can run the controller with <u><em>http://localhost/yii2adv/frontend/web/hello</em></u>, after removing fronted/web and backend/web configuration, we can not run this url. To be able to run URL in this form<br />\r\n<pre title="code" class="brush: php;">\r\nhttp://yiiadvanced/hello</pre>\r\n<br />\r\nWe need to configure in <u><em>fronted\\config\\main.php</em></u> file, we add contents to components as following:<br />\r\n<br />\r\n- Add baseUrl<br />\r\n<pre title="code" class="brush: php;">\r\n''request'' =&gt; [\r\n            ''baseUrl'' =&gt; ''/'',\r\n        ],</pre>\r\n<br />\r\n- Add urlManager, consider showScriptname = false<br />\r\n<pre title="code" class="brush: php;">\r\n''urlManager'' =&gt; [\r\n            ''enablePrettyUrl'' =&gt; true,\r\n            ''showScriptName'' =&gt; false,\r\n            ''rules'' =&gt; [\r\n            ],\r\n        ],</pre>\r\n<br />\r\nAfter adding, we can see this one<br />\r\n<pre title="code" class="brush: php;">\r\n''components'' =&gt; [\r\n        ''request'' =&gt; [\r\n            ''baseUrl'' =&gt; ''/'',\r\n        ],\r\n        ''user'' =&gt; [\r\n            ''identityClass'' =&gt; ''common\\models\\User'',\r\n            ''enableAutoLogin'' =&gt; true,\r\n        ],\r\n        ''log'' =&gt; [\r\n            ''traceLevel'' =&gt; YII_DEBUG ? 3 : 0,\r\n            ''targets'' =&gt; [\r\n                [\r\n                    ''class'' =&gt; ''yii\\log\\FileTarget'',\r\n                    ''levels'' =&gt; [''error'', ''warning''],\r\n                ],\r\n            ],\r\n        ],\r\n        ''errorHandler'' =&gt; [\r\n            ''errorAction'' =&gt; ''site/error'',\r\n        ],\r\n        ''urlManager'' =&gt; [\r\n            ''enablePrettyUrl'' =&gt; true,\r\n            ''showScriptName'' =&gt; false,\r\n            ''rules'' =&gt; [\r\n            ],\r\n        ],\r\n    ],</pre>\r\n<br />\r\nNow, we can run as the structure domain/controller-name<br />\r\n<pre title="code" class="brush: php;">\r\nhttp://yiiadvanced/hello</pre>\r\n<br />\r\nAnd this is the result displayed in the browser<br />\r\n<br />\r\n<img src="http://localhost/tutorials/uploaded/articles/yii2-hello-world_1.jpg" alt="Yii2 framework - Operation with controller in yii2 " width="530" height="196" /><br />\r\n<br />\r\n<br />\r\nSo, we have completed the configuration and run the first application on Yii2 framework, however, we should pay attention to some point below:<br />\r\n<br />\r\n- Yii2 Framework must run with the php 5.4 or higher version<br />\r\n- Yii2 use array by [], and obviously array is still used as usual<br />\r\n- Yii2 often use the structure &lt;?= $name_variable ?&gt; to export the value<br />\r\n<br />\r\n<br />\r\nIn this part, we have not learnt model because the part of model with the database manipulation is relatively wide, and I will share in the following post.', '', '', 'yii2framework.jpg', 1, 'Controller in Yii2, Yii2 create controller, Yii2 framework, Yii2 configuration', 'In this section, we will proceed with creating and running the first controller on the framework yii2', '2016-03-19 00:25:10', 5);
 INSERT INTO `tbl_posts` (`post_id`, `post_title`, `post_title_rewrite`, `post_author`, `post_order`, `post_info`, `post_value`, `post_tags`, `post_tags_rewrite`, `post_image`, `post_status`, `post_keys`, `post_des`, `created_at`, `cate_id`) VALUES
 (90, 'Yii2 part 4 - Operation with model in yii2 framework', 'yii2-part-4-operation-with-model-in-yii2-framework', 'haanhdon', 13, 'Operate with model in yii2 framework, we will find out the database connection, query methods and how to query with database', '<div>Yii2 is a famous framework which is commonly used, methods of query database is relatively numerous and in this post, we will learn some main and commonly used measures. Firstly, to manipulate database, we need to connect to the database..</div>\r\n<br />\r\n<h3>1. Connect with database</h3>\r\nOpen <u>common\\config\\main-local.php</u> &#160;and fill in your database<br />\r\n<pre title="code" class="brush: php;">\r\n''db'' =&gt; [\r\n            ''class'' =&gt; ''yii\\db\\Connection'',\r\n            ''dsn'' =&gt; ''mysql:host=localhost;dbname=yii2adv'',\r\n            ''username'' =&gt; ''root'',\r\n            ''password'' =&gt; '''',\r\n            ''charset'' =&gt; ''utf8'',\r\n        ],</pre>\r\n<h3><br />\r\n2. Operation with model</h3>\r\nIn Yii2 Framework, three folders are set including<br />\r\n<ul>\r\n    <li><u>common\\models</u> :&#160;this is the model for both frontend and the backend, this is also where the main model that are commonly used are included.</li>\r\n    <li><u>frontend\\models</u> : model for frontend</li>\r\n    <li><u>backend\\models</u> : model for backend</li>\r\n</ul>\r\n<br />\r\nIn project, we often prefer common\\models because frontend and backend are often used for one model when operating with database<br />\r\n<br />\r\n<strong>Create a model, a model structure in Yii2.</strong><br />\r\n<br />\r\nIn yii2adv database, we have users table<br />\r\n<pre title="code" class="brush: php;">\r\nCREATE TABLE IF NOT EXISTS `users` (\r\n`id` int(11) unsigned NOT NULL,\r\n  `username` varchar(100) NOT NULL,\r\n  `password` varchar(100) NOT NULL,\r\n  `fullname` varchar(100) NOT NULL,\r\n  `gender` tinyint(4) NOT NULL DEFAULT ''1'',\r\n  `email` varchar(100) NOT NULL,\r\n  `status` tinyint(4) NOT NULL DEFAULT ''1''\r\n) ENGINE=InnoDB DEFAULT CHARSET=utf8;</pre>\r\n<br />\r\nCreate file common\\models\\users.php with the contents<br />\r\n<pre title="code" class="brush: php;">\r\n&lt;?php\r\n\r\nnamespace common\\models;\r\n\r\nuse Yii;\r\n\r\n\r\nclass Users extends \\yii\\db\\ActiveRecord\r\n{\r\n    public static function tableName()\r\n    {\r\n        return ''users'';\r\n    }\r\n\r\n    public function rules()\r\n    {\r\n        return [\r\n            [[''username'', ''password'', ''fullname'', ''email''], ''required''],\r\n            [[''gender'', ''status''], ''integer''],\r\n            [[''username'', ''password'', ''fullname'', ''email''], ''string'', ''max'' =&gt; 100]\r\n        ];\r\n    }\r\n}</pre>\r\n<br />\r\n<div>- \\yii\\db\\ActiveRecord is the &#160;activerecord liabrary of Yii2.</div>\r\n<div>- function tableName () returns the name of the table in the database</div>\r\n<div>- Rules function () declare field of users table, which is used to validate components</div>\r\n<br />\r\nCreate getListUsers()&#160;function &#160;in the model users to retrieve information from the database<br />\r\n<pre title="code" class="brush: php;">\r\n/**\r\n* @description get list users\r\n* @uthor Ha Tuan Kiet(haanhdon@gmail.com)\r\n* @Date 12/02/2016\r\n*/\r\npublic function getListUsers()\r\n{\r\n    $query = new \\yii\\db\\Query();\r\n    $query-&gt;select(''*'')\r\n            -&gt;from(self::tableName())\r\n            -&gt;limit(10);\r\n    return $query-&gt;createCommand()-&gt;queryAll();\r\n}</pre>\r\n<br />\r\nIn controller, call model users, take information of users and transmit to view<br />\r\n<pre title="code" class="brush: php;">\r\n//call model users\r\n$model = new \\common\\models\\Users();\r\n$listUsers = $model-&gt;getListUsers();\r\n        \r\nreturn $this-&gt;render(''index'',[''listUsers'' =&gt; $listUsers]);</pre>\r\n<br />\r\nController users : frontend\\controllers\\UsersController.php<br />\r\n<pre title="code" class="brush: php;">\r\n&lt;?php\r\n\r\nnamespace frontend\\controllers;\r\n\r\nuse Yii;\r\nuse yii\\web\\Controller;\r\n\r\nClass UsersController extends Controller\r\n{\r\n    public function actionIndex()\r\n    {\r\n        Yii::$app-&gt;view-&gt;title = ''Operation with model - Yii2 Framework'';\r\n        \r\n        //call model users\r\n        $model = new \\common\\models\\Users();\r\n        $listUsers = $model-&gt;getListUsers();\r\n        \r\n        return $this-&gt;render(''index'',[''listUsers'' =&gt; $listUsers]);\r\n    }\r\n}</pre>\r\n<br />\r\n<h3>3. In views, show list users</h3>\r\n<br />\r\nCreate frontend\\views\\users\\index.php&#160;file&#160;with the following content<br />\r\n<br />\r\n<pre title="code" class="brush: php;">\r\n&lt;?php foreach ($listUsers as $info){ ?&gt;\r\n    &lt;tr&gt;\r\n        &lt;td&gt;&lt;?= $info[''id'']; ?&gt;&lt;/td&gt;\r\n        &lt;td&gt;&lt;?= $info[''username'']; ?&gt;&lt;/td&gt;\r\n        &lt;td&gt;&lt;?= $info[''gender''] == 1 ? ''Male'' : ''Fmale''; ?&gt;&lt;/td&gt;\r\n        &lt;td&gt;&lt;?= $info[''email'']; ?&gt;&lt;/td&gt;\r\n        &lt;td&gt;&lt;?= $info[''status''] == 1 ? ''Active'' : ''Not active''; ?&gt;&lt;/td&gt;\r\n        &lt;td&gt;&lt;a href=""&gt;Edit&lt;/a&gt;&lt;/td&gt;\r\n        &lt;td&gt;&lt;a href=""&gt;Del&lt;/a&gt;&lt;/td&gt;\r\n    &lt;/tr&gt;\r\n&lt;?php } ?&gt;</pre>\r\n<br />\r\n<br />\r\n<br />\r\n<strong>- Run userController on browse</strong><br />\r\n<br />\r\n<pre title="code" class="brush: php;">\r\nhttp://yiiadvanced/users</pre>\r\n<br />\r\n<img src="http://localhost/tutorials/uploaded/articles/yii2-model-get-users.jpg" alt="Yii2 - Operation with model, get list users" width="600" height="144" /><br />\r\n<br />\r\n<br />\r\nThere are so many methods of active record in yii2 framework. In this post, we only adapt with model, in the next post, we are going to learn more about model in Yii2<br />\r\n<br type="_moz" />', '', '', 'yii2framework.jpg', 1, 'Operation with model in yii2 framework, Yii2 Model, Yii2 Framework', 'Yii2 model interaction in the framework, synthesis methods for active record models', '2016-03-20 09:41:10', 5),
 (91, 'Yii2 phần 5 - Active record trong model yii2 framework', 'yii2-phan-5-active-record-trong-model-yii2-framework', 'haanhdon', 13, 'Thao tác với model trong Yii2 Framework, chúng ta sẽ tìm hiểu các kết nối database, các phương thức truy vấn, query với database như thế nào', 'Yii2 là một framework nổi tiếng được cộng đồng sử dụng rộng rãi, các phương thức truy vấn database tương đối nhiều, chúng ta sẽ đi tìm hiểu một số phương thức chính, hay được sử dụng nhất. Trước tiên thao tác với database thì ta cần phải kết nối cơ sở dữ liệu.<br />\r\n<br />\r\n<strong>1. Kết nối với database</strong><br />\r\nMở file&#160;common\\config\\main-local.php điền thông tin database của bạn vào<br />\r\n<pre title="code" class="brush: php;">\r\n''db'' =&gt; [\r\n            ''class'' =&gt; ''yii\\db\\Connection'',\r\n            ''dsn'' =&gt; ''mysql:host=localhost;dbname=yii2adv'',\r\n            ''username'' =&gt; ''root'',\r\n            ''password'' =&gt; '''',\r\n            ''charset'' =&gt; ''utf8'',\r\n        ],</pre>\r\n<br />\r\n<strong>2. Thao tác với model</strong><br />\r\nTrong Yii2 Framework model được đặt ở 3 folder bao gồm<br />\r\n<br />\r\n-&#160;common\\models : đây là phần model chung cho cả frontend và backend, đây cũng là nơi sẽ chứa các model chính mà mình hay sử dụng<br />\r\n-&#160;frontend\\models : model riêng cho frontend<br />\r\n-&#160;backend\\models : model riêng cho backend<br />\r\n<br />\r\nTrong các dự án thì ta hay sử dụng common\\models nhất, vì frontend và backend thường dùng chung một model khi thao tác với database<br />\r\n<br />\r\n<u>Tạo model, cú pháp một model trong Yii2</u><br />\r\n<br />\r\nTrong database yii2adv ta có bảng users<br />\r\n<pre title="code" class="brush: php;">\r\nCREATE TABLE IF NOT EXISTS `users` (\r\n`id` int(11) unsigned NOT NULL,\r\n  `username` varchar(100) NOT NULL,\r\n  `password` varchar(100) NOT NULL,\r\n  `fullname` varchar(100) NOT NULL,\r\n  `gender` tinyint(4) NOT NULL DEFAULT ''1'',\r\n  `email` varchar(100) NOT NULL,\r\n  `status` tinyint(4) NOT NULL DEFAULT ''1''\r\n) ENGINE=InnoDB DEFAULT CHARSET=utf8;</pre>\r\n<br />\r\nTạo file common\\models\\users.php với nội dung<br />\r\n<pre title="code" class="brush: php;">\r\n&lt;?php\r\n\r\nnamespace common\\models;\r\n\r\nuse Yii;\r\n\r\n\r\nclass Users extends \\yii\\db\\ActiveRecord\r\n{\r\n    public static function tableName()\r\n    {\r\n        return ''users'';\r\n    }\r\n\r\n    public function rules()\r\n    {\r\n        return [\r\n            [[''username'', ''password'', ''fullname'', ''email''], ''required''],\r\n            [[''gender'', ''status''], ''integer''],\r\n            [[''username'', ''password'', ''fullname'', ''email''], ''string'', ''max'' =&gt; 100]\r\n        ];\r\n    }\r\n}</pre>\r\n<br />\r\n-&#160;<span vera="" sans="">\\yii\\db\\ActiveRecord</span>&#160;là thư viện activerecord của Yii2<br />\r\n- function tableName() trả về tên của table trong database<br />\r\n- function rules() khai báo các trường của table users, được dùng cho phần validate<br />\r\n<br />\r\nTạo function getListUsers() trong model users để lấy thông tin từ database<br />\r\n<pre title="code" class="brush: php;">\r\n/**\r\n* description get list users\r\n* Author Ha Tuan Kiet(haanhdon@gmail.com)\r\n* Date 12/02/2016\r\n*/\r\npublic function getListUsers()\r\n{\r\n    $query = new \\yii\\db\\Query();\r\n    $query-&gt;select(''*'')\r\n            -&gt;from(self::tableName())\r\n            -&gt;limit(10);\r\n    return $query-&gt;createCommand()-&gt;queryAll();\r\n}</pre>\r\n<br />\r\nTrong controller khởi tạo model users ,&#160;Lấy thông tin users và truyền qua view<br />\r\n<pre title="code" class="brush: php;">\r\n//Khởi tạo model\r\n$model = new \\common\\models\\Users();\r\n$listUsers = $model-&gt;getListUsers();\r\n        \r\nreturn $this-&gt;render(''index'',[''listUsers'' =&gt; $listUsers]);</pre>\r\n<br />\r\nController users : frontend\\controllers\\UsersController.php<br />\r\n<pre title="code" class="brush: php;">\r\n&lt;?php\r\n\r\nnamespace frontend\\controllers;\r\n\r\nuse Yii;\r\nuse yii\\web\\Controller;\r\n\r\nClass UsersController extends Controller\r\n{\r\n    public function actionIndex()\r\n    {\r\n        Yii::$app-&gt;view-&gt;title = ''Thao tác với model - Yii2 Framework'';\r\n        \r\n        //Khởi tạo model\r\n        $model = new \\common\\models\\Users();\r\n        $listUsers = $model-&gt;getListUsers();\r\n        \r\n        return $this-&gt;render(''index'',[''listUsers'' =&gt; $listUsers]);\r\n    }\r\n}</pre>\r\n<br />\r\n<br />\r\nỞ view ta chỉ cần lặp đổ list users là xong<br />\r\n<pre title="code" class="brush: php;">\r\nhttp://yiiadvanced/users</pre>\r\n<br />\r\n<br />\r\nCó rất nhiều phương thức active record trong Yii2 framework, Ở bài này chúng ta mới chỉ làm quen với model, bài sau chúng ta sẽ đi tìm hiểu sâu hơn về model trong Yii2', '', '', 'yii2framework.jpg', 0, 'Yii2 Thao tác với model, Yii2 Model, Yii2 Framework', 'Tìm hiểu model trong yii2 framework, các phương thức active record trong yii2 framework bao gồm những gì?', '2016-02-17 15:41:10', 5),
-(92, 'Yii2 part 6 - Use layout in yii2 framework', 'yii2-part-6-use-layout-in-yii2-framework', 'haanhdon', 15, 'Use &#160;layout in yii2 framework.&#160;In common, frameworks will have a main layout file, and then, header, content and footer will be called into layout', 'It is true in <strong>Yii2 framework</strong>, Layout is &#160;file frontend\\views\\layouts\\main.php in file main.php. We will consider step by step<br />\r\n<br />\r\nHere, I will divide folders in fronted\\views with the following structure<br />\r\n<img src="http://localhost/tutorials/uploaded/articles/layout-in-yii2-framework.jpg" alt="Layout trong yii2 framework" width="377" height="143" /> <br />\r\n<br />\r\n-&#160;Layouts / main.php file will be the main layouts of the website.<br />\r\n- Partials contain header.ph and footer.php which is the fixed part of website.<br />\r\n<br />\r\n<br />\r\nOpen frontend\\views\\layouts\\main.php file, we will see the following parts<br />\r\n<br />\r\n<div><strong>1. Helper library of Yii2.</strong></div>\r\n<div>This part contain helpers of Yii2 framework such as Html to create form, NavBar menu, Breadcrumbs…</div>\r\n<pre title="code" class="brush: php;">\r\n&lt;?php\r\n\r\nuse yii\\helpers\\Html;\r\nuse yii\\bootstrap\\Nav;\r\nuse yii\\bootstrap\\NavBar;\r\nuse yii\\widgets\\Breadcrumbs;\r\nuse frontend\\assets\\AppAsset;\r\nuse common\\widgets\\Alert;\r\n\r\nAppAsset::register($this);\r\n?&gt;</pre>\r\n<br />\r\n<strong>2. Head contain tille, meta, css and javascript tags</strong><br />\r\nAsset library is used to call css and javascript, it will load these files from folder frontend\\web or backend\\web<br />\r\n<pre title="code" class="brush: php;">\r\n&lt;head&gt;\r\n    &lt;meta charset="&lt;?= Yii::$app-&gt;charset ?&gt;"&gt;\r\n    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;\r\n    &lt;?= Html::csrfMetaTags() ?&gt;\r\n    &lt;title&gt;&lt;?= Html::encode($this-&gt;title) ?&gt;&lt;/title&gt;\r\n    &lt;?php $this-&gt;head() ?&gt;\r\n&lt;/head&gt;</pre>\r\n<br />\r\n<strong>3.&#160;Body of layout</strong><br />\r\nThis section will be divided into three small part, depending on the layout that you divide into different parts. According to the layout in this post, we have<br />\r\n<br />\r\n<div>-&#160;Header: The header of the website includes main parts such as logo, menu, banner…it is fixed.</div>\r\n<div>-&#160;Content: This section will contain the view for each controller, this section will load up on each controller.</div>\r\n<div>-&#160;Footer: it is fixed.</div>\r\n<br />\r\nIn the &lt;body&gt; of frontend\\views\\layouts\\main.php file, there will be three main parts<br />\r\n<pre title="code" class="brush: php;">\r\n&lt;body&gt;\r\n    &lt;?php echo $this-&gt;render(''//partials/header''); ?&gt;\r\n\r\n    &lt;?= $content ?&gt;\r\n    \r\n    &lt;?php echo $this-&gt;render(''//partials/footer''); ?&gt;\r\n&lt;/body&gt;</pre>\r\n<br />\r\n<div>You can see the image to have intensive understanding</div>\r\n<br />\r\n<img src="http://phpandmysql.net/uploaded/articles/load-layout-yii2-framework.jpg" alt="Cách load layout trong yii2 framework" /> <br />\r\n<br />\r\n-&#160;&lt;?= $content ?&gt; is a dynamic part. When you run any controller, the controller view will be loaded into main.php file through variable &lt;? = $Content ?&gt;&#160;<br />\r\n<br />\r\n-&#160;When we run a certain controller, all the header, left menu, footer are fixed while only the content is changed.', '', '', 'yii2framework.jpg', 1, 'Use  layout in yii2 framework, Yii2 Layout, Yii2 Framework, Yii2 Framework Layout', 'How to use use layout in Yii2 framework. Custom layout for application yii2 framework', '2016-02-17 15:41:10', 5),
+(92, 'Yii2 part 6 - Use layout in yii2 framework', 'yii2-part-6-use-layout-in-yii2-framework', 'haanhdon', 15, 'Use &#160;layout in yii2 framework.&#160;In common, frameworks will have a main layout file, and then, header, content and footer will be called into layout', 'It is true in <strong>Yii2 framework</strong>, Layout is &#160;file frontend\\views\\layouts\\main.php in file main.php. We will consider step by step<br />\r\n<br />\r\nHere, I will divide folders in fronted\\views with the following structure<br />\r\n<img src="http://localhost/tutorials/uploaded/articles/layout-in-yii2-framework.jpg" alt="Layout trong yii2 framework" width="377" height="143" /> <br />\r\n<br />\r\n-&#160;Layouts / main.php file will be the main layouts of the website.<br />\r\n- Partials contain header.ph and footer.php which is the fixed part of website.<br />\r\n<br />\r\n<br />\r\nOpen frontend\\views\\layouts\\main.php file, we will see the following parts<br />\r\n<br />\r\n<div><strong>1. Helper library of Yii2.</strong></div>\r\n<div>This part contain helpers of Yii2 framework such as Html to create form, NavBar menu, Breadcrumbs…</div>\r\n<pre title="code" class="brush: php;">\r\n&lt;?php\r\n\r\nuse yii\\helpers\\Html;\r\nuse yii\\bootstrap\\Nav;\r\nuse yii\\bootstrap\\NavBar;\r\nuse yii\\widgets\\Breadcrumbs;\r\nuse frontend\\assets\\AppAsset;\r\nuse common\\widgets\\Alert;\r\n\r\nAppAsset::register($this);\r\n?&gt;</pre>\r\n<br />\r\n<strong>2. Head contain tille, meta, css and javascript tags</strong><br />\r\nAsset library is used to call css and javascript, it will load these files from folder frontend\\web or backend\\web<br />\r\n<pre title="code" class="brush: php;">\r\n&lt;head&gt;\r\n    &lt;meta charset="&lt;?= Yii::$app-&gt;charset ?&gt;"&gt;\r\n    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;\r\n    &lt;?= Html::csrfMetaTags() ?&gt;\r\n    &lt;title&gt;&lt;?= Html::encode($this-&gt;title) ?&gt;&lt;/title&gt;\r\n    &lt;?php $this-&gt;head() ?&gt;\r\n&lt;/head&gt;</pre>\r\n<br />\r\n<strong>3.&#160;Body of layout</strong><br />\r\nThis section will be divided into three small part, depending on the layout that you divide into different parts. According to the layout in this post, we have<br />\r\n<br />\r\n<div>-&#160;Header: The header of the website includes main parts such as logo, menu, banner…it is fixed.</div>\r\n<div>-&#160;Content: This section will contain the view for each controller, this section will load up on each controller.</div>\r\n<div>-&#160;Footer: it is fixed.</div>\r\n<br />\r\nIn the &lt;body&gt; of frontend\\views\\layouts\\main.php file, there will be three main parts<br />\r\n<pre title="code" class="brush: php;">\r\n&lt;body&gt;\r\n    &lt;?php echo $this-&gt;render(''//partials/header''); ?&gt;\r\n\r\n    &lt;?= $content ?&gt;\r\n    \r\n    &lt;?php echo $this-&gt;render(''//partials/footer''); ?&gt;\r\n&lt;/body&gt;</pre>\r\n<br />\r\n<div>You can see the image to have intensive understanding</div>\r\n<br />\r\n<img src="http://localhost/tutorials/uploaded/articles/load-layout-yii2-framework_1.jpg" alt="load layout in yii2 framework" width="518" height="245" /> <br />\r\n<br />\r\n-&#160;&lt;?= $content ?&gt; is a dynamic part. When you run any controller, the controller view will be loaded into main.php file through variable &lt;? = $Content ?&gt;&#160;<br />\r\n<br />\r\n-&#160;When we run a certain controller, all the header, left menu, footer are fixed while only the content is changed.', '', '', 'yii2framework.jpg', 1, 'Use  layout in yii2 framework, Yii2 Layout, Yii2 Framework, Yii2 Framework Layout', 'How to use use layout in Yii2 framework. Custom layout for application yii2 framework', '2016-02-17 15:41:10', 5),
 (93, 'Yii2 part 7 - Modules in yii2 framework', 'yii2-part-7-modules-in-yii2-framework', 'haanhdon', 16, 'When the website has a variety of &#160;<strong>modules</strong>, at this time if we mix all controllers of each module together in the same folder, this will result in application being tangle and code being not organized clearly. In this section, we will manipulate to divide controllers and viewers into each <strong>module</strong>, for example, users, news, products…are divided into separated <strong>module</strong>.', 'One module in Yii2 Framework consists of controller and views like a normal MVC model, while controllers will include controller and views which contain view file for each controller.<br />\r\n<br />\r\n<h3><strong>1. Manipulate with module, create modules.</strong></h3>\r\nWe start to create modules folder in frontend folder. For example, here we will create schedule module and in module schedule, we will create two folder, namely controllers, views and Schedule.php file<br />\r\n<br />\r\n- Create <em>modules\\schedule\\controllers\\DefaultController.php</em> and <em>modules\\schedule\\views\\default\\index.php</em> file<br />\r\n<br />\r\n<img src="http://localhost/tutorials/uploaded/articles/modules-in-yii2.jpg" alt="Create modules in yii2 framework" width="453" height="146" /> <br />\r\n<br />\r\nAfter that, add the following content, <strong>DefaultController.php</strong> file <br />\r\n<pre title="code" class="brush: php;">\r\n&lt;?php\r\n\r\nnamespace app\\modules\\schedule\\controllers;\r\n\r\nuse Yii;\r\nuse yii\\web\\Controller;\r\n\r\n/*\r\n * Default controller\r\n * @author Ha Tuan Kiet &lt;haanhdon@gmail.com&gt;\r\n */\r\n\r\nclass DefaultController extends Controller\r\n{\r\n    public function actionIndex()\r\n    {\r\n        Yii::$app-&gt;view-&gt;title = ''Modules in Yii2 Framework'';\r\n        \r\n        return $this-&gt;render(''index'');\r\n    }\r\n}</pre>\r\n<br />\r\n- Modules\\schedule\\views\\default\\index.php file<br />\r\n<pre title="code" class="brush: php;">\r\n&lt;h3&gt;Hello&lt;/h3&gt;\r\n\r\n&lt;p&gt;Module schedule - Yii2 Framework&lt;/p&gt;</pre>\r\n<br />\r\n<br />\r\nOpen&#160;<u>frontend\\modules\\schedule\\Schedule.php</u>&#160;file and we will have the following content<br />\r\n<pre title="code" class="brush: php;">\r\n&lt;?php\r\n\r\n//hatutorials.com\r\n\r\nnamespace app\\modules\\schedule;\r\n\r\nclass Schedule extends \\yii\\base\\Module\r\n{\r\n    public $controllerNamespace = ''app\\modules\\schedule\\controllers'';\r\n\r\n    public function init()\r\n    {\r\n        parent::init();\r\n\r\n        // custom initialization code goes here\r\n    }\r\n}</pre>\r\n<br />\r\n<br />\r\nI''ve created a schedule modules, but this time I can not run this module because it is not declared in <strong>config\\main.php</strong><br />\r\n<br />\r\n<h3><strong>2. Declare modules</strong></h3>\r\n<div>In frontend\\config\\main.php file we add the code to declare module</div>\r\n<pre title="code" class="brush: php;">\r\n''modules'' =&gt; [\r\n        ''schedule'' =&gt; [\r\n            ''class'' =&gt; ''app\\modules\\schedule\\Schedule'',\r\n        ],\r\n    ],</pre>\r\n<br />\r\nModules declare the same level with the <strong>components</strong>. You can see the code in more details as below<br />\r\n<br />\r\n<pre title="code" class="brush: php;">\r\nreturn [\r\n    ''id'' =&gt; ''app-frontend'',\r\n    ''basePath'' =&gt; dirname(__DIR__),\r\n    ''bootstrap'' =&gt; [''log''],\r\n    ''controllerNamespace'' =&gt; ''frontend\\controllers'',\r\n    ''modules'' =&gt; [\r\n        ''schedule'' =&gt; [\r\n            ''class'' =&gt; ''app\\modules\\schedule\\Schedule'',\r\n        ],\r\n    ],\r\n    ''components'' =&gt; [\r\n        ''request'' =&gt; [\r\n            ''baseUrl'' =&gt; ''/'',\r\n        ],</pre>\r\n<br />\r\nOk, a module has already been done, you can create more module if you want. Now, we can run module schedule on the path<br />\r\n<pre title="code" class="brush: php;">\r\nhttp://yiiadvanced/schedule</pre>\r\n<br />\r\nIn the right order, when you run a module, it will be module-&gt;controller-&gt;action. In Yii2 framework, DefaultController of a module will be run first, and in one controller, actionIndex will be, too.<br />\r\n<br />\r\nIn more detail, to run module schedule and actionIndex of DefaultController, Url will be:<br />\r\n<pre title="code" class="brush: php;">\r\nhttp://yiiadvanced/schedule/default/index</pre>\r\n<br />\r\nThis iss the result when module schedule is run.<br />\r\n<br />\r\n<img src="http://localhost/tutorials/uploaded/articles/how-to-creat-module-yii2-framework.jpg" alt="How to create module Yii2 framework" width="445" height="151" />', '', '', 'yii2framework.jpg', 1, 'Modules Yii2 Framework, Modules trong yii2 framework.', 'Modules in yii2 framework. how to organize folder in yii2 framework web application', '2016-02-17 15:41:10', 5),
 (94, 'What is laravel framework?', 'what-is-laravel-framework', 'Tuan Kiet', 0, 'Laravel is the first open source, is a framework used to build web applications, was designed based on the model of MVC (Model, Controller, View), full source code is placed on github.', '<h3>1. Introduction of Laravel Framework.</h3>\r\n<div>Laravel - a open source, a framework used to build web application is designed based on the MVC model &#160;(Model, Controller, View). All source &#160;codes are put on github. As the research of developer on december, 2013, <strong>Laravel framework</strong> ranks the top one in one of the most commond frameworks, next is Phalcon, Symfony 2, Codelgniter and other frameworks. On August, 2014, Laravel Framework is considered as the most common PHP project on Github.<br />\r\n<br />\r\n<h3>2. Basic function of Laravel Framework.</h3>\r\n<ul>\r\n    <li><strong>Bundles</strong> : Laravel version 3.x provides a packaged system modules, with a lot of features included.</li>\r\n    <li><strong>Composer</strong> : Laravel version 4.x is used as a management tool with functions as add installation package and &#160;the PHP blackening for Packagist Laravel in stock.</li>\r\n    <li><strong>Eloquent ORM</strong> (Object Relation Mappling): mapping objects and relational databases, providing internal methods to execute, at the same time,complementing the limited features of the relationship between the base object database. Eloquent ORM presents the tables in the database in the form of layers, providing more choices to access the database directly, more professionally.</li>\r\n    <li><strong>Application logic</strong> : is a part of application development is used by controllers.</li>\r\n    <li><strong>Routes</strong> : define the relationship between url, link. When a link is created by using the name of routes, a link identifier will be created uniformly by laravel.</li>\r\n    <li><strong>Restful Controller&#160;</strong>: provide options to split logic behind HTTP POST, GET request.</li>\r\n    <li><strong>Class auto loading</strong> : provide automatic class downloading in PHO without having to include the class. Depending on the requirement for essential class that will be loaded, limit unnecessary class.</li>\r\n    <li><strong>View&#160;</strong>: contains html code, display data specified by controller.</li>\r\n    <li><strong>Migrations</strong>: provide a system of controlling version mapping database cheme, make web application be able to interact conveniently with logic changes, codes of application and essential changes in the database layout, loosening and update applications.</li>\r\n    <li><strong>Unit testing&#160;</strong>: plays an important role in Laravel. Unit Testing contains a wide range of unit testing system, which helps detect and protect error in certain framework. Unit Testing can be run thorough command-line utility.</li>\r\n    <li><strong>Automatic pagination&#160;</strong>: the function of automatically dividing pages that is integrated &#160;in laravel to simplify the task of implementing paging in comparison &#160;with conventional methods.</li>\r\n</ul>\r\n</div>', '', '', 'what-is-laravel-framework.jpg', 1, 'What is laravel?, Laravel framework, Introduction laravel', 'Laravel is the first open source, is a framework used to build web applications, was designed based on the model of MVC (Model, Controller, View), full source code is placed on github', '2016-03-22 22:39:01', 7),
 (95, 'How to install laravel 5?', 'how-to-install-laravel-5', 'Tuan Kiet', 0, 'In last post, we can partly understand and basic function of <strong>Laravel 5</strong>. Maybe, there will be a wide range of wondering, misunderstanding, however, don’t worry, in this post, Hatutorials.com will instruct you <strong>how to install laravel 5</strong> on Windows and Ubuntu 14.04', '<h3>A. Install Laravel 5 on window</h3>\r\n<h4>1. Preparation</h4>\r\n<div>a. To install Laravel 5, at least in your computer, PHP&gt;=5.3.7 and mcrypt PHP Extension. If you finish installing Xampp or Wamp, we need two conditions above and no need to reinstall.</div>\r\n<div>&#160;</div>\r\n<div>b. Turn Extemsion php_openssl on (open php.ini file and find :extension=php_openssl.dll line, remove (;) at the beginning of line, save file and then restart apache)</div>\r\n<div>&#160;</div>\r\n<div>c. Download and install Composer for window in link : <a href="https://getcomposer.org/Composer-Setup.exe">https://getcomposer.org/Composer-Setup.exe</a> . In the process of composer installation, a notification will emerge and ask you to choose the folder containing php.exe. To xampp, it will lay on the URL like that: xampp: <strong>c:\\xampp\\php\\php.exe</strong>.</div>\r\n<div>&#160;</div>\r\n<div>d. Download and install Git with window version at msysgit.googlecode.com/files/Git-1.8.3-preview20130601.exe<br />\r\n&#160;</div>\r\n<div>\r\n<h4><span>2. Start to install Laravel 5.</span></h4>\r\n<div>* Step 1: click Window, in box Search programs and files, type cmd and then enter.<br />\r\n* Step 2: In cmd, type the following command to move to C:\\xamm\\htdocs.</div>\r\n<pre title="code" class="brush: php;">\r\ncd C:\\xampp\\htdocs</pre>\r\n* Step 3: Install composer plugin<br />\r\n<pre title="code" class="brush: php;">\r\ncomposer global require "laravel/installer=~1.1"</pre>\r\n<div>* Step 4: run the following command to create project laravel</div>\r\n<pre title="code" class="brush: php;">\r\ncomposer create-project laravel/laravel {project} "~5.0.0" --prefer-dist</pre>\r\n</div>\r\n<br />\r\n<img src="http://localhost/tutorials/uploaded/articles/install-laravel-5-by-composer.jpg" alt="Install laravel 5 by composer" width="600" height="218" /><br />\r\nWith <strong>{project}</strong>&#160;is the name of folder containing <strong>project laravel</strong> and you can name it depending on you (here I have laravel-5). After running the command above, wait for a time after the process finish running, you will see the folder containing project laravel 5.<br />\r\n<br />\r\n<img src="http://localhost/tutorials/uploaded/articles/laravel-5-structure-folder.jpg" alt="Laravel 5 structure folder" width="561" height="230" /><br />\r\n<br />\r\nStep 3: Access the browser and then type URL: &#160;<a href="http://localhost/laravel-5/public">http://localhost/laravel-5/public</a> if you see the result below. It means that you are successful in installing:<br />\r\n<img src="http://localhost/tutorials/uploaded/articles/install-laravel-5.jpg" alt="Laravel 5 install successfully" width="600" height="225" /><br />\r\n<h3>B. Insatll laravel 5 in Ubuntu 14.04</h3>\r\n<h4>1. Preparation.</h4>\r\n<div>Before installing Laravel, you need to ensure that Apache, PHO, MySQL in Ubuntu have already been installed. Next, you need to set up Mcrypt PHP Extension.</div>\r\n<pre title="code" class="brush: php;">\r\nsudo apt-get install php5-mcrypt</pre>\r\nAnd then restart apache by two following command:<br />\r\n<pre title="code" class="brush: php;">\r\nsudo php5enmod mcrypt\r\nsudo service apache2 restart</pre>\r\n<h4><br />\r\n2. Install Composer in Ubuntu</h4>\r\n<div>Open terminal (Ctrl + Alt + T), type the following command to set up Composer.</div>\r\n<pre title="code" class="brush: php;">\r\ncurl -sS https://getcomposer.org/installer | php</pre>\r\nMove Composer to /usr/local/bin/composer.<br />\r\n<pre title="code" class="brush: php;">\r\nmv composer.phar /usr/local/bin/composer</pre>\r\nEnable rewrite in Apache<br />\r\n<pre title="code" class="brush: php;">\r\nsudo a2enmod rewrite</pre>\r\n<h4><br />\r\n3. Install Laravel 5</h4>\r\nOpen terminal, move momposer to original folder <br />\r\n<pre title="code" class="brush: php;">\r\ncd /var/www/html</pre>\r\n<br />\r\nRun next command to install<br />\r\n<pre title="code" class="brush: php;">\r\ncomposer create-project laravel/laravel project-name --prefer-dist</pre>\r\n<br />\r\nLike on windows, when the downloading process finishes, laravel insalltation is successfull<br />\r\n<br />\r\n* Change permission for storage folder<br />\r\nFrom current URL (/var/www/html/laravel), type the following command to chmod 777 for storage folder<br />\r\n<pre title="code" class="brush: php;">\r\nchmod -R 777 app/storage/</pre>\r\nAfter installing, continue to run the following command<br />\r\n<pre title="code" class="brush: php;">\r\nphp artisan serve</pre>\r\nIf you see the image of Laravel 5 as following, it means that you are successfully install<br />\r\n<br />\r\n<img src="http://localhost/tutorials/uploaded/articles/install-laravel-5.jpg" alt="Laravel 5 install successfully" width="600" height="225" /><br />\r\nSummary: Hence, you know how to install Laravel 5 in Window and Ubuntu, the next post I will share with you the definition of Routes, Controller, View in Laravel 5<br />\r\n<br type="_moz" />', '', '', 'how-to-install-laravel-5.jpg', 1, 'What is laravel?, Laravel framework, Introduction laravel', 'Guide to install Laravel 5 on window and ubuntu 14.04. Introduction how to install laravel in the simplest and the most understandable way.', '2016-03-22 22:46:39', 7),
@@ -534,7 +534,8 @@ INSERT INTO `tbl_posts` (`post_id`, `post_title`, `post_title_rewrite`, `post_au
 (101, 'Mvc model in laravel 5', 'mvc-model-in-laravel-5', '', 0, 'In the post of instructing how to use eloquent in Laravel 5, you have had basic knowledge of how eloquent in laravel 5 works. In this post, I will share with you how MVC model operates in Laravel 5. Anyone else has no idea of MVC model, you can refer this post: knowledge of MVC model in PHP', '<h3><span><span>MVC MODEL IN LARAVEL 5</span></span></h3>\r\n<div>Before learning the way that data is transmitted according to MVC model in Laravel, we need to insert some data line created in last post into articles table.</div>\r\n<div>Open cmd, move to Laravel 5 folder:</div>\r\n<pre title="code" class="brush: php;">\r\ncd C:/xampp/htdocs/laravel-5</pre>\r\nUse php artisan tinker to add new record. Type:<br />\r\n<pre title="code" class="brush: php;">\r\nphp artisan tinker</pre>\r\nTo enter the program, type respectively to add a new record to db<br />\r\n<pre title="code" class="brush: php;">\r\n&gt;&gt;&gt; $articles = new App\\Articles\r\n&gt;&gt;&gt; $articles-&gt;name = "Tuan kiet"\r\n&gt;&gt;&gt; $articles-&gt;author = "hatutorials.com"\r\n&gt;&gt;&gt; $articles-&gt;save();</pre>\r\nAfter running inside commands, at that time, articles table have a new record. To add the second data line, keep on doing as nature order. After finishing adding sample data streams into the database, we move to the next step.<br />\r\n<div>&#160;</div>\r\n<h3>1. Create route</h3>\r\n<div>Here, I will create a new route to use regularly throughout the post. Open routes.php file, add new route, calling to index() in controller Articles as below:</div>\r\n<pre title="code" class="brush: jscript;">\r\nRoute::get(''/articles'', ''ArticlesController@index'');/&gt;</pre>\r\n<br />\r\n<h3>2. Create controller</h3>\r\n<div>In route above, we use ArticlesController, therefore I continue creating new controller that is ArticlesController.php by using <strong>php artisan</strong>.</div>\r\n<pre title="code" class="brush: php;">\r\nphp artisan make:controller ArticlesController --plain</pre>\r\nRun the command above, one file of ArticlesController.php is created in Http folder with the following content:<br />\r\n<pre title="code" class="brush: php;">\r\n&lt;?php namespace App\\Http\\Controllers;\r\n \r\nuse App\\Http\\Requests;\r\nuse App\\Http\\Controllers\\Controller;\r\n \r\nuse Illuminate\\Http\\Request;\r\n \r\nclass ArticlesController extends Controller\r\n{\r\n    //\r\n}</pre>\r\nIn this file, I add a new method namely index(), moreover, I will call model Articles.php file that we created in previous post:<br />\r\n<pre title="code" class="brush: php;">\r\npublic function index()\r\n{\r\n   $articles = Articles::all();\r\n}</pre>\r\n<br />\r\nNotice that to be able to use index() methd above, you need to import class Articles, I add this one at the top of ArticlesController.php file:<br />\r\n<pre title="code" class="brush: php;">\r\nuse App\\Articles;</pre>\r\nAt that time, the total content of ArticlesController.php will be<br />\r\n<pre title="code" class="brush: php;">\r\n&lt;?php \r\nnamespace App\\Http\\Controllers;\r\nuse App\\Articles;\r\nuse App\\Http\\Requests;\r\nuse App\\Http\\Controllers\\Controller;\r\n \r\nuse Illuminate\\Http\\Request;\r\n \r\nclass ArticlesController extends Controller\r\n{\r\n    public function index()\r\n    {\r\n        $articles = Articles::all();\r\n        return $articles;\r\n    }\r\n}</pre>\r\nNow, assces browser and run the following URL:<br />\r\n<pre title="code" class="brush: php;">\r\nhttp://localhost/laravel-5/public/article</pre>\r\nYou will realize that the data is returned in the form of json as following:<br />\r\n<pre title="code" class="brush: php;">\r\n[{"id":1,"name":"Tuan kiet","author":"hatutorials.com","created_at...}]</pre>\r\nNow, I will reedit function index() to call view articles, and transmit data $articles as following:<br />\r\n<pre title="code" class="brush: php;">\r\n&lt;?php \r\nnamespace App\\Http\\Controllers;\r\nuse App\\Articles;\r\nuse App\\Http\\Requests;\r\nuse App\\Http\\Controllers\\Controller;\r\nuse Illuminate\\Http\\Request;\r\n \r\nclass ArticlesController extends Controller\r\n{\r\n    public function index()\r\n    {\r\n        $articles = Articles::all();\r\n        return view("articles")-&gt;with("articles", $articles);\r\n    }\r\n}</pre>\r\n<br />\r\n<h3>3. Create view</h3>\r\n<div>After creating controller, next I will create new articles.blade.php view, this file will take data $article transmitted from controller ArticlesController and display list of article:</div>\r\n<pre title="code" class="brush: php;">\r\n&lt;html&gt;\r\n&lt;head&gt;\r\n &lt;title&gt;View articles&lt;/title&gt;\r\n&lt;/head&gt;\r\n&lt;body&gt;\r\n &lt;ul&gt;\r\n @foreach($articles as $article)\r\n  &lt;li&gt;Name : {{$article-&gt;name}} | Author : {{$article-&gt;author}}&lt;/li&gt;\r\n @endforeach\r\n &lt;/ul&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;</pre>\r\n<div>In the code above, the foreach loop will review a list of articles that are contained in $articles variable and call each article of $article. With each article we will show data beyond the name, author in db.<br />\r\n<br />\r\nSave view file and re-run the paths</div>\r\n<pre title="code" class="brush: php;">\r\nhttp://localhost/laravel-5/public/articles</pre>\r\n<div>The result will be shown as below:</div>\r\n<pre title="code" class="brush: php;">\r\nName : Tuan kiet | Author : hatutorials.com\r\n</pre>\r\n<div><br />\r\nSummary: so you know how the data is transmitted in the MVC pattern in Laravel 5. My writing show general knowledge that helps you understand MVC foundation in Laravel and from which you can expand depending on demand the reality of the project</div>', '', '', 'mvc-in-laravel-5.jpg', 1, 'Mvc in laravel 5, Laravel model, Laravel controller, Laravel view', 'In this post, I will share with you how MVC model operates in Laravel 5. Anyone else has no idea of MVC model, you can refer this post: knowledge of MVC model in PHP', '2016-03-29 18:35:39', 7),
 (102, 'Form in laravel 5', 'form-in-laravel-5', 'Tuan Kiet', 0, 'In last post, I have already shared with you <strong>MVC in Laravel 5</strong>, simultaneously, you can know the way information displayed from the inside model to outside view. In this post, we will keep on learning how to save data into database through the example of creating <strong>form in Laravel 5</strong>.', '<h3>Form in Laravel 5</h3>\r\n<div>Laravel 5 support to create form easily through available parameters. In this post, I will instruct you how to create one form to save the post into articles table that we have used in previous post.</div>\r\n<h4>1. Add routes.</h4>\r\n<div>I will add a new route to display form for users to update information. This route will take in charge of calling to function create() in ArticlesController</div>\r\n<pre title="code" class="brush: php;">\r\nRoute::get(''/articles/create'', ''ArticlesController@create'');</pre>\r\n<br />\r\n<h4>2. Edit Controller ArticlesController.php file</h4>\r\n<div>Inside the ArticlesController.php file created in last post, I add a new function called create() which is equivalent to route created. This function will handle to call view create.blade.php to display form.</div>\r\n<pre title="code" class="brush: php;">\r\npublic function create()\r\n{\r\n    return view("create");\r\n}</pre>\r\n<h4><br />\r\n3. Install service HtmlServiceProvider</h4>\r\n<div>To be able to use form in Laravel 5, we need install an extra set of <strong>HtmlServiceProvider</strong>, because Laravel that is installed initially cannot integrate. HtmlServiceprovider provide available methods for us to perform with form more easily.</div>\r\n<pre title="code" class="brush: php;">\r\ncomposer require "illuminate/html":"5.0.*"</pre>\r\n<div>Wait for some seconds, which help installation process happen ass below:<br />\r\n<img src="http://localhost/tutorials/uploaded/articles/laravel-5-install-illuminate-html.jpg" alt="laravel 5 install illuminate html" width="567" height="61" /><br />\r\nNext, after finishing ServiceHtmlprovider installation, open config/app.php, search lines containing provider of laravel&#160;and add a new HtmlServiceProvider as below:</div>\r\n<pre title="code" class="brush: php;">\r\n''providers'' =&gt; [\r\n \r\n  /*\r\n   * Laravel Framework Service Providers...\r\n   */\r\n  ''Illuminate\\Foundation\\Providers\\ArtisanServiceProvider'',\r\n  ''Illuminate\\Auth\\AuthServiceProvider'',\r\n  ''Illuminate\\Queue\\QueueServiceProvider'',\r\n  ''Illuminate\\Redis\\RedisServiceProvider'',\r\n  ''Illuminate\\Auth\\Passwords\\PasswordResetServiceProvider'',\r\n  ''Illuminate\\Session\\SessionServiceProvider'',\r\n  ''Illuminate\\Translation\\TranslationServiceProvider'',\r\n  ''Illuminate\\Validation\\ValidationServiceProvider'',\r\n  ''Illuminate\\View\\ViewServiceProvider'',\r\n  ''Illuminate\\Html\\HtmlServiceProvider'',</pre>\r\n<div><br />\r\nNext, find any lines containing aliases&#160;and add two new alias namely <strong>Form</strong> and <strong>Html</strong> at the end as below:</div>\r\n<pre title="code" class="brush: php;">\r\n''aliases'' =&gt; [\r\n \r\n  ''App''       =&gt; ''Illuminate\\Support\\Facades\\App'',\r\n  ''Artisan''   =&gt; ''Illuminate\\Support\\Facades\\Artisan'',\r\n  ''Auth''      =&gt; ''Illuminate\\Support\\Facades\\Auth'',\r\n  ''Redirect''  =&gt; ''Illuminate\\Support\\Facades\\Redirect'',\r\n  ''Redis''     =&gt; ''Illuminate\\Support\\Facades\\Redis'',\r\n  ''Request''   =&gt; ''Illuminate\\Support\\Facades\\Request'',\r\n  ''Response''  =&gt; ''Illuminate\\Support\\Facades\\Response'',\r\n  ''Validator'' =&gt; ''Illuminate\\Support\\Facades\\Validator'',\r\n  ''View''      =&gt; ''Illuminate\\Support\\Facades\\View'',\r\n  ''Form''      =&gt; ''Illuminate\\Html\\FormFacade'',\r\n  ''View''      =&gt; ''Illuminate\\Html\\HtmlFacade'',\r\n ],</pre>\r\n<br />\r\nNow, we will set up necessary requirements to use form in laravel 5. Next, we will create view to display form.\r\n<div>&#160;</div>\r\n<h4>4. Create view</h4>\r\n<div>In view folder, continue to create view file called <strong>create.blade.php</strong> with the following content:</div>\r\n<pre title="code" class="brush: xhtml;">\r\n&lt;!DOCTYPE html&gt;\r\n&lt;html&gt;\r\n    &lt;head&gt;\r\n        &lt;meta charset="UTF-8"&gt;\r\n        &lt;title&gt;Form in laravel 5&lt;/title&gt;\r\n    &lt;/head&gt;\r\n    &lt;body&gt;\r\n        &lt;h3&gt;Add new post&lt;/h3&gt;\r\n        {!! Form::open() !!}\r\n        {!! Form::close() !!}\r\n    &lt;/body&gt;\r\n&lt;/html&gt;</pre>\r\nSave and then turn cmd command on to run server laravel:<br />\r\n<pre title="code" class="brush: php;">\r\nphp artisan serve</pre>\r\nAs you can see, massage will be returned:<br />\r\n<pre title="code" class="brush: php;">\r\nLaravel development server started on http://localhost:8000</pre>\r\nGo to the browser and type the following link:<br />\r\n<pre title="code" class="brush: php;">\r\nhttp://localhost:8000/articles/create</pre>\r\nA blank page will appear with the title: “Add new post” because at this time, we just create form tags but not to create any input. &#160;Use Inspect element in chrome or firefox (press F12 or on the browser, click right and select Inspect Implement). You will see a form tags that is created as following:<br />\r\n<br />\r\n<img src="http://localhost/tutorials/uploaded/articles/create-form-laravel.jpg" alt="Create form in laravel 5" width="581" height="196" /><br />\r\nTiếp theo, mình sẽ thêm 1 input mới gọi là name và có label là Name vào thẻ form như sau:<br />\r\n<pre title="code" class="brush: php;">\r\n{!! Form::open() !!}\r\n  {!! Form::label(''name'',''Name:'') !!}\r\n  {!! Form::text(''name'') !!}\r\n{!! Form::close() !!} </pre>\r\n<br />\r\n<span>F5 tải lại browse bạn sẽ thấy 1 thẻ input mới được tạo ra như hình dưới<br />\r\n<img src="http://localhost/tutorials/uploaded/articles/form-in-laravel-5.jpg" alt="Form in laravel 5" width="416" height="99" /><br />\r\nSimilarly, I add one input called author and button submit form:<br />\r\n<pre title="code" class="brush: xhtml;">\r\n{!! Form::open() !!}\r\n    {!! Form::label(''name'',''Name:'') !!}\r\n    {!! Form::text(''name'') !!} &lt;br /&gt;\r\n \r\n    {!! Form::label(''author'',''Author:'') !!}\r\n    {!! Form::text(''author'') !!} &lt;br /&gt;\r\n \r\n    {!! Form::submit(''Submit'')!!}\r\n{!! Form::close() !!}</pre>\r\n<br />\r\nF5 the browse<br />\r\n<img src="http://localhost/tutorials/uploaded/articles/add-new-post-laravel.jpg" alt="Add new post use form laravel" width="387" height="143" /><br />\r\n<br />\r\nSo we have finished designing one simple form in Laravel 5. Next time, I will write code for users to fill information into input and click submit. Then we will save these value into database.<br />\r\n<br />\r\n</span>\r\n<div>&#160;</div>\r\n<h4>5. Get values from form</h4>\r\n<div>In item 4 above, you can see the action of form tag that is calling to current route:</div>\r\n<pre title="code" class="brush: php;">\r\nhttp://localhost:8000/articles/create</pre>\r\nHowever, here I expect that when submitting form into a new route, we can call articles. Therefore, I will edit action of form as following:<br />\r\n<pre title="code" class="brush: php;">\r\n{!! Form::open([''url'' =&gt; ''articles'']) !!}</pre>\r\nIt means that you have to create a new route with the method post in routes.php file:<br />\r\n<pre title="code" class="brush: php;">\r\nRoute::post(''/articles'', ''ArticlesController@store'');</pre>\r\nThe route is in charge of redirecting data from input tag when submitting form by post method to function store() in ArticlesControl. Therefore, in ArticlesController.php, I will add a new function called store() with the following content:<br />\r\n<pre title="code" class="brush: php;">\r\npublic function store(Request $request)\r\n{\r\n    return $request-&gt;all();\r\n}</pre>\r\n<div>Notice that &#160;if you can receive information from input, you have to transmit Request into store parameter.</div>\r\n<div>&#160;</div>\r\n<div>Rerun the link and fill information into input tag (here the input name that I fill is “Tuan kiet”, input author is hatutorials.com) and click “submit” button and I will be able to take information that post comes from json as following:<br />\r\n<br />\r\n<div>{"_token":"O155iMEZjnp3e9FQGUIOdfGJpqyH6PY2vEcZuO9c","name":"Tuan Kiet","author":"hatutorials.com"}</div>\r\n<div><br />\r\n<div>&#160;</div>\r\n<h4>6. Save the value into database.</h4>\r\n<div>After you get values from form, next, save these data into database.</div>\r\n<div>&#160;</div>\r\n<div>I will edit function store() as shown below:</div>\r\n<pre title="code" class="brush: php;">\r\npublic function store(Request $request)\r\n{\r\n  $posts = $request-&gt;all();\r\n \r\n  //call model Articles.php\r\n  $articles = new Articles;\r\n \r\n  //set attribute\r\n  $articles-&gt;name = $posts["name"];\r\n  $articles-&gt;author = $posts["author"];\r\n \r\n  //save data database\r\n  $articles-&gt;save();\r\n \r\n  //redirect\r\n  return redirect(''articles'');\r\n}</pre>\r\n</div>\r\n</div>\r\n<br />\r\nRerun URL to fill information and click “Submit”, you will be rdirected to http://localhost:8000/articles, with the information displaying as “ your information is saved into database”.<br />\r\n<br />\r\n<div>In conclusion, &#160;in this post, I have already shared with you how to create form in laravel 5 and how the data entered from form is saved into database.</div>', '', '', 'form-laravel-5.jpg', 1, 'Form in laravel 5, Laravel create form, Install service HtmlServiceProvider', 'In this post, we will keep on learning how to save data into database through the example of creating form in laravel 5', '2016-03-31 02:08:41', 7),
 (108, 'Part 6. Load database in codeigniter', 'part-6-load-database-in-codeigniter', 'Tuan Kiet', 0, 'How to load database in codeigniter? this post you will learn database manipulation and get used to active record', '&#160;', '', '', 'codeigniter-framework.jpg', 1, 'Load database in codeigniter, Config database codeiginiter, Codeigniter connect database', 'How to load database in codeigniter? this post you will learn database manipulation and get used to active record', '2016-04-06 16:27:24', 9),
-(109, 'Assess web hosting service in Stablehost', 'assess-web-hosting-service-in-stablehost', 'Tuan Kiet', 0, 'When building web site or blog, it is certainly difficult to choose a domain and a pack of qualified as well as appropriate package of hosting. And it takes time to have careful consideration because in the market, there are a wide range of suppliers providing this service, therefore, be careful and follow instructions of predecessors', 'I have used the smallest package for individuals here. Let’s have a look.<br />\r\n<br />\r\n<div>ASSESS STABLEHOST SERVICE</div>\r\n<div>&#160;</div>\r\n<h3>1. Advantages of stablehost</h3>\r\n<ol>\r\n    <li>&#160;Easily register the account without the complex process of confirmation.</li>\r\n    <li>&#160;Convenient payment method</li>\r\n    <li>&#160;Packages of web hosting relatively has high and stable quality and is suitable for many users.</li>\r\n    <li>&#160;A wide range of discount programs yearly.</li>\r\n    <li>&#160;Good review during operating process.</li>\r\n    <li>&#160;Support system process flexibility errors including ticket or calling quickly and &#160;conveniently .</li>\r\n    <li>&#160;Shared hosting is 1GB RAM, limits 25% of one CPU core.</li>\r\n    <li>&#160;Normal packages do not limit Bandwidth and the number of domain used, which is nice.</li>\r\n    <li>&#160;Administrating hosting by cpanel is relatively easy and convenient to manage, which is suitable for many users.</li>\r\n</ol>\r\n<h3>2. Disadvantages.</h3>\r\n<ol>\r\n    <li>&#160;No live to chat directly and you have to use Ticket</li>\r\n    <li>&#160;Not the best web hosting service supplier in the world</li>\r\n</ol>\r\n<div>\r\n<div><br />\r\nPackages of Web hosting Stablehost service.</div>\r\n<h3>3.&#160;Shared Hosting Package</h3>\r\n<div><span class="Apple-tab-span" span="">This is the kind of the cheapest hosting with the lowest technical parameter.</span>&#160;<span class="Apple-tab-span" span="">Suitable for small website blog with purely individual users.<br />\r\n<br type="_moz" />\r\n</span></div>\r\n<div><span class="Apple-tab-span" span=""><img src="http://localhost/tutorials/uploaded/articles/stablehost-shared-hosting.jpg" alt="Shared hosting package stablehost" width="600" height="354" /><br />\r\n<br />\r\n</span>\r\n<div>STARTER HOSTING :</div>\r\n<ul>\r\n    <li>Disk Space: unlimitted, you can store data with a large amount, however, the amount of storage is specified to an extent.</li>\r\n    <li>Bandwidth : UNLIMITED, therefore, you completely can be free to use.</li>\r\n    <li>One Domains: only enable one domain</li>\r\n    <li>SSD Hard Drives: Store by SSD included.</li>\r\n    <li>Real 24/7 Technical Support : Technical support performs continuously 24/7</li>\r\n    <li>Cost is 4,95$ monthly.</li>\r\n</ul>\r\n<div>&#160;</div>\r\n<div>PRO HOSTING:&#160;<br />\r\n&#160;</div>\r\n<div>It is similar to the previous package but the differences are:</div>\r\n<ul>\r\n    <li>unlimited domains</li>\r\n    <li>Cost increases to 8,95$ per month.</li>\r\n</ul>\r\n<u>Note:</u>&#160;The main difference between 2 packages service that are starter and pro hosting is the number of domain. You can run paralelly many domains at the same time in one hosting, therefore, take careful consideration on your need to avoid unnecessary expense<br />\r\n<br type="_moz" />\r\n<div>\r\n<h3>4. Reseller Hosing Package</h3>\r\n- The price is higher than that of shared Hosting\r\n<div>- For agents supplying hosting for smaller customers.<br />\r\n<br />\r\n<img src="http://localhost/tutorials/uploaded/articles/stablehost-reseller-hosting.jpg" alt="Stablehost reseller hosting package" width="600" height="354" /><br />\r\n<br />\r\n<div><strong>Basic package:</strong></div>\r\n<ul>\r\n    <li><span class="Apple-tab-span" span="">Disk Space: store all data information to 10GB&#160;</span></li>\r\n    <li><span class="Apple-tab-span" span="">Bandwidth :200 GB Bandwidth Allowance</span></li>\r\n    <li><span class="Apple-tab-span" span="">Reseller Clients: The number of customers maximizes to 10 members.</span></li>\r\n    <li><span class="Apple-tab-span" span="">Private Nameservers: Both save and hide information of server’s name &#160;</span></li>\r\n    <li><span class="Apple-tab-span" span="">Real 24/7 Technical Support : technical support performs continuously 24/7</span></li>\r\n    <li><span class="Apple-tab-span" span="">The price is 9,95$ per month</span></li>\r\n</ul>\r\n<div><strong>Reseller package:&#160;</strong></div>\r\n<ul>\r\n    <li><span class="Apple-tab-span" span="">Disk Space: 20 GB Disk Space</span></li>\r\n    <li><span class="Apple-tab-span" span="">Bandwidth :500 GB Bandwidth Allowance</span></li>\r\n    <li><span class="Apple-tab-span" span="">Reseller Clients: Up to 50 clients</span></li>\r\n    <li><span class="Apple-tab-span" span="">Private Nameservers: Included!</span></li>\r\n    <li><span class="Apple-tab-span" span="">Real 24/7 Technical Support : technical support performs continuously 24/7</span></li>\r\n    <li><span class="Apple-tab-span" span="">The price is 19,95$ per month.</span></li>\r\n</ul>\r\n<div><strong>Plus package:&#160;</strong></div>\r\n<ul>\r\n    <li><span class="Apple-tab-span" span="">Disk Space: 40 GB Disk Space</span></li>\r\n    <li><span class="Apple-tab-span" span="">Bandwidth : 1000 GB Bandwidth Allowance</span></li>\r\n    <li><span class="Apple-tab-span" span="">Reseller Clients: Unlimited Clients</span></li>\r\n    <li><span class="Apple-tab-span" span="">Private Nameservers: Included!</span></li>\r\n    <li><span class="Apple-tab-span" span="">Real 24/7 Technical Support : technical support performs continuously 24/7</span></li>\r\n    <li><span class="Apple-tab-span" span="">The price is 29,95$ per month</span></li>\r\n</ul>\r\n<br />\r\n<u>Note:</u>&#160;This is the package is for retailing agents of stablehost, therefore, if you are individual or company who purchase hosting to run a small website, I recommend you not &#160;buy this package.<br type="_moz" />\r\n<br />\r\n<h3>5. Vps Hosting</h3>\r\n<div>-&#160;Type of hosting with the best quality in web hosting here.</div>\r\n<div>-&#160;Suitable for website blog for medium and large company if want to have a good system and pay higher price.<br />\r\n<br />\r\n<img src="http://localhost/tutorials/uploaded/articles/stablehost-vps-hosting.jpg" alt="Stablehost vps hosting" width="600" height="357" /><br />\r\n<br />\r\n<br />\r\n&#160;</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>', '', '', 'stablehost-web-hosting.jpg', 1, 'Stablehost web hosting, Assess web hosting Stablehost, Web hosting service in Stablehost', 'Assess web hosting service in stablehost with high qualitiy and cheap price, which is suitable for many users'' requirement', '2016-04-08 12:56:38', 6);
+(109, 'Assess web hosting service in Stablehost', 'assess-web-hosting-service-in-stablehost', 'Tuan Kiet', 0, 'When building web site or blog, it is certainly difficult to choose a domain and a pack of qualified as well as appropriate package of hosting. And it takes time to have careful consideration because in the market, there are a wide range of suppliers providing this service, therefore, be careful and follow instructions of predecessors', 'I have used the smallest package for individuals here. Let’s have a look.<br />\r\n<br />\r\n<div>ASSESS STABLEHOST SERVICE</div>\r\n<div>&#160;</div>\r\n<h3>1. Advantages of stablehost</h3>\r\n<ol>\r\n    <li>&#160;Easily register the account without the complex process of confirmation.</li>\r\n    <li>&#160;Convenient payment method</li>\r\n    <li>&#160;Packages of web hosting relatively has high and stable quality and is suitable for many users.</li>\r\n    <li>&#160;A wide range of discount programs yearly.</li>\r\n    <li>&#160;Good review during operating process.</li>\r\n    <li>&#160;Support system process flexibility errors including ticket or calling quickly and &#160;conveniently .</li>\r\n    <li>&#160;Shared hosting is 1GB RAM, limits 25% of one CPU core.</li>\r\n    <li>&#160;Normal packages do not limit Bandwidth and the number of domain used, which is nice.</li>\r\n    <li>&#160;Administrating hosting by cpanel is relatively easy and convenient to manage, which is suitable for many users.</li>\r\n</ol>\r\n<h3>2. Disadvantages.</h3>\r\n<ol>\r\n    <li>&#160;No live to chat directly and you have to use Ticket</li>\r\n    <li>&#160;Not the best web hosting service supplier in the world</li>\r\n</ol>\r\n<div>\r\n<div><br />\r\nPackages of Web hosting Stablehost service.</div>\r\n<h3>3.&#160;Shared Hosting Package</h3>\r\n<div><span class="Apple-tab-span" span="">This is the kind of the cheapest hosting with the lowest technical parameter.</span>&#160;<span class="Apple-tab-span" span="">Suitable for small website blog with purely individual users.<br />\r\n<br type="_moz" />\r\n</span></div>\r\n<div><span class="Apple-tab-span" span=""><img src="http://localhost/tutorials/uploaded/articles/stablehost-shared-hosting.jpg" alt="Shared hosting package stablehost" width="600" height="354" /><br />\r\n<br />\r\n</span>\r\n<div>STARTER HOSTING :</div>\r\n<ul>\r\n    <li>Disk Space: unlimitted, you can store data with a large amount, however, the amount of storage is specified to an extent.</li>\r\n    <li>Bandwidth : UNLIMITED, therefore, you completely can be free to use.</li>\r\n    <li>One Domains: only enable one domain</li>\r\n    <li>SSD Hard Drives: Store by SSD included.</li>\r\n    <li>Real 24/7 Technical Support : Technical support performs continuously 24/7</li>\r\n    <li>Cost is 4,95$ monthly.</li>\r\n</ul>\r\n<div>&#160;</div>\r\n<div>PRO HOSTING:&#160;<br />\r\n&#160;</div>\r\n<div>It is similar to the previous package but the differences are:</div>\r\n<ul>\r\n    <li>unlimited domains</li>\r\n    <li>Cost increases to 8,95$ per month.</li>\r\n</ul>\r\n<u>Note:</u>&#160;The main difference between 2 packages service that are starter and pro hosting is the number of domain. You can run paralelly many domains at the same time in one hosting, therefore, take careful consideration on your need to avoid unnecessary expense<br />\r\n<br type="_moz" />\r\n<div>\r\n<h3>4. Reseller Hosing Package</h3>\r\n- The price is higher than that of shared Hosting\r\n<div>- For agents supplying hosting for smaller customers.<br />\r\n<br />\r\n<img src="http://localhost/tutorials/uploaded/articles/stablehost-reseller-hosting.jpg" alt="Stablehost reseller hosting package" width="600" height="354" /><br />\r\n<br />\r\n<div><strong>Basic package:</strong></div>\r\n<ul>\r\n    <li><span class="Apple-tab-span" span="">Disk Space: store all data information to 10GB&#160;</span></li>\r\n    <li><span class="Apple-tab-span" span="">Bandwidth :200 GB Bandwidth Allowance</span></li>\r\n    <li><span class="Apple-tab-span" span="">Reseller Clients: The number of customers maximizes to 10 members.</span></li>\r\n    <li><span class="Apple-tab-span" span="">Private Nameservers: Both save and hide information of server’s name &#160;</span></li>\r\n    <li><span class="Apple-tab-span" span="">Real 24/7 Technical Support : technical support performs continuously 24/7</span></li>\r\n    <li><span class="Apple-tab-span" span="">The price is 9,95$ per month</span></li>\r\n</ul>\r\n<div><strong>Reseller package:&#160;</strong></div>\r\n<ul>\r\n    <li><span class="Apple-tab-span" span="">Disk Space: 20 GB Disk Space</span></li>\r\n    <li><span class="Apple-tab-span" span="">Bandwidth :500 GB Bandwidth Allowance</span></li>\r\n    <li><span class="Apple-tab-span" span="">Reseller Clients: Up to 50 clients</span></li>\r\n    <li><span class="Apple-tab-span" span="">Private Nameservers: Included!</span></li>\r\n    <li><span class="Apple-tab-span" span="">Real 24/7 Technical Support : technical support performs continuously 24/7</span></li>\r\n    <li><span class="Apple-tab-span" span="">The price is 19,95$ per month.</span></li>\r\n</ul>\r\n<div><strong>Plus package:&#160;</strong></div>\r\n<ul>\r\n    <li><span class="Apple-tab-span" span="">Disk Space: 40 GB Disk Space</span></li>\r\n    <li><span class="Apple-tab-span" span="">Bandwidth : 1000 GB Bandwidth Allowance</span></li>\r\n    <li><span class="Apple-tab-span" span="">Reseller Clients: Unlimited Clients</span></li>\r\n    <li><span class="Apple-tab-span" span="">Private Nameservers: Included!</span></li>\r\n    <li><span class="Apple-tab-span" span="">Real 24/7 Technical Support : technical support performs continuously 24/7</span></li>\r\n    <li><span class="Apple-tab-span" span="">The price is 29,95$ per month</span></li>\r\n</ul>\r\n<br />\r\n<u>Note:</u>&#160;This is the package is for retailing agents of stablehost, therefore, if you are individual or company who purchase hosting to run a small website, I recommend you not &#160;buy this package.<br type="_moz" />\r\n<br />\r\n<h3>5. Vps Hosting</h3>\r\n<div>-&#160;Type of hosting with the best quality in web hosting here.</div>\r\n<div>-&#160;Suitable for website blog for medium and large company if want to have a good system and pay higher price.<br />\r\n<br />\r\n<img src="http://localhost/tutorials/uploaded/articles/stablehost-vps-hosting.jpg" alt="Stablehost vps hosting" width="600" height="357" /><br />\r\n<br />\r\n<br />\r\n&#160;</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>', '', '', 'stablehost-web-hosting.jpg', 1, 'Stablehost web hosting, Assess web hosting Stablehost, Web hosting service in Stablehost', 'Assess web hosting service in stablehost with high qualitiy and cheap price, which is suitable for many users'' requirement', '2016-04-08 12:56:38', 6),
+(110, 'A2 hosting reviews and expert opinion', 'a2-hosting-reviews-and-expert-opinion', 'Tuan Kiet', 0, 'See 116 real customers reviews and our experts opinion of A2 Hosting before signing up and learn why they are ranked 3rd out of 2269 web hosting companies', '', '', '', 'a2-hosting.jpg', 1, 'A2 hosting reviews', 'See 116 real customers reviews and our experts opinion of A2 Hosting before signing up and learn why they are ranked 3rd out of 2269 web hosting companies', '2016-04-10 16:36:02', 6);
 
 -- --------------------------------------------------------
 
@@ -543,7 +544,7 @@ INSERT INTO `tbl_posts` (`post_id`, `post_title`, `post_title_rewrite`, `post_au
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_products` (
-`pro_id` int(10) unsigned NOT NULL,
+  `pro_id` int(10) unsigned NOT NULL,
   `pro_code` varchar(100) DEFAULT NULL,
   `pro_name` varchar(100) NOT NULL,
   `pro_name_rewrite` varchar(200) NOT NULL,
@@ -565,7 +566,7 @@ CREATE TABLE IF NOT EXISTS `tbl_products` (
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_question` (
-`question_id` int(11) unsigned NOT NULL,
+  `question_id` int(11) unsigned NOT NULL,
   `question_title` varchar(255) NOT NULL,
   `question_rewrite` varchar(255) NOT NULL,
   `question_file` varchar(100) NOT NULL,
@@ -592,7 +593,7 @@ INSERT INTO `tbl_question` (`question_id`, `question_title`, `question_rewrite`,
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_search` (
-`s_id` int(10) unsigned NOT NULL,
+  `s_id` int(10) unsigned NOT NULL,
   `s_type` varchar(100) NOT NULL,
   `t_id` int(10) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
@@ -604,7 +605,7 @@ CREATE TABLE IF NOT EXISTS `tbl_search` (
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_services` (
-`service_id` int(10) unsigned NOT NULL,
+  `service_id` int(10) unsigned NOT NULL,
   `service_info` text CHARACTER SET utf8 NOT NULL,
   `service_full` longtext CHARACTER SET utf8 NOT NULL,
   `service_data` varchar(200) CHARACTER SET utf8 NOT NULL
@@ -624,7 +625,7 @@ INSERT INTO `tbl_services` (`service_id`, `service_info`, `service_full`, `servi
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_slideshow` (
-`slide_id` int(10) unsigned NOT NULL,
+  `slide_id` int(10) unsigned NOT NULL,
   `slide_title` varchar(200) NOT NULL,
   `slide_image` varchar(200) NOT NULL,
   `slide_link` varchar(200) NOT NULL,
@@ -638,7 +639,7 @@ CREATE TABLE IF NOT EXISTS `tbl_slideshow` (
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_students` (
-`student_id` int(10) unsigned NOT NULL,
+  `student_id` int(10) unsigned NOT NULL,
   `student_name` varchar(200) NOT NULL,
   `student_rewrite` varchar(200) NOT NULL,
   `student_phone` varchar(200) NOT NULL,
@@ -681,7 +682,7 @@ INSERT INTO `tbl_students` (`student_id`, `student_name`, `student_rewrite`, `st
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_subjects` (
-`subject_id` int(10) unsigned NOT NULL,
+  `subject_id` int(10) unsigned NOT NULL,
   `subject_title` varchar(255) NOT NULL,
   `subject_rewrite` varchar(200) NOT NULL,
   `subject_info` longtext NOT NULL,
@@ -710,7 +711,7 @@ INSERT INTO `tbl_subjects` (`subject_id`, `subject_title`, `subject_rewrite`, `s
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_support` (
-`sup_id` int(10) unsigned NOT NULL,
+  `sup_id` int(10) unsigned NOT NULL,
   `sup_name` varchar(50) NOT NULL,
   `sup_yahoo` varchar(50) NOT NULL,
   `sup_phone` varchar(100) NOT NULL,
@@ -733,7 +734,7 @@ INSERT INTO `tbl_support` (`sup_id`, `sup_name`, `sup_yahoo`, `sup_phone`, `sup_
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_times` (
-`education_id` int(10) unsigned NOT NULL,
+  `education_id` int(10) unsigned NOT NULL,
   `education_title` varchar(200) CHARACTER SET utf8 NOT NULL,
   `education_rewrite` varchar(200) CHARACTER SET utf8 NOT NULL,
   `education_info` text CHARACTER SET utf8 NOT NULL,
@@ -761,7 +762,7 @@ INSERT INTO `tbl_times` (`education_id`, `education_title`, `education_rewrite`,
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_user` (
-`user_id` int(10) unsigned NOT NULL,
+  `user_id` int(10) unsigned NOT NULL,
   `username` varchar(50) NOT NULL,
   `password` char(50) NOT NULL,
   `name` varchar(50) NOT NULL,
@@ -800,7 +801,7 @@ INSERT INTO `tbl_user` (`user_id`, `username`, `password`, `name`, `avatar`, `ge
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_vote` (
-`vote_id` int(11) unsigned NOT NULL,
+  `vote_id` int(11) unsigned NOT NULL,
   `vote_up` int(11) NOT NULL,
   `vote_down` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
@@ -831,169 +832,169 @@ INSERT INTO `tbl_vote` (`vote_id`, `vote_up`, `vote_down`, `user_id`, `answer_id
 -- Indexes for table `tbl_answers`
 --
 ALTER TABLE `tbl_answers`
- ADD PRIMARY KEY (`answer_id`);
+  ADD PRIMARY KEY (`answer_id`);
 
 --
 -- Indexes for table `tbl_articles`
 --
 ALTER TABLE `tbl_articles`
- ADD PRIMARY KEY (`article_id`);
+  ADD PRIMARY KEY (`article_id`);
 
 --
 -- Indexes for table `tbl_categorie`
 --
 ALTER TABLE `tbl_categorie`
- ADD PRIMARY KEY (`cago_id`);
+  ADD PRIMARY KEY (`cago_id`);
 
 --
 -- Indexes for table `tbl_category`
 --
 ALTER TABLE `tbl_category`
- ADD PRIMARY KEY (`cate_id`);
+  ADD PRIMARY KEY (`cate_id`);
 
 --
 -- Indexes for table `tbl_config`
 --
 ALTER TABLE `tbl_config`
- ADD PRIMARY KEY (`config_id`);
+  ADD PRIMARY KEY (`config_id`);
 
 --
 -- Indexes for table `tbl_contact`
 --
 ALTER TABLE `tbl_contact`
- ADD PRIMARY KEY (`con_id`);
+  ADD PRIMARY KEY (`con_id`);
 
 --
 -- Indexes for table `tbl_contact_info`
 --
 ALTER TABLE `tbl_contact_info`
- ADD PRIMARY KEY (`contact_id`);
+  ADD PRIMARY KEY (`contact_id`);
 
 --
 -- Indexes for table `tbl_content`
 --
 ALTER TABLE `tbl_content`
- ADD PRIMARY KEY (`con_id`);
+  ADD PRIMARY KEY (`con_id`);
 
 --
 -- Indexes for table `tbl_customer`
 --
 ALTER TABLE `tbl_customer`
- ADD PRIMARY KEY (`customer_id`);
+  ADD PRIMARY KEY (`customer_id`);
 
 --
 -- Indexes for table `tbl_education`
 --
 ALTER TABLE `tbl_education`
- ADD PRIMARY KEY (`edu_id`);
+  ADD PRIMARY KEY (`edu_id`);
 
 --
 -- Indexes for table `tbl_intro`
 --
 ALTER TABLE `tbl_intro`
- ADD PRIMARY KEY (`in_id`);
+  ADD PRIMARY KEY (`in_id`);
 
 --
 -- Indexes for table `tbl_intro_one`
 --
 ALTER TABLE `tbl_intro_one`
- ADD PRIMARY KEY (`intro_id`);
+  ADD PRIMARY KEY (`intro_id`);
 
 --
 -- Indexes for table `tbl_menu`
 --
 ALTER TABLE `tbl_menu`
- ADD PRIMARY KEY (`menu_id`);
+  ADD PRIMARY KEY (`menu_id`);
 
 --
 -- Indexes for table `tbl_news`
 --
 ALTER TABLE `tbl_news`
- ADD PRIMARY KEY (`news_id`);
+  ADD PRIMARY KEY (`news_id`);
 
 --
 -- Indexes for table `tbl_online`
 --
 ALTER TABLE `tbl_online`
- ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `tbl_order`
 --
 ALTER TABLE `tbl_order`
- ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `tbl_posts`
 --
 ALTER TABLE `tbl_posts`
- ADD PRIMARY KEY (`post_id`);
+  ADD PRIMARY KEY (`post_id`);
 
 --
 -- Indexes for table `tbl_products`
 --
 ALTER TABLE `tbl_products`
- ADD PRIMARY KEY (`pro_id`);
+  ADD PRIMARY KEY (`pro_id`);
 
 --
 -- Indexes for table `tbl_question`
 --
 ALTER TABLE `tbl_question`
- ADD PRIMARY KEY (`question_id`);
+  ADD PRIMARY KEY (`question_id`);
 
 --
 -- Indexes for table `tbl_search`
 --
 ALTER TABLE `tbl_search`
- ADD PRIMARY KEY (`s_id`);
+  ADD PRIMARY KEY (`s_id`);
 
 --
 -- Indexes for table `tbl_services`
 --
 ALTER TABLE `tbl_services`
- ADD PRIMARY KEY (`service_id`);
+  ADD PRIMARY KEY (`service_id`);
 
 --
 -- Indexes for table `tbl_slideshow`
 --
 ALTER TABLE `tbl_slideshow`
- ADD PRIMARY KEY (`slide_id`);
+  ADD PRIMARY KEY (`slide_id`);
 
 --
 -- Indexes for table `tbl_students`
 --
 ALTER TABLE `tbl_students`
- ADD PRIMARY KEY (`student_id`);
+  ADD PRIMARY KEY (`student_id`);
 
 --
 -- Indexes for table `tbl_subjects`
 --
 ALTER TABLE `tbl_subjects`
- ADD PRIMARY KEY (`subject_id`);
+  ADD PRIMARY KEY (`subject_id`);
 
 --
 -- Indexes for table `tbl_support`
 --
 ALTER TABLE `tbl_support`
- ADD PRIMARY KEY (`sup_id`);
+  ADD PRIMARY KEY (`sup_id`);
 
 --
 -- Indexes for table `tbl_times`
 --
 ALTER TABLE `tbl_times`
- ADD PRIMARY KEY (`education_id`);
+  ADD PRIMARY KEY (`education_id`);
 
 --
 -- Indexes for table `tbl_user`
 --
 ALTER TABLE `tbl_user`
- ADD PRIMARY KEY (`user_id`);
+  ADD PRIMARY KEY (`user_id`);
 
 --
 -- Indexes for table `tbl_vote`
 --
 ALTER TABLE `tbl_vote`
- ADD PRIMARY KEY (`vote_id`);
+  ADD PRIMARY KEY (`vote_id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -1003,142 +1004,142 @@ ALTER TABLE `tbl_vote`
 -- AUTO_INCREMENT for table `tbl_answers`
 --
 ALTER TABLE `tbl_answers`
-MODIFY `answer_id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=110;
+  MODIFY `answer_id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=110;
 --
 -- AUTO_INCREMENT for table `tbl_articles`
 --
 ALTER TABLE `tbl_articles`
-MODIFY `article_id` int(10) unsigned NOT NULL AUTO_INCREMENT;
+  MODIFY `article_id` int(10) unsigned NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `tbl_categorie`
 --
 ALTER TABLE `tbl_categorie`
-MODIFY `cago_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=200;
+  MODIFY `cago_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=200;
 --
 -- AUTO_INCREMENT for table `tbl_category`
 --
 ALTER TABLE `tbl_category`
-MODIFY `cate_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=132;
+  MODIFY `cate_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=132;
 --
 -- AUTO_INCREMENT for table `tbl_config`
 --
 ALTER TABLE `tbl_config`
-MODIFY `config_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+  MODIFY `config_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `tbl_contact`
 --
 ALTER TABLE `tbl_contact`
-MODIFY `con_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=328;
+  MODIFY `con_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=328;
 --
 -- AUTO_INCREMENT for table `tbl_contact_info`
 --
 ALTER TABLE `tbl_contact_info`
-MODIFY `contact_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+  MODIFY `contact_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `tbl_content`
 --
 ALTER TABLE `tbl_content`
-MODIFY `con_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=108;
+  MODIFY `con_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=108;
 --
 -- AUTO_INCREMENT for table `tbl_customer`
 --
 ALTER TABLE `tbl_customer`
-MODIFY `customer_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
+  MODIFY `customer_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
 --
 -- AUTO_INCREMENT for table `tbl_education`
 --
 ALTER TABLE `tbl_education`
-MODIFY `edu_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+  MODIFY `edu_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `tbl_intro`
 --
 ALTER TABLE `tbl_intro`
-MODIFY `in_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=15;
+  MODIFY `in_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=15;
 --
 -- AUTO_INCREMENT for table `tbl_intro_one`
 --
 ALTER TABLE `tbl_intro_one`
-MODIFY `intro_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+  MODIFY `intro_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `tbl_menu`
 --
 ALTER TABLE `tbl_menu`
-MODIFY `menu_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+  MODIFY `menu_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `tbl_news`
 --
 ALTER TABLE `tbl_news`
-MODIFY `news_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=103;
+  MODIFY `news_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=103;
 --
 -- AUTO_INCREMENT for table `tbl_online`
 --
 ALTER TABLE `tbl_online`
-MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=925913;
+  MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=925913;
 --
 -- AUTO_INCREMENT for table `tbl_order`
 --
 ALTER TABLE `tbl_order`
-MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=21;
+  MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=21;
 --
 -- AUTO_INCREMENT for table `tbl_posts`
 --
 ALTER TABLE `tbl_posts`
-MODIFY `post_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=110;
+  MODIFY `post_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=111;
 --
 -- AUTO_INCREMENT for table `tbl_products`
 --
 ALTER TABLE `tbl_products`
-MODIFY `pro_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1127;
+  MODIFY `pro_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1127;
 --
 -- AUTO_INCREMENT for table `tbl_question`
 --
 ALTER TABLE `tbl_question`
-MODIFY `question_id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
+  MODIFY `question_id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
 --
 -- AUTO_INCREMENT for table `tbl_search`
 --
 ALTER TABLE `tbl_search`
-MODIFY `s_id` int(10) unsigned NOT NULL AUTO_INCREMENT;
+  MODIFY `s_id` int(10) unsigned NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `tbl_services`
 --
 ALTER TABLE `tbl_services`
-MODIFY `service_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+  MODIFY `service_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `tbl_slideshow`
 --
 ALTER TABLE `tbl_slideshow`
-MODIFY `slide_id` int(10) unsigned NOT NULL AUTO_INCREMENT;
+  MODIFY `slide_id` int(10) unsigned NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `tbl_students`
 --
 ALTER TABLE `tbl_students`
-MODIFY `student_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=40;
+  MODIFY `student_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=40;
 --
 -- AUTO_INCREMENT for table `tbl_subjects`
 --
 ALTER TABLE `tbl_subjects`
-MODIFY `subject_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=23;
+  MODIFY `subject_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=23;
 --
 -- AUTO_INCREMENT for table `tbl_support`
 --
 ALTER TABLE `tbl_support`
-MODIFY `sup_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=25;
+  MODIFY `sup_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=25;
 --
 -- AUTO_INCREMENT for table `tbl_times`
 --
 ALTER TABLE `tbl_times`
-MODIFY `education_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
+  MODIFY `education_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT for table `tbl_user`
 --
 ALTER TABLE `tbl_user`
-MODIFY `user_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=124;
+  MODIFY `user_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=124;
 --
 -- AUTO_INCREMENT for table `tbl_vote`
 --
 ALTER TABLE `tbl_vote`
-MODIFY `vote_id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=153;
+  MODIFY `vote_id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=153;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
