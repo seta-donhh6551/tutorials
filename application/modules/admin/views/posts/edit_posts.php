@@ -1,13 +1,16 @@
 +				<div class="section">
                 <script type="text/javascript">
-					function checkuser(){
+					function checkForm(){
 						var form = document.sac;
 						if(form.post_title.value == ""){
 							alert("Vui lòng nhập tiêu đề tin");
 							form.post_title.focus();
 							return false;
-						}else{
-							return true;
+						}
+						if(form.cate_id.value == ""){
+							alert("Vui lòng chọn chuyên mục");
+							form.cate_id.focus();
+							return false;
 						}
 					}
 				</script>
@@ -40,7 +43,7 @@
                                 	<div class="error_red"><?php if(isset($error)) { echo "<p>".$error."</p>"; } ?>
 										<?php echo validation_errors();?>
 									</div>
-									<form action="<?php echo base_url();?>admin/posts/update/<?php echo $get['post_id']; ?>" method="post" name="sac" onsubmit="return checkuser()" enctype="multipart/form-data">
+									<form action="<?php echo base_url();?>admin/posts/update/<?php echo $get['post_id']; ?>" method="post" name="sac" onsubmit="return checkForm()" enctype="multipart/form-data">
                             		<div class="form_items">
                                     	<div class="form_items_left">Tiêu đề</div>
                                         <div class="form_items_right"><input name="post_title" type="text" id="post_title" value="<?php echo $get['post_title']; ?>" size="35" /></div>
@@ -49,6 +52,7 @@
                                     	<div class="form_items_left">Thuộc mục</div>
                                         <div class="form_items_right">
                                         	<select name="cate_id">
+												<option value="">Chọn mục</option>
 											<?php
                                                 foreach($listcate as $cate){
                                                     echo "<option value='".$cate['cate_id']."'";
@@ -73,13 +77,13 @@
                                     <div class="form_items">
                                     	<div class="form_items_left">Keywords</div>
                                         <div class="form_items_right">
-                                        <textarea name="post_keys" cols="30" rows="5"><?php echo $get['post_keys']; ?></textarea>
+                                        <textarea name="post_keys" cols="45" rows="5"><?php echo $get['post_keys']; ?></textarea>
                                         </div>
                                     </div>
                                     <div class="form_items">
                                     	<div class="form_items_left">Description</div>
                                         <div class="form_items_right">
-                                        <textarea name="post_des" cols="30" rows="5"><?php echo $get['post_des']; ?></textarea>
+                                        <textarea name="post_des" cols="45" rows="5"><?php echo $get['post_des']; ?></textarea>
                                         </div>
                                     </div>
                                     <div class="form_items">

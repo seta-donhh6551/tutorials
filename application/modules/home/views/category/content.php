@@ -44,7 +44,7 @@
 										<div class="meta-info">
 											<div class="td-post-author-name"><a href="javascript:void(0)">Tuan Kiet</a> <span>-</span></div>
 											<div class="td-post-date">
-												<time class="entry-date updated td-module-date"><?php echo date('d F, Y'); ?></time>
+												<time class="entry-date updated td-module-date" datetime="<?php echo date('Y-m-d').'T'.date('H:i'); ?>"><?php echo date('d F, Y'); ?></time>
 											</div>
 											<!--div class="td-module-comments"><a href="#">0</a>
 											</div-->
@@ -68,7 +68,7 @@
 												<h3 class="entry-title td-module-title"><a href="<?php echo base_url().$items['cate_rewrite']."/".$items['post_title_rewrite']."-".$items['post_id'].".html"; ?>" rel="bookmark" title="<?php echo $items['post_title']; ?>"><?php echo $items['post_title']; ?></a></h3>
 												<div class="meta-info">
 													<div class="td-post-date">
-														<time class="entry-date updated td-module-date"><?php echo date('d F, Y', strtotime($items['created_at'])); ?></time>
+														<time class="entry-date updated td-module-date" datetime="<?php echo date('Y-m-d', strtotime($items['created_at'])).'T'.date('H:i', strtotime($items['created_at'])); ?>"><?php echo date('d F, Y', strtotime($items['created_at'])); ?></time>
 													</div>
 												</div>
 											</div>
@@ -103,7 +103,7 @@
 									<div class="meta-info">
 										<div class="td-post-author-name"><a href="#">Tuan Kiet</a> <span>-</span> </div>
 										<div class="td-post-date">
-											<time class="entry-date updated td-module-date"><?php echo date('d F, Y', strtotime($items['created_at'])); ?></time>
+											<time class="entry-date updated td-module-date" datetime="<?php echo date('Y-m-d', strtotime($items['created_at'])).'T'.date('H:i', strtotime($items['created_at'])); ?>"><?php echo date('d F, Y', strtotime($items['created_at'])); ?></time>
 										</div>
 										<div class="td-module-comments"><a href="<?php echo base_url().$result['cate_rewrite']."/".$items['post_title_rewrite']."-".$items['post_id'].".html"; ?>/#respond">0</a>
 										</div>
@@ -128,7 +128,7 @@
 				<div class="wpb_wrapper" style="width: auto; position: static; top: auto; bottom: auto; z-index: 1;"><div class="clearfix"></div>
 					<div class="td-a-rec td-a-rec-id-sidebar ">
 						<div class="td-all-devices">
-							<a href="#"><img src="<?php echo base_url(); ?>public/images/adsense-300x250.gif">
+							<a href="#"><img src="<?php echo base_url(); ?>public/images/adsense-300x250.gif" alt="Ads banner demo" />
 							</a>
 						</div>
 					</div>
@@ -144,7 +144,7 @@
 									<div class="meta-info">
 										<div class="td-post-author-name"><a href="javascript:void(0)">Tuan Kiet</a> <span>-</span> </div>
 										<div class="td-post-date">
-                                            <time class="entry-date updated td-module-date"><?php echo date('d F, Y', strtotime($ranPost['created_at'])); ?></time>
+                                            <time class="entry-date updated td-module-date" datetime="<?php echo date('Y-m-d', strtotime($ranPost['created_at'])).'T'.date('H:i', strtotime($ranPost['created_at'])); ?>"><?php echo date('d F, Y', strtotime($ranPost['created_at'])); ?></time>
 										</div>
 										<div class="td-module-comments"><a href="<?php echo base_url().$ranPost['cate_rewrite']."/".$ranPost['post_title_rewrite']."-".$ranPost['post_id'].".html"; ?>#respond">0</a>
 										</div>

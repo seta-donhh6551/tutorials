@@ -1,8 +1,8 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="refresh" content="600" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title><?php echo $config['config_title']; ?></title>
 <link rel="author" href="https://plus.google.com/102870804259820301805" />
 <link rel="canonical" href="<?php echo base_url(); ?>" />

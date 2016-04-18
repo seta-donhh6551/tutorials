@@ -1,8 +1,8 @@
 <pre>Array
 (
-    [currentFolderPath] => ../../../../uploaded/datas/jquery/
-    [new_folder] => scripts
+    [currentFolderPath] => ../../../../uploaded/
+    [new_folder] => wordpress
 )
 </pre>
 
-31/Jul/2014 22:45:54
+16/Apr/2016 20:04:55

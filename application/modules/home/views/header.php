@@ -55,7 +55,7 @@
 			<div class="td-header-ad-wrap  td-ad-m td-ad-tp td-ad-p">
 				<div class="td-a-rec td-a-rec-id-header ">
 					<div class="td-all-devices">
-						<a href="#"><img src="<?php echo base_url(); ?>wp-content/uploads/2016/01/rec728.jpg">
+						<a href="#"><img src="<?php echo base_url(); ?>public/images/rec728.jpg" alt="Ads banner" />
 						</a>
 					</div>
 				</div>
@@ -81,13 +81,14 @@
 						<li class="menu-item td-menu-item"><a href="<?php echo base_url(); ?>laravel-5.html" class="sf-with-ul">Laravel 5</a></li>
 						<li class="menu-item td-menu-item"><a href="<?php echo base_url(); ?>yii2-framework.html" class="sf-with-ul">Yii2 framework</a></li>
 						<li class="menu-item td-menu-item"><a href="<?php echo base_url(); ?>codeigniter-3.html" class="sf-with-ul">Codeigniter 3</a></li>
+                                                <li class="menu-item td-menu-item"><a href="<?php echo base_url(); ?>wordpress.html" class="sf-with-ul">Wordpress</a></li>
 						<!--li class="menu-item menu-item-has-children td-menu-item td-normal-menu"><a href="#" class="sf-with-ul">PHP Tutorials<i class="td-icon-menu-down"></i></a>
 							<ul class="sub-menu">
 								<li class="menu-item menu-item-type-post_type menu-item-object-page td-menu-item td-normal-menu"><a href="<?php echo base_url(); ?>php-basic.html">PHP Basic</a></li>
 								<li class="menu-item menu-item-type-post_type menu-item-object-page td-menu-item td-normal-menu"><a href="<?php echo base_url(); ?>php-advanced.html">PHP Advanced</a></li>
 							</ul>
 						</li-->
-						<li class="menu-item td-menu-item"><a href="hosting-domain.html" class="sf-with-ul">Hosting domain</a></li>
+						<li class="menu-item td-menu-item"><a href="<?php echo base_url(); ?>hosting-domain.html" class="sf-with-ul">Hosting domain</a></li>
 						<!--li class="menu-item menu-item-has-children td-menu-item td-normal-menu"><a href="#" class="sf-with-ul">PHP Framework<i class="td-icon-menu-down"></i></a>
 							<ul class="sub-menu">
 								<li class="menu-item menu-item-type-post_type menu-item-object-page td-menu-item td-normal-menu"><a href="<?php echo base_url(); ?>yii2-framework.html">Yii2 Framework</a></li>
@@ -114,7 +115,7 @@
 			<div class="header-search-wrap">
 				<div class="dropdown header-search">
 					<div class="td-drop-down-search" aria-labelledby="td-header-search-button">
-						<form role="search" method="get" class="td-search-form" action="<?php echo base_url(); ?>">
+						<form role="search" method="get" class="td-search-form" action="<?php echo base_url(); ?>search.html">
 							<div class="td-head-form-search-wrap">
 								<input class="needsclick" id="td-header-search" type="text" value="" name="s" autocomplete="off">
 								<input class="wpb_button wpb_btn-inverse btn" type="submit" id="td-header-search-top" value="Search">

@@ -11,7 +11,7 @@
                                     <div class="td-trending-now-title block-title">Trending Now</div>
                                     <div class="td-trending-now-display-area">
                                         <div class="td_module_trending_now td_module_wrap td-trending-now-post-0 td-trending-now-post">
-                                            <h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/we-found-the-sexiest-lingerie-on-the-internet/" rel="bookmark" title="We Found the Sexiest Lingerie on the Internet">We Found the Sexiest Lingerie on the Internet</a></h3>
+                                            <h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/we-found-the-sexiest-lingerie-on-the-internet/" rel="bookmark" title="Hatutorials.com, Php web development tutorials">Hatutorials.com, Php web development tutorials</a></h3>
                                         </div>
                                     </div>
                                 </div>
@@ -33,9 +33,9 @@
                                             <div class="td-big-grid-meta">
                                                 <h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>hosting-domain/assess-web-hosting-service-in-stablehost-109.html" rel="bookmark" title="Assess web hosting service in Stablehost">Assess web hosting service in Stablehost</a></h3>
                                                 <div class="td-module-meta-info">
-                                                    <div class="td-post-author-name"><a href="<?php echo base_url(); ?>author/admin/">admin</a> <span>-</span> </div>
+                                                    <div class="td-post-author-name"><a href="#">Tuan Kiet</a> <span>-</span> </div>
                                                     <div class="td-post-date">
-                                                        <time class="entry-date updated td-module-date">April 8, 2016</time>
+                                                        <time class="entry-date updated td-module-date" datetime="2016-04-08T13:53">April 8, 2016</time>
                                                     </div>
                                                 </div>
                                             </div>
@@ -44,58 +44,54 @@
                                 </div>
                                 <div class="td_module_mx6 td-animation-stack td-big-grid-post-1 td-big-grid-post td-tiny-thumb">
                                     <div class="td-module-thumb">
-                                        <a href="<?php echo base_url(); ?>2016/01/22/express-recipes-how-to-make-creamy-papaya-raita/" rel="bookmark" title="Express Recipes: How to make Creamy Papaya Raita"><img width="238" height="178" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url(); ?>wp-content/uploads/2016/01/15-238x178.jpg" alt="" title="Express Recipes: How to make Creamy Papaya Raita">
+                                        <a href="<?php echo base_url(); ?>laravel-5/mvc-model-in-laravel-5-101.html" rel="bookmark" title="Mvc model in laravel 5"><img width="238" height="178" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url(); ?>uploads/news/mvc-in-laravel-5.jpg" alt="" title="Mvc model in laravel 5">
                                                 </a>
                                     </div>
                                     <div class="td-meta-info-container">
                                         <div class="td-meta-align">
                                             <div class="td-big-grid-meta">
-                                                <h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/express-recipes-how-to-make-creamy-papaya-raita/" rel="bookmark" title="Express Recipes: How to make Creamy Papaya Raita">Express Recipes: How to make Creamy Papaya Raita</a></h3>
+                                                <h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>laravel-5/mvc-model-in-laravel-5-101.html" rel="bookmark" title="Mvc model in laravel 5">Mvc model in laravel 5</a></h3>
                                                 <div class="td-module-meta-info">
-                                                    <div class="td-post-author-name"><a href="<?php echo base_url(); ?>author/admin/">admin</a> <span>-</span> </div>
                                                     <div class="td-post-date">
-                                                        <time class="entry-date updated td-module-date" datetime="2016-01-22T06:09:15+00:00">22nd January 2016</time>
+                                                        <time class="entry-date updated td-module-date" datetime="2016-03-29T08:34">March 29, 2016</time>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="td-module-comments"><a href="<?php echo base_url(); ?>2016/01/22/express-recipes-how-to-make-creamy-papaya-raita/#respond">0</a>
                                     </div>
                                 </div>
                                 <div class="td_module_mx6 td-animation-stack td-big-grid-post-2 td-big-grid-post td-tiny-thumb">
                                     <div class="td-module-thumb">
-                                        <a href="<?php echo base_url(); ?>2016/01/22/robots-helped-inspire-deep-learning-might-become/" rel="bookmark" title="Robots helped inspire deep learning might become"><img width="238" height="178" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url(); ?>wp-content/uploads/2016/01/9-238x178.jpg" alt="" title="Robots helped inspire deep learning might become"><span class="td-video-play-ico"><img width="40" class="td-retina td-animation-stack-type0-2" src="<?php echo base_url(); ?>wp-content/themes/Newsmag/images/icons/ico-video-large.png" alt="video"></span>
-                                                </a>
+                                        <a href="<?php echo base_url(); ?>codeigniter-3/part-1-install-codeigniter-folder-codeigniter-structure-103.html" rel="bookmark" title="Robots helped inspire deep learning might become"><img width="238" height="178" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url(); ?>uploads/news/codeigniter-install.jpg" alt="" title="Part 1. Install codeigniter, folder codeigniter structure">
+											<span class="td-video-play-ico">
+												<img width="40" class="td-retina td-animation-stack-type0-2" src="<?php echo base_url(); ?>public/images/icons/ico-video-large.png" alt="video">
+											</span>
+										</a>
                                     </div>
                                     <div class="td-meta-info-container">
                                         <div class="td-meta-align">
                                             <div class="td-big-grid-meta">
-                                                <h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/robots-helped-inspire-deep-learning-might-become/" rel="bookmark" title="Robots helped inspire deep learning might become">Robots helped inspire deep learning might become</a></h3>
+                                                <h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>codeigniter-3/part-1-install-codeigniter-folder-codeigniter-structure-103.html" rel="bookmark" title="Part 1. Install codeigniter, folder codeigniter structure">Part 1. Install codeigniter, folder codeigniter structure</a></h3>
                                                 <div class="td-module-meta-info">
-                                                    <div class="td-post-author-name"><a href="<?php echo base_url(); ?>author/admin/">admin</a> <span>-</span> </div>
                                                     <div class="td-post-date">
-                                                        <time class="entry-date updated td-module-date" datetime="2016-01-22T06:09:14+00:00">22nd January 2016</time>
+                                                        <time class="entry-date updated td-module-date" datetime="2016-04-02T21:14">02 April, 2016</time>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="td-module-comments"><a href="<?php echo base_url(); ?>2016/01/22/robots-helped-inspire-deep-learning-might-become/#respond">0</a>
-                                    </div>
                                 </div>
                                 <div class="td_module_mx6 td-animation-stack td-big-grid-post-3 td-big-grid-post td-tiny-thumb">
                                     <div class="td-module-thumb">
-                                        <a href="<?php echo base_url(); ?>2016/01/22/what-do-i-need-to-make-it-in-business/" rel="bookmark" title="What Do I Need To Make It In Business?"><img width="238" height="178" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url(); ?>wp-content/uploads/2016/01/5-238x178.jpg" alt="" title="What Do I Need To Make It In Business?"></a>
+                                        <a href="<?php echo base_url(); ?>yii2-framework/yii2-part-7-modules-in-yii2-framework-93.html" rel="bookmark" title="Yii2 part 7 - Modules in yii2 framework"><img width="238" height="178" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url(); ?>uploads/news/yii2framework.jpg" alt="" title="Yii2 part 7 - Modules in yii2 framework"></a>
                                     </div>
                                     <div class="td-meta-info-container">
                                         <div class="td-meta-align">
                                             <div class="td-big-grid-meta">
-                                                <h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/what-do-i-need-to-make-it-in-business/" rel="bookmark" title="What Do I Need To Make It In Business?">What Do I Need To Make It In Business?</a></h3>
+                                                <h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>yii2-framework/yii2-part-7-modules-in-yii2-framework-93.html" rel="bookmark" title="Yii2 part 7 - Modules in yii2 framework">Yii2 part 7 - Modules in yii2 framework</a></h3>
                                                 <div class="td-module-meta-info">
-                                                    <div class="td-post-author-name"><a href="<?php echo base_url(); ?>author/admin/">admin</a> <span>-</span> </div>
                                                     <div class="td-post-date">
-                                                        <time class="entry-date updated td-module-date" datetime="2016-01-22T06:09:13+00:00">22nd January 2016</time>
+                                                        <time class="entry-date updated td-module-date" datetime="2016-02-17T11:56">February 17, 2016</time>
                                                     </div>
                                                 </div>
                                             </div>
@@ -106,17 +102,15 @@
                                 </div>
                                 <div class="td_module_mx6 td-animation-stack td-big-grid-post-4 td-big-grid-post td-tiny-thumb">
                                     <div class="td-module-thumb">
-                                        <a href="<?php echo base_url(); ?>2016/01/22/simple-form-creation-and-storage-built-for-developers/" rel="bookmark" title="Simple form creation and storage, built for developers."><img width="238" height="178" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url(); ?>wp-content/uploads/2016/01/13-238x178.jpg" alt="" title="Simple form creation and storage, built for developers.">
-                                                </a>
+                                        <a href="<?php echo base_url(); ?>hosting-domain/a2-hosting-reviews-and-expert-opinion-110.html" rel="bookmark" title="A2 hosting reviews and expert opinion"><img width="238" height="178" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url(); ?>uploads/news/a2-hosting.jpg" alt="" title="A2 hosting reviews and expert opinion"></a>
                                     </div>
                                     <div class="td-meta-info-container">
                                         <div class="td-meta-align">
                                             <div class="td-big-grid-meta">
-                                                <h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>2016/01/22/simple-form-creation-and-storage-built-for-developers/" rel="bookmark" title="Simple form creation and storage, built for developers.">Simple form creation and storage, built for developers.</a></h3>
+                                                <h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>hosting-domain/a2-hosting-reviews-and-expert-opinion-110.html" rel="bookmark" title="A2 hosting reviews and expert opinion">A2 hosting reviews and expert opinion</a></h3>
                                                 <div class="td-module-meta-info">
-                                                    <div class="td-post-author-name"><a href="<?php echo base_url(); ?>author/admin/">admin</a> <span>-</span> </div>
                                                     <div class="td-post-date">
-                                                        <time class="entry-date updated td-module-date" datetime="2016-01-22T06:09:13+00:00">22nd January 2016</time>
+                                                        <time class="entry-date updated td-module-date" datetime="2016-01-22T22:24">22nd January 2016</time>
                                                     </div>
                                                 </div>
                                             </div>
@@ -182,7 +176,7 @@
 													<h3 class="entry-title td-module-title"><a href="<?php echo base_url()."yii2-framework/".$yii2['post_title_rewrite']."-".$yii2['post_id'].".html"; ?>" rel="bookmark" title="<?php echo $yii2['post_title']; ?>"><?php echo $yii2['post_title']; ?></a></h3>
 													<div class="meta-info">
 														<div class="td-post-date">
-															<time class="entry-date updated td-module-date"><?php echo date('d F, Y', strtotime($yii2['created_at'])); ?></time>
+															<time class="entry-date updated td-module-date" datetime="<?php echo date('Y-m-d', strtotime($yii2['created_at'])).'T'.date('H:i', strtotime($yii2['created_at'])); ?>"><?php echo date('d F, Y', strtotime($yii2['created_at'])); ?></time>
 														</div>
 													</div>
 												</div>
@@ -218,11 +212,11 @@
 								<div class="td-block-span6">
 									<div class="td_module_mx1 td_module_wrap td-animation-stack">
 										<div class="td-block14-border"></div>
-										<div class="td-module-thumb"><a href="<?php echo base_url(); ?>" rel="bookmark" title="Use template in laravel 5.0"><img width="341" height="220" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url(); ?>wp-content/uploads/2016/01/7-341x220.jpg" alt="" title="Use template in laravel 5.0"></a></div>
+										<div class="td-module-thumb"><a href="<?php echo base_url(); ?>" rel="bookmark" title="Use template in laravel 5.0"><img width="341" height="220" class="entry-thumb td-animation-stack-type0-2" src="<?php echo base_url(); ?>public/images/7-341x220.jpg" alt="" title="Use template in laravel 5.0"></a></div>
 										<div class="meta-info">
 											<h3 class="entry-title td-module-title"><a href="<?php echo base_url(); ?>laravel-5/use-template-in-laravel-50-98.html" rel="bookmark" title="Use template in laravel 5.0">Use template in laravel 5.0</a></h3>
 											<div class="td-editor-date">
-												<div class="td-post-date"><time class="entry-date updated td-module-date">22nd January 2016</time></div>
+												<div class="td-post-date"><time class="entry-date updated td-module-date" datetime="2016-03-22T19:32">March 22, 2016</time></div>
 											</div>
 										</div>
 									</div>
@@ -242,7 +236,7 @@
 											<h3 class="entry-title td-module-title"><a href="<?php echo base_url().$basic['cate_rewrite']."/".$basic['post_title_rewrite']."-".$basic['post_id'].".html"; ?>" rel="bookmark" title="<?php echo $basic['post_title']; ?>"><?php echo $basic['post_title']; ?></a></h3>
                                             <div class="meta-info">
 												<div class="td-post-date">
-                                                    <time class="entry-date updated td-module-date"><?php echo date('d F, Y', strtotime($basic['created_at'])); ?></time>
+                                                    <time class="entry-date updated td-module-date" datetime="<?php echo date('Y-m-d', strtotime($basic['created_at'])).'T'.date('H:i', strtotime($basic['created_at'])); ?>"><?php echo date('d F, Y', strtotime($basic['created_at'])); ?></time>
                                                 </div>
                                             </div>
 										</div>
@@ -273,7 +267,7 @@
 													<div class="meta-info">
 														<div class="td-post-author-name"><a href="javascript:void(0)">Tuan Kiet</a> <span>-</span> </div>
 														<div class="td-post-date">
-															<time class="entry-date updated td-module-date"><?php echo date('d F, Y', strtotime($advance[0]['created_at'])); ?></time>
+															<time class="entry-date updated td-module-date" datetime="<?php echo date('Y-m-d', strtotime($advance[0]['created_at'])).'T'.date('H:i', strtotime($advance[0]['created_at'])); ?>"><?php echo date('d F, Y', strtotime($advance[0]['created_at'])); ?></time>
 														</div>
 													</div>
 													<div class="td-excerpt">
@@ -302,7 +296,7 @@
                                                     <div class="meta-info">
                                                         <div class="td-post-author-name"><a href="javascript:void(0)">admin</a> <span>-</span> </div>
                                                         <div class="td-post-date">
-                                                            <time class="entry-date updated td-module-date"><?php echo date('d F, Y', strtotime($phpadv['created_at'])); ?></time>
+                                                            <time class="entry-date updated td-module-date" datetime="<?php echo date('Y-m-d', strtotime($phpadv['created_at'])).'T'.date('H:i', strtotime($phpadv['created_at'])); ?>"><?php echo date('d F, Y', strtotime($phpadv['created_at'])); ?></time>
                                                         </div>
                                                     </div>
                                                     <div class="td-bottom-dotted-line"></div>
@@ -324,7 +318,7 @@
 				<div class="wpb_wrapper" style="width: auto; position: static; top: auto; bottom: auto; z-index: 1;"><div class="clearfix"></div>
 					<div class="td-a-rec td-a-rec-id-sidebar ">
 						<div class="td-all-devices">
-							<a href="#"><img src="<?php echo base_url(); ?>public/images/adsense-300x250.gif">
+							<a href="#"><img src="<?php echo base_url(); ?>public/images/adsense-300x250.gif" alt="Ads banner demo" />
 							</a>
 						</div>
 					</div>
@@ -340,7 +334,7 @@
 									<div class="meta-info">
 										<div class="td-post-author-name"><a href="javascript:void(0)">Tuan Kiet</a> <span>-</span> </div>
 										<div class="td-post-date">
-                                            <time class="entry-date updated td-module-date"><?php echo date('d F, Y', strtotime($ranPost['created_at'])); ?></time>
+                                            <time class="entry-date updated td-module-date" datetime="<?php echo date('Y-m-d', strtotime($ranPost['created_at'])).'T'.date('H:i', strtotime($ranPost['created_at'])); ?>"><?php echo date('d F, Y', strtotime($ranPost['created_at'])); ?></time>
 										</div>
 										<div class="td-module-comments"><a href="<?php echo base_url().$ranPost['cate_rewrite']."/".$ranPost['post_title_rewrite']."-".$ranPost['post_id'].".html"; ?>#respond">0</a>
 										</div>

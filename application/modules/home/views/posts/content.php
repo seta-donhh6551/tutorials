@@ -22,7 +22,7 @@
                                 <div class="meta-info">
                                     <div class="td-post-author-name">By <a href="#">Tuan Kiet</a> - </div>
                                     <div class="td-post-date">
-                                        <time class="entry-date updated td-module-date"><?php echo date('F j, Y', strtotime($result['created_at'])); ?></time>
+                                        <time class="entry-date updated td-module-date" datetime="<?php echo date('Y-m-d', strtotime($result['created_at'])).'T'.date('H:i', strtotime($result['created_at'])); ?>"><?php echo date('F j, Y', strtotime($result['created_at'])); ?></time>
                                     </div>
                                     <div class="td-post-views"><i class="td-icon-views"></i><span class="td-nr-views-143">0</span>
                                     </div>

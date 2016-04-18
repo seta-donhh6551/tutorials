@@ -21,9 +21,9 @@
                         <div class="item-details">
                             <h3 class="entry-title td-module-title"><a href="<?php echo base_url().$rewrite."/".$post['post_title_rewrite']."-".$post['post_id'].".html"; ?>" rel="bookmark" title=""><?php echo $post['post_title']; ?></a></h3>
                             <div class="meta-info">
-                                <div class="td-post-author-name"><a href="#">admin</a> <span>-</span> </div>
+                                <div class="td-post-author-name"><a href="javascript:void(0)">Tuan Kiet</a> <span>-</span> </div>
                                 <div class="td-post-date">
-                                    <time class="entry-date updated td-module-date">February 29, 2016</time>
+                                    <time class="entry-date updated td-module-date" datetime="<?php echo date('Y-m-d', strtotime($post['created_at'])).'T'.date('H:i', strtotime($post['created_at'])); ?>"><?php echo date('F j, Y', strtotime($post['created_at'])); ?></time>
                                 </div>
                             </div>
                         </div>

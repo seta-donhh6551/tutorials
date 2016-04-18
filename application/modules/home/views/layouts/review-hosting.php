@@ -13,7 +13,7 @@
 					<h3 class="entry-title td-module-title"><a href="<?php echo base_url().$review['cate_rewrite']."/".$review['post_title_rewrite']."-".$review['post_id'].".html"; ?>" rel="bookmark" title="<?php echo $review['post_title']; ?>"><?php echo $review['post_title']; ?></a></h3>
 					<div class="meta-info">
 						<div class="td-post-date">
-							<time class="entry-date updated td-module-date"><?php echo date('d F, Y', strtotime($review['created_at'])); ?></time>
+							<time class="entry-date updated td-module-date" datetime="<?php echo date('Y-m-d', strtotime($review['created_at'])).'T'.date('H:i', strtotime($review['created_at'])); ?>"><?php echo date('d F, Y', strtotime($review['created_at'])); ?></time>
 						</div>
 					</div>
 				</div>

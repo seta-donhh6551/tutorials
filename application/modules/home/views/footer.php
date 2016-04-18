@@ -4,10 +4,10 @@
 		<div class="td-pb-span4">
 			<div class="td-footer-info td-pb-padding-side">
 				<div class="footer-logo-wrap">
-					<a href="<?php echo base_url(); ?>"><img class="td-retina-data" src="<?php echo base_url(); ?>public/images/ha-footer.png" data-retina="<?php echo base_url(); ?>wp-content/uploads/2016/01/newsmag-footer.png" alt="" />
+					<a href="<?php echo base_url(); ?>"><img class="td-retina-data" src="<?php echo base_url(); ?>public/images/ha-footer.png" data-retina="<?php echo base_url(); ?>public/images/ha-footer.png" alt="Hatutorials.com" />
 					</a>
 				</div>
-				<div class="footer-text-wrap">Hatutorials.com is an individual blog sharing the knowledge of programming and web development. The instructing posts are written by Tuan Kiet- an IT engineer in his free time.
+				<div class="footer-text-wrap">Hatutorials.com is an individual blog sharing the knowledge of programming and web development. The instructing posts are written by Tuan Kiet - an IT engineer in his free time.
 					<div class="footer-email-wrap">Contact us: <a href="mailto:contact@hatutorials.com">contact@hatutorials.com</a>
 					</div>
 				</div>
@@ -33,7 +33,7 @@
 								<h3 class="entry-title td-module-title"><a href="<?php echo base_url().$randp['cate_rewrite']."/".$randp['post_title_rewrite']."-".$randp['post_id'].".html"; ?>" rel="bookmark" title="<?php echo $randp['post_title']; ?>"><?php echo $randp['post_title']; ?></a></h3>
 								<div class="meta-info">
 									<div class="td-post-date">
-										<time class="entry-date updated td-module-date"><?php echo date('d F, Y', strtotime($randp['created_at'])); ?></time>
+										<time class="entry-date updated td-module-date" datetime="<?php echo date('Y-m-d', strtotime($randp['created_at'])).'T'.date('H:i', strtotime($randp['created_at'])); ?>"><?php echo date('d F, Y', strtotime($randp['created_at'])); ?></time>
 									</div>
 								</div>
 							</div>
