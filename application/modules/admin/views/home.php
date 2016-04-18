@@ -31,8 +31,6 @@
                                 	<p>Full name : Hà Hữu Đôn</p>
                                     <p>Phone number : 0974136509</p>
                                     <p>Email : haanhdon@gmail.com</p>
-                                    <p>Yahoo : nhatgai218</p>
-                                    <p>Skype : haanhdon</p>
                                 </div>
                             </div>
 						</div>

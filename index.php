@@ -1,4 +1,5 @@
 <?php
+
 header('Content-Type: text/html; charset=utf-8');
 //1. Nhung tap tin FCKeditor vao file chay
 include('fckeditor/fckeditor.php');
@@ -8,7 +9,6 @@ $sDomain = str_replace(basename($_SERVER['SCRIPT_NAME']),"",$_SERVER['SCRIPT_NAM
 $folderFCK = 'fckeditor/';
 define('sBASEPATH', $sRoot.$sDomain.$folderFCK);
 
-date_default_timezone_set('Asia/Ho_Chi_Minh');
 /*
  *---------------------------------------------------------------
  * APPLICATION ENVIRONMENT

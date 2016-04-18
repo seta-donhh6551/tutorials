@@ -6,8 +6,9 @@ jQuery(function($){
 	});
 	$("#quick-view ul li a").click(function() {
 		var id = $(this).attr('href');
+                var topValue = $(id).offset().top;
 		$('html, body').animate({
-			scrollTop: $(id).offset().top
+			scrollTop: (topValue - 50)
 		}, 1000);
 		return false;
 	});

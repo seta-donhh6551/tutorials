@@ -34,7 +34,7 @@ class Category extends MY_Controller
 		$data['listall'] = $this->model_category->listall($id, $config['per_page'], $start);
 		$data['category'] = $this->listcago();
 		$data['hosting'] = $this->model_posts->phplist(6, 4); // yii2 fw
-		$data['title'] = $data['result']['cate_name'];
+		$data['title'] = $data['result']['cate_title_seo'] != null ? $data['result']['cate_title_seo'] : $data['result']['cate_name'];
 		$data['rewrite'] = $data['result']['cate_rewrite'];
 		$this->load->view("category/layout", $data);
 	}

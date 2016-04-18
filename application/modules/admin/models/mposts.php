@@ -18,7 +18,7 @@
 			$this->db->from($this->_table);
 			$this->db->join("tbl_category","tbl_category.cate_id = tbl_posts.cate_id");
 			$this->db->order_by("tbl_posts.cate_id","ASC");
-			$this->db->order_by("post_id","desc");
+			$this->db->order_by("post_order","desc");
 			$this->db->limit($off,$start);
 			return $this->db->get()->result_array();
 		}

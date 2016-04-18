@@ -6,9 +6,9 @@
 			$this->load->helper("url");
 		}
 		public function index(){
-			$data['title'] = "Lập trình PHP &amp; MYSQL";
+			$data['title'] = "Php web development tutorials";
 			$data['template'] = "home";
-			$data['data'] = "Lời chào";
+			$data['data'] = "Hello";
 			$data['act'] = 0;
 			$this->load->view("layout",$data);
 		}
